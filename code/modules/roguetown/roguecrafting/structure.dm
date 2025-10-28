@@ -2,6 +2,7 @@
 /datum/crafting_recipe/roguetown/structure
 	abstract_type = /datum/crafting_recipe/roguetown/structure
 	req_table = FALSE
+	subtype_reqs = TRUE
 	craftsound = 'sound/foley/Building-01.ogg'
 
 /datum/crafting_recipe/roguetown/structure/TurfCheck(mob/user, turf/T)
@@ -474,7 +475,7 @@
 	buildsame = TRUE
 
 /datum/crafting_recipe/roguetown/structure/fence
-	name = "palisade"
+	name = "palisade (stakes)"
 	result = /obj/structure/fluff/railing/fence
 	reqs = list(/obj/item/grown/log/tree/stake = 2)
 	ontile = TRUE
@@ -495,7 +496,7 @@
 
 
 /datum/crafting_recipe/roguetown/structure/fencealt
-	name = "palisade"
+	name = "palisade (log)"
 	result = /obj/structure/fluff/railing/fence
 	reqs = list(/obj/item/grown/log/tree/small = 1)
 	ontile = TRUE
