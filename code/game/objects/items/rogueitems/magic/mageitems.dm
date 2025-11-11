@@ -78,7 +78,9 @@
 	desc = "A pouch for carrying handfuls of alchemical ingredients."
 	color = "#210f0c"
 	populate_contents = list(
-		/obj/item/alch/viscera = 3,
+		/obj/item/alch/viscera,
+		/obj/item/alch/viscera,
+		/obj/item/alch/viscera.
 		/obj/item/alch/urtica,
 		/obj/item/alch/taraxacum,
 		/obj/item/alch/puresalt,
