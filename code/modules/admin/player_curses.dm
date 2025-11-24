@@ -18,7 +18,8 @@
 	var/mob/owner
 	var/list/signals = list()
 	var/obj/effect/proc_holder/spell/targeted/shapeshift/shapeshift = new
-
+	var/datum/antagonist/vampire/vampholder
+	
 /datum/modular_curse/proc/attach_to_mob(mob/M)
 	owner = M
 
@@ -101,6 +102,7 @@
 				else
 					H.remove_status_effect(debuff_id)
 					H.apply_status_effect(debuff_id, 10 SECONDS)
+			notify_player_of_effect(arg)
 		if("remove trait")
 			var/trait_id = effect_args["trait"]
 			if(!trait_id)
@@ -109,6 +111,7 @@
 				REMOVE_TRAIT(L, trait_id, TRAIT_GENERIC)
 			else
 				arg = FALSE
+			notify_player_of_effect(arg)
 		if("add trait")
 			var/trait_id = effect_args["trait"]
 			if(!trait_id)
@@ -117,10 +120,15 @@
 				arg = FALSE
 			else
 				ADD_TRAIT(L, trait_id, TRAIT_GENERIC)
+			notify_player_of_effect(arg)
 		if("scream")
-			L.emote("scream", forced = TRUE)
+			spawn(0)
+				L.emote("scream", forced = TRUE)
+				notify_player_of_effect(arg)
 		if("cry")
-			L.emote("cry", forced = TRUE)
+			spawn(0)
+				L.emote("cry", forced = TRUE)
+				notify_player_of_effect(arg)
 		if("add reagent")
 			var/reagent_type = effect_args["reagent_type"]
 			var/amount = effect_args["amount"]
@@ -135,11 +143,14 @@
 			var/datum/reagents/reagents = new()
 			reagents.add_reagent(reagent_type, amount)
 			reagents.trans_to(M, amount, transfered_by = M, method = INGEST)
+			notify_player_of_effect(arg)
 		if("add arousal")
 			var/amount = effect_args["amount"]
 			L.sexcon.arousal += amount
+			notify_player_of_effect(arg)
 		if("orgasm")
 			L.sexcon.arousal += 999
+			notify_player_of_effect(arg)
 		if("shrink sex organs")
 			spawn(0)
 				var/obj/item/organ/penis/penis = L.getorganslot(ORGAN_SLOT_PENIS)
@@ -168,6 +179,7 @@
 				if(!pmax && !tmax && !bmax) //nothing was able to change
 					arg = FALSE
 				L.update_body()
+				notify_player_of_effect(arg)
 		if("enlarge sex organs")
 			spawn(0)
 				var/obj/item/organ/penis/penis = L.getorganslot(ORGAN_SLOT_PENIS)
@@ -196,17 +208,21 @@
 				if(!pmax && !tmax && !bmax) //nothing was able to change
 					arg = FALSE
 				L.update_body()
+				notify_player_of_effect(arg)
 		if("add nausea")
 			var/mob/living/carbon/M = L
 			var/amount = effect_args["amount"]
 			M.add_nausea(amount)
+			notify_player_of_effect(arg)
 		if("clothesplosion")
 			L.drop_all_held_items()
 			for(var/obj/item/I in L.get_equipped_items())
 				L.dropItemToGround(I, TRUE)
+			notify_player_of_effect(arg)
 		if("slip")
 			spawn(0)
 				L.liquid_slip(total_time = 1 SECONDS, stun_duration = 1 SECONDS, height = 12, flip_count = 0)
+				notify_player_of_effect(arg)
 			/*
 		if("jail in arcyne walls")
 			var/turf/target = get_turf(L)
@@ -219,24 +235,57 @@
 				new /obj/effect/temp_visual/trap_wall(affected_turf)
 				addtimer(CALLBACK(src, PROC_REF(/obj/effect/proc_holder/spell/invoked/forcewall/new_wall), affected_turf, L), wait = 0 SECONDS)
 				/obj/effect/proc_holder/spell/invoked/forcewall/proc/new_wall(var/turf/target, mob/user)
-	new wall_type(target, user)
+	new wall_type(target, user)*/
 		if("make deadite")
-			if(istype(L, /mob/living/carbon/human))	
-				var/mob/living/carbon/human/H = L
-				H.transform_into_deadite()
+			spawn(0)
+				if(L.mind.has_antag_datum(/datum/antagonist/zombie))
+					remove_zombie_antag(target = L, user = L, method = "curse", lethal = FALSE)
+					arg = FALSE
+				else
+					L.fully_heal(TRUE)
+					L.mind.add_antag_datum(/datum/antagonist/zombie)
+					var/datum/antagonist/zombie/newz = L.mind.has_antag_datum(/datum/antagonist/zombie)
+					if(newz)
+						newz.wake_zombie(TRUE)
+				notify_player_of_effect(arg)
+				/*
 		if("make vampire")
-			if(istype(L, /mob/living/carbon/human))	
-				var/mob/living/carbon/human/H = L
-				H.transform_into_vampire()
+			spawn(0)
+				var/datum/antagonist/vampire/existing = L.mind.has_antag_datum(/datum/antagonist/vampire)
+				if(existing)
+					if(hascall(existing, "on_removal"))
+						existing.on_removal()
+					L.mind.remove_antag_datum(existing)
+					arg = FALSE
+				else
+					L.fully_heal(TRUE)
+					if(vampholder)
+						L.mind.add_antag_datum(vampholder)
+					else
+						var/datum/antagonist/vampire/newvamp = new /datum/antagonist/vampire(generation = GENERATION_THINBLOOD)
+						L.mind.add_antag_datum(newvamp)
+						vampholder = newvamp
+						if(newvamp)
+							L.adjust_bloodpool(500)
+				notify_player_of_effect(arg)
 		if("make werewolf")
-			if(istype(L, /mob/living/carbon/human))	
-				var/mob/living/carbon/human/H = L
-				H.transform_into_werewolf()*/
+			spawn(0)
+				if(L.mind.has_antag_datum(/datum/antagonist/werewolf))
+					L.mind.remove_antag_datum(/datum/antagonist/werewolf)
+					arg = FALSE
+				else
+					L.fully_heal(TRUE)
+					var/datum/antagonist/werewolf/neww = L.mind.has_antag_datum(/datum/antagonist/werewolf)
+					L.mind.add_antag_datum(/datum/antagonist/werewolf)
+				notify_player_of_effect(arg)
+				*/
 		if("shock")
 			L.electrocute_act(rand(15,30), src)
+			notify_player_of_effect(arg)
 		if("add fire stack")
 			L.adjust_fire_stacks(rand(1,6))
 			L.ignite_mob()
+			notify_player_of_effect(arg)
 		if("cbt")
 			if(!ishuman(L))
 				return
@@ -245,6 +294,7 @@
 			if(!affecting)
 				return
 			affecting.add_wound(/datum/wound/cbt/permanent)
+			notify_player_of_effect(arg)
 		/*if("easy ambush")
 			var/mob/living/simple_animal/M = effect_args["mob_type"]
 			if(!M || !istype(M, /mob/living/simple_animal))
@@ -257,11 +307,7 @@
 			ambush_mob_at_target(L, M, easy = FALSE)*/
 		if("explode")
 			explosion(get_turf(L), 1, 2, 3, 0, TRUE, TRUE)
-		/*
-		if("nugget")
-			if(istype(L, /mob/living/carbon/human))	
-				var/mob/living/carbon/human/H = L
-				H.spawn_gold_nugget()*/
+			notify_player_of_effect(arg)
 		if("shapeshift")
 			spawn(0)
 				shapeshift.shapeshift_type = text2path(effect_args["mob_type"])
@@ -270,25 +316,24 @@
 					shapeshift.Restore(L)
 				else if(shapeshift.shapeshift_type)
 					shapeshift.Shapeshift(L)
+				notify_player_of_effect(arg)
 		if("gib")
 			if(!L)
 				return
 			message_admins(span_adminnotice("[key_name_admin(owner)] gibbed due to curse."))
 			SSblackbox.record_feedback("tally", "curse", 1, "Gib Curse") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 			addtimer(CALLBACK(L, TYPE_PROC_REF(/mob/living, gib), 1, 1, 1), 2)
+			notify_player_of_effect(arg)
 			return
 
 		else
 			// Unknown effect
 			return
 
-	notify_player_of_effect(arg)
-
 /datum/modular_curse/proc/notify_player_of_effect(arg)
 	if(!owner)
 		return
-	if(arg == FALSE)
-		return
+	var/no_notify_on_false_arg = TRUE
 
 	var/flavor_text_self = ""
 	var/flavor_text_other = ""
@@ -449,6 +494,16 @@
 			effect_text_self = "your equipment flies away";effect_text_other = "equipment bursts away from them"
 		if("slip")
 			effect_text_self = "your footing vanishes";effect_text_other = "they stumble and fall"
+		if("make deadite")
+			no_notify_on_false_arg = FALSE
+			effect_text_self = (arg == TRUE ? "you begin to crave brains" : "you no longer crave brains") ;effect_text_other = (arg == TRUE ? "their body rapidly decomposes" : "their body rapidly restores itself") 
+		/*if("make vampire")
+			no_notify_on_false_arg = FALSE
+			effect_text_self = (arg == TRUE ? "you begin to crave blood" : "you no longer crave blood") ;effect_text_other = (arg == TRUE ? "they become rather pale" : "life seems to rush into them") 
+		if("make werewolf")
+			no_notify_on_false_arg = FALSE
+			effect_text_self = (arg == TRUE ? "you begin to crave flesh" : "you no longer crave flesh") ;effect_text_other = (arg == TRUE ? "their hair and nails lengthen" : "their hair and nails shorten") 
+		*/
 		if("shock")
 			effect_text_self = "a jolt tears through you";effect_text_other = "their body convulses sharply"
 		if("add fire stack")
@@ -465,6 +520,9 @@
 	// final messages
 	var/self_message   = "[flavor_text_self] [trigger_text_self]. [effect_text_self]."
 	var/others_message = "[flavor_text_other] [trigger_text_other]. [effect_text_other]!"
+
+	if(arg == FALSE && no_notify_on_false_arg == TRUE)
+		return
 
 	owner.visible_message(span_warning(others_message), span_warning(self_message))
 
@@ -840,9 +898,9 @@
 		"clothesplosion",
 		"slip",
 		//"jail in arcyne walls",
-		//"make deadite",
-		//"make vampire",
-		//"make werewolf",
+		"make deadite",
+		/*"make vampire",
+		"make werewolf",*/
 		"shock",
 		"add fire stack",
 		"cbt",
