@@ -17,7 +17,7 @@
 	max_integrity = 0
 	anchored = TRUE
 	layer = BELOW_OBJ_LAYER
-	var/locked = FALSE
+	locked = FALSE
 	var/keycontrol = "steward"
 	var/current_tab = TAB_MAIN
 	var/compact = TRUE
@@ -47,7 +47,7 @@
 	daily_payments["Head Physician"] = 20 //Doctors
 	daily_payments["Apothecary"] = 10
 	daily_payments["Court Magician"] = 50 //University
-	daily_payments["Archivist"] = 20
+	daily_payments["Archivist"] = 10
 	daily_payments["Magicians Associate"] = 10
 	daily_payments["Jester"] = 6
 
