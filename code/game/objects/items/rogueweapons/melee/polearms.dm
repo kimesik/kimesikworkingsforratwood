@@ -152,7 +152,7 @@
 /datum/intent/partizan/peel
 	name = "armor peel"
 	icon_state = "inpeel"
-	attack_verb = list("<font color ='#e7e7e7'>strongly peels</font>")
+	attack_verb = list("<font color ='#e7e7e7'>peels</font>")
 	animname = "cut"
 	blade_class = BCLASS_PEEL
 	hitsound = list('sound/combat/hits/blunt/metalblunt (1).ogg', 'sound/combat/hits/blunt/metalblunt (2).ogg', 'sound/combat/hits/blunt/metalblunt (3).ogg')
@@ -161,14 +161,14 @@
 	swingdelay = 0
 	damfactor = 0.01
 	item_d_type = "slash"
-	peel_divisor = 3
+	peel_divisor = 4
 	reach = 2
 
 //Old partizan peel, for the naginata.
 /datum/intent/partizan/peel/nag
-	attack_verb = list("<font color ='#e7e7e7'>peels</font>")
+	attack_verb = list("<font color ='#e7e7e7'>weakly peels</font>")
 	swingdelay = 5
-	peel_divisor = 4
+	peel_divisor = 5
 
 /datum/intent/spear/bash/ranged/quarterstaff
 	damfactor = 1
