@@ -497,7 +497,7 @@ GLOBAL_VAR_INIT(mobids, 1)
 				if(!iscarbon(T))
 					target = "\the [T.name]'s [T.simple_limb_hit(zone_selected)]"
 				if(iscarbon(T) && T != src)
-					target = "[T]'s [parse_zone(zone_selected)]"
+					target = "[T]'s [parse_zone(zone_selected, T.get_bodypart(zone_selected))]"
 			if(m_intent != MOVE_INTENT_SNEAK)
 				visible_message(span_emote("[message] [target]."))
 
