@@ -903,14 +903,17 @@
 	if(ishuman(user))
 		var/mob/living/carbon/human/H = user
 		var/stress = H.get_stress_amount()//stress check for racism
+		var/stress_type = /datum/stressevent/shunned_race
 		if(H.has_flaw(/datum/charflaw/paranoid) || stress >= 4)//Paranoid or stressed, for basic examine.
 			if(H.dna.species.name != dna.species.name)
 				if(dna.species.stress_examine)//some species don't have a stress desc
 					. += dna.species.stress_desc
 				if(!HAS_TRAIT(user, TRAIT_TOLERANT))//They're given the stress event if they qualify for racism and aren't tolerant.
-					var/stress_type = /datum/stressevent/shunned_race
 					if(HAS_TRAIT(user, TRAIT_XENOPHOBIC))//Xenophobic are hit worse. By a bit.
 						stress_type = /datum/stressevent/shunned_race_xenophobic
+					user.add_stress(stress_type)
+				else//Xenophiles (Tolerant) get a positive event!
+					stress_type = /datum/stressevent/xenophile
 					user.add_stress(stress_type)
 
 	if((user != src) && isliving(user))

@@ -161,17 +161,17 @@
 			H.cmode_music = 'sound/music/combat_baotha.ogg'
 			ADD_TRAIT(H, TRAIT_HERESIARCH, TRAIT_GENERIC)
 		if(/datum/patron/divine/xylix)
-			neck = /obj/item/clothing/neck/roguetown/luckcharm
+			neck = /obj/item/clothing/neck/roguetown/psicross/xylix
 			H.cmode_music = 'sound/music/combat_jester.ogg'
 
 /datum/advclass/cleric/paladin
 	name = "Paladin"
-	tutorial = "You are a holy knight, clad in maille and armed with steel. Where others of the clergy may have spent their free time studying scriptures, you devoted yourself towards fighting Psydonia's evils - a longsword in one hand, and a clenched psycross in the other."
+	tutorial = "You are a holy knight, clad in maille or plate and armed with steel. Where others of the clergy may have spent their free time studying scriptures, you devoted yourself towards fighting Psydonia's evils - a longsword in one hand, and a clenched psycross in the other."
 	outfit = /datum/outfit/job/roguetown/adventurer/paladin
-	traits_applied = list(TRAIT_MEDIUMARMOR)
+	traits_applied = list()//Handled in armor selection.
 	subclass_stats = list(
 		STATKEY_STR = 2,
-		STATKEY_CON = 2,
+		STATKEY_CON = 1,
 		STATKEY_WIL = 1,
 	)
 	subclass_skills = list(
@@ -193,7 +193,8 @@
 		"The Verses and Acts of the Ten" = /obj/item/book/rogue/bibble,
 		"Tome of Psydon" = /obj/item/book/rogue/bibble/psy
 	)
-	extra_context = "This subclass can choose to take one of two holy items to take along: a potion of lifeblood and Novice skills in Medicine, or a silver longsword that gives Journeyman skills in Swordsmanship."
+	extra_context = "This subclass can choose to take one of two holy items to take along: a potion of lifeblood and Novice skills in Medicine, or a silver longsword that gives Journeyman skills in Swordsmanship. \
+	Additionally, you select your choice of armor path. Medium armor path grants +1CON."
 
 /datum/outfit/job/roguetown/adventurer/paladin/pre_equip(mob/living/carbon/human/H)
 	to_chat(H, span_warning("You are a holy knight, clad in maille and armed with steel. Where others of the clergy may have spent their free time studying scriptures, you devoted yourself towards fighting Psydonia's evils - a longsword in one hand, and a clenched psycross in the other."))
@@ -222,57 +223,39 @@
 						head = /obj/item/clothing/head/roguetown/helmet/heavy/psydonhelm
 					if("Buckethelm")
 						head = /obj/item/clothing/head/roguetown/helmet/heavy/psybucket
-				var/armors = list("Hauberk","Cuirass")
-				var/armor_choice = input(H, "Choose your MAILLE.", "STAND AGAINST HER DARKNESS.") as anything in armors
-				switch(armor_choice)
-					if("Hauberk")
-						armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
-					if("Cuirass")
-						armor = /obj/item/clothing/suit/roguetown/armor/plate/half/fluted/ornate
 		if(/datum/patron/divine/astrata)
 			cloak = /obj/item/clothing/cloak/templar/astrata
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/astratan
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
 		if(/datum/patron/divine/noc)
 			cloak = /obj/item/clothing/cloak/templar/noc
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/nochelm
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
 		if(/datum/patron/divine/abyssor)
 			cloak = /obj/item/clothing/cloak/abyssortabard
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/abyssorgreathelm
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
 		if(/datum/patron/divine/dendor)
 			cloak = /obj/item/clothing/cloak/templar/dendor
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/dendorhelm
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
 		if(/datum/patron/divine/necra)
 			cloak = /obj/item/clothing/cloak/templar/necra
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/necrahelm
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
 		if (/datum/patron/divine/malum)
 			cloak = /obj/item/clothing/cloak/templar/malum
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/malum
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
 		if (/datum/patron/divine/eora)
 			cloak = /obj/item/clothing/cloak/templar/eora
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/eoran
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
 		if (/datum/patron/divine/ravox)
 			cloak = /obj/item/clothing/cloak/cleric/ravox
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket/gold
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
 		if (/datum/patron/divine/xylix)
 			cloak = /obj/item/clothing/cloak/templar/xylix
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
 		if (/datum/patron/divine/pestra)
 			cloak = /obj/item/clothing/cloak/templar/pestra
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/pestran
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
 		else
 			cloak = /obj/item/clothing/cloak/cape/crusader
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = CLERIC_REGEN_WEAK, devotion_limit = CLERIC_REQ_1)	//Capped to T1 miracles.
@@ -308,16 +291,58 @@
 			if("Axe")
 				H.adjust_skillrank_up_to(/datum/skill/combat/axes, SKILL_LEVEL_JOURNEYMAN, TRUE)
 				r_hand = /obj/item/rogueweapon/stoneaxe/woodcut
+
 		var/oaths = list("Cleric - Medicine & Mirth","Crusader - Silver Longsword")
 		var/oath_choice = input(H, "Choose your OATH.", "PROFESS YOUR BLESSINGS.") as anything in oaths
 		switch(oath_choice)
 			if("Cleric - Medicine & Mirth")
-				H.adjust_skillrank_up_to(/datum/skill/misc/medicine, SKILL_LEVEL_NOVICE, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/misc/medicine, SKILL_LEVEL_APPRENTICE, TRUE)
 				beltl = /obj/item/reagent_containers/glass/bottle/rogue/healthpot //No needles or cloth, but a basic potion of lifeblood - similar to the Sorcerer's manna potion. Take the 'Physician's Apprentice' virtue for that, uncapped skills, and more.
 			if("Crusader - Silver Longsword")
 				H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_JOURNEYMAN, TRUE)
-				l_hand = /obj/item/rogueweapon/sword/long/silver //Turns the Paladin into a pre-Exorcist version of the Monster Hunter. Differences are +1 CON / -1 INT, access to minor miracles, and more limb coverage.
-				beltl = /obj/item/rogueweapon/scabbard/sword //Functionally, inflicts silverbane at the cost of -5 damage. Likely won't be a balancing issue, unless we start seeing +5-10 Clerics overnight.
+				l_hand = /obj/item/rogueweapon/sword/long/silver //Functionally, inflicts silverbane at the cost of -5 damage. Likely won't be a balancing issue, unless we start seeing +5-10 Clerics overnight.
+				beltl = /obj/item/rogueweapon/scabbard/sword
+
+		var/armor_path = list("Cleric - Medium","Crusader - Heavy")
+		var/armor_choice = input(H, "Choose your ARMOR.", "PROTECT THY FRAME.") as anything in armor_path
+		switch(armor_choice)
+			if("Cleric - Medium")
+				ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+				H.change_stat(STATKEY_CON, 1)//You get your +1CON back if you take medium armour.
+				if(/datum/patron/old_god)
+					var/armors_med_psy = list("Hauberk","Cuirass")
+					var/armor_choice_med_psy = input(H, "Choose your MAILLE.", "STAND AGAINST HER DARKNESS.") as anything in armors_med_psy
+					switch(armor_choice_med_psy)
+						if("Hauberk")
+							armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+						if("Cuirass")
+							armor = /obj/item/clothing/suit/roguetown/armor/plate/half/fluted/ornate
+				else
+					var/armors_med_ten = list("Hauberk","Cuirass")
+					var/armor_choice_med_ten = input(H, "Choose your MAILLE.", "STAND AGAINST HER DARKNESS.") as anything in armors_med_ten
+					switch(armor_choice_med_ten)
+						if("Hauberk")
+							armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+						if("Cuirass")
+							armor = /obj/item/clothing/suit/roguetown/armor/plate/half
+			if("Crusader - Heavy")
+				ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)//This alone is worth more than that +1CON. God this is an awful idea.
+				if(/datum/patron/old_god)
+					var/armors_hev_psy = list("Half-Plate","Fluted Plate")
+					var/armor_choice_hev_psy = input(H, "Choose your PLATE.", "STAND AGAINST HER DARKNESS.") as anything in armors_hev_psy
+					switch(armor_choice_hev_psy)
+						if("Half-Plate")
+							armor = /obj/item/clothing/suit/roguetown/armor/plate
+						if("Fluted Plate")//Same integrity as coat of plates. Full coverage. Not used anywhere else.
+							armor = /obj/item/clothing/suit/roguetown/armor/plate/fluted/ornate
+				else
+					var/armors_hev_ten = list("Half-Plate","Coat of Plates")
+					var/armor_choice_hev_ten = input(H, "Choose your PLATE.", "STAND AGAINST HER DARKNESS.") as anything in armors_hev_ten
+					switch(armor_choice_hev_ten)
+						if("Half-Plate")
+							armor = /obj/item/clothing/suit/roguetown/armor/plate
+						if("Coat of Plates")//Lacks the leg protection, compared to fluted.
+							armor = /obj/item/clothing/suit/roguetown/armor/brigandine/coatplates
 
 	H.set_blindness(0)
 	switch(H.patron?.type)
@@ -360,7 +385,7 @@
 			H.cmode_music = 'sound/music/combat_baotha.ogg'
 			ADD_TRAIT(H, TRAIT_HERESIARCH, TRAIT_GENERIC)
 		if(/datum/patron/divine/xylix)
-			wrists = /obj/item/clothing/neck/roguetown/luckcharm
+			wrists = /obj/item/clothing/neck/roguetown/psicross/xylix
 			H.cmode_music = 'sound/music/combat_jester.ogg'
 
 /datum/advclass/cleric/cantor
@@ -504,14 +529,14 @@
 			H.cmode_music = 'sound/music/combat_baotha.ogg'
 			ADD_TRAIT(H, TRAIT_HERESIARCH, TRAIT_GENERIC)
 		if(/datum/patron/divine/xylix)
-			neck = /obj/item/clothing/neck/roguetown/luckcharm
+			neck = /obj/item/clothing/neck/roguetown/psicross/xylix
 			H.cmode_music = 'sound/music/combat_jester.ogg'
 
 /datum/advclass/cleric/missionary
 	name = "Missionary"
 	tutorial = "You are a devout worshipper of the divine with a strong connection to your patron god. You've spent years studying scriptures and serving your deity - now you wander into foreign lands, spreading the word of your faith."
 	outfit = /datum/outfit/job/roguetown/adventurer/missionary
-	traits_applied = list()
+	traits_applied = list(TRAIT_EMPATH)
 	subclass_stats = list(
 		STATKEY_INT = 2,
 		STATKEY_PER = 2,
@@ -641,5 +666,5 @@
 			H.cmode_music = 'sound/music/combat_baotha.ogg'
 			ADD_TRAIT(H, TRAIT_HERESIARCH, TRAIT_GENERIC)
 		if(/datum/patron/divine/xylix)
-			neck = /obj/item/clothing/neck/roguetown/luckcharm
+			neck = /obj/item/clothing/neck/roguetown/psicross/xylix
 			H.cmode_music = 'sound/music/combat_jester.ogg'

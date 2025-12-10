@@ -335,7 +335,6 @@
 	stressadd = -3
 	desc = "<span class='green'>I got some love, and it was wonderful!</span>"
 
-
 /datum/stressevent/dimwitted
 	timer = 10 MINUTES
 	stressadd = -4
@@ -345,7 +344,6 @@
 	timer = 10 MINUTES
 	stressadd = -10
 	desc = span_green("Heeh...")
-
 
 /datum/stressevent/champion
 	stressadd = -3
@@ -370,4 +368,9 @@
 /datum/stressevent/fermented_crab_good
 	stressadd = -1
 	desc = span_green("That fermented crab was not the most pleasant dish ever, but youthful vigor in my body was worth the sacrifice!")
+	timer = 3 MINUTES
+
+/datum/stressevent/xenophile
+	stressadd = -1
+	desc = span_green("All these unique faces! It's a blessing!")
 	timer = 3 MINUTES

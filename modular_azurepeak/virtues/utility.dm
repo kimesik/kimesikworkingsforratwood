@@ -324,7 +324,11 @@
 /datum/virtue/utility/tolerant
 	name = "Tolerant"
 	desc = "Whether fostered through travel or care, you just don't see an issue with certain folks."
-	custom_text = "Prevents you from experiencing negative stress events when looking at select species."
+	custom_text = "Inverts negative stress events when looking at select species. Changes negative species examine text."
 	added_traits = list(TRAIT_TOLERANT)
 
-
+/datum/virtue/utility/tolerant/handle_traits(mob/living/carbon/human/recipient)
+	..()
+	if(HAS_TRAIT(recipient, TRAIT_XENOPHOBIC))
+		to_chat(recipient, "Your love is cancelled out! You become a bigot.")
+		REMOVE_TRAIT(recipient, TRAIT_TOLERANT, TRAIT_VIRTUE)
