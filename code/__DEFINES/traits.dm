@@ -77,7 +77,7 @@
 #define TRAIT_INFINITE_ENERGY "Boundless Energy" //infinite fatigue (blue bar) but not infinite stamina
 #define TRAIT_PERMAMUTE "Permanent Mute"
 #define TRAIT_EXCOMMUNICATED "Excommunicated"
-#define TRAIT_HERESIARCH "Forbidden Knowledge" //allows entry to ascendant church
+#define TRAIT_HERESIARCH "Forbidden Knowledge"//Church curse protection. Stronger heretic spires. Heretic conversion handling.
 #define TRAIT_ZURCH 	"Hidden Domiciles" //allows entry to ascendant church
 #define TRAIT_DREAMWALKER "Dreamwalker"
 #define TRAIT_PONYGIRL_RIDEABLE "Mount" //riding
@@ -93,6 +93,7 @@
 #define TRAIT_BLOODPOOL_BORN "Bloodpool Born"
 #define TRAIT_ROYALSERVANT "Household Insight" // Let's you see the royals liked/hated food/drink
 #define TRAIT_WAGES_SUSPENDED "Wages Suspended" //Stops nerve master daily pay for this guy
+#define TRAIT_SCALEARMOR "Weathered Scales"//Mage armor, refluffed to scales.
 
 //Hearthstone port (Tracking)
 #define TRAIT_PERFECT_TRACKER "Huntmaster" //Will always find any tracks and analyzes them perfectly.
@@ -447,7 +448,6 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_SILVER_WEAK = span_warning("Silver is the greatest threat to my lyfe. Blows from silver weapons will set me alight, inhibit my ability to regenerate, and - if blessed - can outright destroy my vessel."),
 	TRAIT_DYES = span_notice("I know my way around pigments and shades, and I'm able to create the exact colors I want in a dye station."),
 	TRAIT_RACISMISBAD = span_warning("The Black Oaks can spot ANY Foreigners and Outsiders, no matter how long they've lived in the vale. This is an easy skill to master, as it is simply identifying who isn't an elf."),
-	TRAIT_HERESIARCH = span_warning("I know of sacred sites of worship where followers of the Ascendants convene, and the path to the nearest conclave is etched into my memory."),
 	TRAIT_GOODWRITER = span_notice("I'm proficient at writing. Any skillbooks made by me will allow the reader to learn the subject more quickly."),
 	TRAIT_PONYGIRL_RIDEABLE = span_notice("Willing or not, I've been trained to carry other people's burdens."),
 	TRAIT_VENOMOUS = span_necrosis("I am venomous. When chewing someone I've bitten, I will inject venom."),
@@ -473,6 +473,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_SPELL_DISPERSION = span_necrosis("Spells are useless against me, so long as I maintain my arcyne barrier."),
 	TRAIT_CONVICTION = span_suppradio("My connection to the Ten is unwavering. Prayer alone keeps me alive, for I am a conduit of faith."),
 	TRAIT_WAGES_SUSPENDED = span_warning("The Stewardry has halted my daily wages!"),
+	TRAIT_SCALEARMOR = span_info("My scales can protect me from harm every so often."),
 ))
 
 // trait accessor defines
