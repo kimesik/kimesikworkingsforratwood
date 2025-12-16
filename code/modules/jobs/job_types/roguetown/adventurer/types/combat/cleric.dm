@@ -161,7 +161,7 @@
 			H.cmode_music = 'sound/music/combat_baotha.ogg'
 			ADD_TRAIT(H, TRAIT_HERESIARCH, TRAIT_GENERIC)
 		if(/datum/patron/divine/xylix)
-			neck = /obj/item/clothing/neck/roguetown/luckcharm
+			neck = /obj/item/clothing/neck/roguetown/psicross/xylix
 			H.cmode_music = 'sound/music/combat_jester.ogg'
 
 /datum/advclass/cleric/paladin
@@ -360,7 +360,7 @@
 			H.cmode_music = 'sound/music/combat_baotha.ogg'
 			ADD_TRAIT(H, TRAIT_HERESIARCH, TRAIT_GENERIC)
 		if(/datum/patron/divine/xylix)
-			wrists = /obj/item/clothing/neck/roguetown/luckcharm
+			wrists = /obj/item/clothing/neck/roguetown/psicross/xylix
 			H.cmode_music = 'sound/music/combat_jester.ogg'
 
 /datum/advclass/cleric/cantor
@@ -441,28 +441,34 @@
 		else
 			cloak = /obj/item/clothing/cloak/cape/crusader
 	if(H.mind)
-		var/weapons = list("Harp","Lute","Accordion","Guitar","Hurdy-Gurdy","Viola","Vocal Talisman", "Psyaltery", "Flute")
+		var/weapons = list("Accordion","Drum","Flute","Guitar","Harp","Hurdy-Gurdy","Lute","Psyaltery","Shamisen","Trumpet","Viola","Vocal Talisman")
 		var/weapon_choice = tgui_input_list(H, "Choose your instrument.", "TAKE UP ARMS", weapons)
 		H.set_blindness(0)
 		switch(weapon_choice)
-			if("Harp")
-				backr = /obj/item/rogue/instrument/harp
-			if("Lute")
-				backr = /obj/item/rogue/instrument/lute
 			if("Accordion")
 				backr = /obj/item/rogue/instrument/accord
+			if("Drum")
+				backr = /obj/item/rogue/instrument/drum
+			if("Flute")
+				backr = /obj/item/rogue/instrument/flute
 			if("Guitar")
 				backr = /obj/item/rogue/instrument/guitar
+			if("Harp")
+				backr = /obj/item/rogue/instrument/harp
 			if("Hurdy-Gurdy")
 				backr = /obj/item/rogue/instrument/hurdygurdy
+			if("Lute")
+				backr = /obj/item/rogue/instrument/lute
+			if("Psyaltery")
+				backr = /obj/item/rogue/instrument/psyaltery
+			if("Shamisen")
+				backr = /obj/item/rogue/instrument/shamisen
+			if("Trumpet")
+				backr = /obj/item/rogue/instrument/trumpet
 			if("Viola")
 				backr = /obj/item/rogue/instrument/viola
 			if("Vocal Talisman")
 				backr = /obj/item/rogue/instrument/vocals
-			if("Psyaltery")
-				backr = /obj/item/rogue/instrument/psyaltery
-			if("Flute")
-				backr = /obj/item/rogue/instrument/flute
 
 	switch(H.patron?.type)
 		if(/datum/patron/old_god)
@@ -504,14 +510,14 @@
 			H.cmode_music = 'sound/music/combat_baotha.ogg'
 			ADD_TRAIT(H, TRAIT_HERESIARCH, TRAIT_GENERIC)
 		if(/datum/patron/divine/xylix)
-			neck = /obj/item/clothing/neck/roguetown/luckcharm
+			neck = /obj/item/clothing/neck/roguetown/psicross/xylix
 			H.cmode_music = 'sound/music/combat_jester.ogg'
 
 /datum/advclass/cleric/missionary
 	name = "Missionary"
 	tutorial = "You are a devout worshipper of the divine with a strong connection to your patron god. You've spent years studying scriptures and serving your deity - now you wander into foreign lands, spreading the word of your faith."
 	outfit = /datum/outfit/job/roguetown/adventurer/missionary
-	traits_applied = list()
+	traits_applied = list(TRAIT_EMPATH)
 	subclass_stats = list(
 		STATKEY_INT = 2,
 		STATKEY_PER = 2,
@@ -641,5 +647,5 @@
 			H.cmode_music = 'sound/music/combat_baotha.ogg'
 			ADD_TRAIT(H, TRAIT_HERESIARCH, TRAIT_GENERIC)
 		if(/datum/patron/divine/xylix)
-			neck = /obj/item/clothing/neck/roguetown/luckcharm
+			neck = /obj/item/clothing/neck/roguetown/psicross/xylix
 			H.cmode_music = 'sound/music/combat_jester.ogg'
