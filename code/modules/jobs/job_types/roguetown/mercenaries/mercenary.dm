@@ -25,6 +25,7 @@
 		/datum/advclass/mercenary/atgervi/shaman,
 		/datum/advclass/mercenary/condottiero,
 		/datum/advclass/mercenary/crocs,
+		/datum/advclass/mercenary/crocs/assassin,
 		/datum/advclass/mercenary/desert_rider,
 		/datum/advclass/mercenary/desert_rider/zeybek,
 		/datum/advclass/mercenary/desert_rider/almah,
