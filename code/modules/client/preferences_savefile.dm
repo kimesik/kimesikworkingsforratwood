@@ -427,16 +427,32 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["vice4"] >> vice4_type
 	S["vice5"] >> vice5_type
 	
+	// Explicitly set each vice slot - null if not in savefile
+	// This prevents vices from persisting between character slots
 	if(vice1_type)
 		vice1 = new vice1_type()
+	else
+		vice1 = null
+		
 	if(vice2_type)
 		vice2 = new vice2_type()
+	else
+		vice2 = null
+		
 	if(vice3_type)
 		vice3 = new vice3_type()
+	else
+		vice3 = null
+		
 	if(vice4_type)
 		vice4 = new vice4_type()
+	else
+		vice4 = null
+		
 	if(vice5_type)
 		vice5 = new vice5_type()
+	else
+		vice5 = null
 
 /datum/preferences/proc/_load_culinary_preferences(S)
 	var/list/loaded_culinary_preferences

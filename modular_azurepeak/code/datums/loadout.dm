@@ -536,6 +536,11 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Halfmask"
 	path = /obj/item/clothing/mask/rogue/shepherd
 
+/datum/loadout_item/golden_half_mask
+	name = "Golden Half-Mask"
+	path = /obj/item/clothing/mask/rogue/lordmask
+
+
 /datum/loadout_item/exoticsilkmask
 	name = "Exotic Silk Mask"
 	path = /obj/item/clothing/mask/rogue/exoticsilkmask
@@ -670,44 +675,6 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/wedding_band
 	name = "silver wedding band"
 	path = /obj/item/clothing/ring/band
-
-// GEMSTONE RINGS - GOLD
-/datum/loadout_item/ring_gold_diamond
-	name = "Dorpel Ring (Gold)"
-	path = /obj/item/clothing/ring/diamond
-
-/datum/loadout_item/ring_gold_ruby
-	name = "Rontz Ring (Gold)"
-	path = /obj/item/clothing/ring/ruby
-
-/datum/loadout_item/ring_gold_emerald
-	name = "Gemerald Ring (Gold)"
-	path = /obj/item/clothing/ring/emerald
-
-/datum/loadout_item/ring_gold_sapphire
-	name = "Saffira Ring (Gold)"
-	path = /obj/item/clothing/ring/sapphire
-
-/datum/loadout_item/ring_gold_topaz
-	name = "Toper Ring (Gold)"
-	path = /obj/item/clothing/ring/topaz
-
-/datum/loadout_item/ring_gold_quartz
-	name = "Blortz Ring (Gold)"
-	path = /obj/item/clothing/ring/quartz
-
-// SIMPLE RINGS
-/datum/loadout_item/ring_gold
-	name = "Gold Ring"
-	path = /obj/item/clothing/ring/gold
-
-/datum/loadout_item/ring_silver
-	name = "Silver Ring"
-	path = /obj/item/clothing/ring/silver
-
-/datum/loadout_item/ring_blacksteel
-	name = "Blacksteel Ring"
-	path = /obj/item/clothing/ring/blacksteel
 
 /datum/loadout_item/chaperon
     name = "Chaperon (Normal)"
@@ -977,106 +944,6 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	path = /obj/item/rogueweapon/sword/stone
 	triumph_cost = 2
 
-// Heirloom Swords (Non-Nobility)
-/datum/loadout_item/tri_arming_sword
-	name = "Heirloom Arming Sword"
-	path = /obj/item/rogueweapon/sword
-	triumph_cost = 6
-
-/datum/loadout_item/tri_longsword
-	name = "Heirloom Longsword"
-	path = /obj/item/rogueweapon/sword/long
-	triumph_cost = 8
-
-/datum/loadout_item/tri_heirloom_longsword
-	name = "Old Longsword (Heirloom)"
-	path = /obj/item/rogueweapon/sword/long/heirloom
-	triumph_cost = 7
-
-/datum/loadout_item/tri_rapier
-	name = "Rapier"
-	path = /obj/item/rogueweapon/sword/rapier
-	triumph_cost = 6
-
-// Decorated Swords (Nobility-Locked)
-/datum/loadout_item/tri_decorated_arming
-	name = "Decorated Heirloom Arming Sword"
-	path = /obj/item/rogueweapon/sword/decorated
-	triumph_cost = 8
-
-/datum/loadout_item/tri_decorated_arming/nobility_check(client/C)
-	var/datum/preferences/P = C.prefs
-	if(!P)
-		return FALSE
-	// Check if user selected Nobility virtue
-	if(P.virtue && istype(P.virtue, /datum/virtue/utility/noble))
-		return TRUE
-	if(P.virtuetwo && istype(P.virtuetwo, /datum/virtue/utility/noble))
-		return TRUE
-	// Check if user has high priority for any noble, courtier, or yeoman job
-	for(var/job_title in GLOB.noble_positions)
-		if(P.job_preferences[job_title] == JP_HIGH)
-			return TRUE
-	for(var/job_title in GLOB.courtier_positions)
-		if(P.job_preferences[job_title] == JP_HIGH)
-			return TRUE
-	for(var/job_title in GLOB.yeoman_positions)
-		if(P.job_preferences[job_title] == JP_HIGH)
-			return TRUE
-	return FALSE
-
-/datum/loadout_item/tri_decorated_longsword
-	name = "Decorated Heirloom Longsword"
-	path = /obj/item/rogueweapon/sword/long/dec
-	triumph_cost = 10
-
-/datum/loadout_item/tri_decorated_longsword/nobility_check(client/C)
-	var/datum/preferences/P = C.prefs
-	if(!P)
-		return FALSE
-	// Check if user selected Nobility virtue
-	if(P.virtue && istype(P.virtue, /datum/virtue/utility/noble))
-		return TRUE
-	if(P.virtuetwo && istype(P.virtuetwo, /datum/virtue/utility/noble))
-		return TRUE
-	// Check if user has high priority for any noble, courtier, or yeoman job
-	for(var/job_title in GLOB.noble_positions)
-		if(P.job_preferences[job_title] == JP_HIGH)
-			return TRUE
-	for(var/job_title in GLOB.courtier_positions)
-		if(P.job_preferences[job_title] == JP_HIGH)
-			return TRUE
-	for(var/job_title in GLOB.yeoman_positions)
-		if(P.job_preferences[job_title] == JP_HIGH)
-			return TRUE
-	return FALSE
-
-/datum/loadout_item/tri_decorated_rapier
-	name = "Decorated Heirloom Rapier"
-	path = /obj/item/rogueweapon/sword/rapier/dec
-	triumph_cost = 8
-
-/datum/loadout_item/tri_decorated_rapier/nobility_check(client/C)
-	var/datum/preferences/P = C.prefs
-	if(!P)
-		return FALSE
-	// Check if user selected Nobility virtue
-	if(P.virtue && istype(P.virtue, /datum/virtue/utility/noble))
-		return TRUE
-	if(P.virtuetwo && istype(P.virtuetwo, /datum/virtue/utility/noble))
-		return TRUE
-	// Check if user has high priority for any noble, courtier, or yeoman job
-	for(var/job_title in GLOB.noble_positions)
-		if(P.job_preferences[job_title] == JP_HIGH)
-			return TRUE
-	for(var/job_title in GLOB.courtier_positions)
-		if(P.job_preferences[job_title] == JP_HIGH)
-			return TRUE
-	for(var/job_title in GLOB.yeoman_positions)
-		if(P.job_preferences[job_title] == JP_HIGH)
-			return TRUE
-	return FALSE
-
 // DAGGERS & KNIVES
 /datum/loadout_item/tri_stone_knife
 	name = "Stone Knife"
@@ -1092,17 +959,6 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/tri_bone_spear
 	name = "Bone Spear"
 	path = /obj/item/rogueweapon/spear/bonespear
-	triumph_cost = 2
-
-// ARMOR
-/datum/loadout_item/tri_leather_armor
-	name = "Leather Armor"
-	path = /obj/item/clothing/suit/roguetown/armor/leather
-	triumph_cost = 2
-
-/datum/loadout_item/tri_leather_gloves
-	name = "Leather Gloves"
-	path = /obj/item/clothing/gloves/roguetown/leather
 	triumph_cost = 2
 
 //─────────────────────────────────────────────────────────────
@@ -1123,7 +979,7 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/tri_scythe
 	name = "Peasant Scythe"
 	path = /obj/item/rogueweapon/scythe
-	triumph_cost = 5
+	triumph_cost = 3
 
 // CLOTHING - TABARDS & RELIGIOUS CLOAKS
 /datum/loadout_item/tri_astrata_tabard
@@ -1162,12 +1018,12 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/tri_see_tabard
 	name = "See Tabard"
 	path = /obj/item/clothing/cloak/templar/undivided
-	triumph_cost = 5
+	triumph_cost = 4
 
 /datum/loadout_item/tri_see_cloak
 	name = "See Cloak"
 	path = /obj/item/clothing/cloak/undivided
-	triumph_cost = 5
+	triumph_cost = 4
 
 /datum/loadout_item/tri_justice_tabard
 	name = "Justice Tabard (Ravox)"
@@ -1177,7 +1033,7 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/tri_princess_dress
 	name = "Princess Dress"
 	path = /obj/item/clothing/suit/roguetown/shirt/dress/royal/princess
-	triumph_cost = 4
+	triumph_cost = 3
 
 /datum/loadout_item/tri_princess_dress/nobility_check(client/C)
 	var/datum/preferences/P = C.prefs
@@ -1203,7 +1059,7 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/tri_royal_dress
 	name = "Royal Dress"
 	path = /obj/item/clothing/suit/roguetown/shirt/dress/royal
-	triumph_cost = 4
+	triumph_cost = 3
 
 /datum/loadout_item/tri_royal_dress/nobility_check(client/C)
 	var/datum/preferences/P = C.prefs
@@ -1229,7 +1085,7 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/tri_royal_sleeves
 	name = "Royal Sleeves"
 	path = /obj/item/clothing/wrists/roguetown/royalsleeves
-	triumph_cost = 4
+	triumph_cost = 3
 
 /datum/loadout_item/tri_royal_sleeves/nobility_check(client/C)
 	var/datum/preferences/P = C.prefs
@@ -1255,7 +1111,7 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/tri_lady_cloak
 	name = "Lady's Cloak"
 	path = /obj/item/clothing/cloak/lordcloak/ladycloak
-	triumph_cost = 4
+	triumph_cost = 3
 
 /datum/loadout_item/tri_lady_cloak/nobility_check(client/C)
 	var/datum/preferences/P = C.prefs
@@ -1282,7 +1138,7 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/tri_circlet
 	name = "Circlet"
 	path = /obj/item/clothing/head/roguetown/circlet
-	triumph_cost = 4
+	triumph_cost = 3
 
 /datum/loadout_item/tri_circlet/nobility_check(client/C)
 	var/datum/preferences/P = C.prefs
@@ -1308,12 +1164,12 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/tri_volfhelm
 	name = "Volf Helm"
 	path = /obj/item/clothing/head/roguetown/helmet/leather/volfhelm
-	triumph_cost = 3
+	triumph_cost = 2
 
 /datum/loadout_item/tri_saiga
 	name = "Saiga Helm"
 	path = /obj/item/clothing/head/roguetown/helmet/leather/saiga
-	triumph_cost = 3
+	triumph_cost = 2
 
 // CLOTHING - JEWELRY & ACCESSORIES
 /datum/loadout_item/tri_noble_amulet
@@ -1324,28 +1180,28 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/tri_shell_bracelet
 	name = "Shell Bracelet"
 	path = /obj/item/clothing/neck/roguetown/psicross/shell/bracelet
-	triumph_cost = 4
+	triumph_cost = 2
 
 /datum/loadout_item/tri_shell_necklace
 	name = "oyster shell necklace"
 	path = /obj/item/clothing/neck/roguetown/psicross/shell
-	triumph_cost = 4
+	triumph_cost = 2
 
 // CLOTHING - ARMOR (Alphabetically Ordered)
 /datum/loadout_item/tri_desert_coat
 	name = "Desert Coat"
 	path = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/raneshen
-	triumph_cost = 4
+	triumph_cost = 3
 
 /datum/loadout_item/tri_fencing_gambeson
 	name = "Fencing Gambeson (Otavan)"
 	path = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/otavan
-	triumph_cost = 4
+	triumph_cost = 3
 
 /datum/loadout_item/tri_fencing_shirt
 	name = "Fencing Shirt (Padded)"
 	path = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/freifechter
-	triumph_cost = 4
+	triumph_cost = 3
 
 
 /datum/loadout_item/tri_gambeson
@@ -1361,17 +1217,17 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/tri_gambeson_padded
 	name = "Gambeson (Padded)"
 	path = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
-	triumph_cost = 4
+	triumph_cost = 3
 
 /datum/loadout_item/tri_grenzelhoft_hipshirt
 	name = "Grenzelhoft Hip-Shirt"
 	path = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/grenzelhoft
-	triumph_cost = 4
+	triumph_cost = 3
 
 /datum/loadout_item/tri_gronn_byrine_chausses
 	name = "Gronn Byrine Chausses"
 	path = /obj/item/clothing/under/roguetown/splintlegs/iron/gronn
-	triumph_cost = 4
+	triumph_cost = 3
 
 /datum/loadout_item/tri_gronn_byrine_gloves
 	name = "Gronn Byrine Gloves"
@@ -1379,9 +1235,9 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	triumph_cost = 3
 
 /datum/loadout_item/tri_gronn_byrine_hauberk
-	name = "Gronn Byrine Hauberk"
+	name = "Gronn Byrine"
 	path = /obj/item/clothing/suit/roguetown/armor/brigandine/gronn
-	triumph_cost = 5
+	triumph_cost = 3
 
 /datum/loadout_item/tri_gronn_fur_pants
 	name = "Gronn Fur Pants"
@@ -1393,49 +1249,14 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	path = /obj/item/clothing/gloves/roguetown/angle/gronnfur
 	triumph_cost = 3
 
-/datum/loadout_item/tri_gronn_norsii_helmet
-	name = "Gronn Norsii Helmet"
-	path = /obj/item/clothing/head/roguetown/helmet/heavy/bucket/gronn
-	triumph_cost = 6
-
-/datum/loadout_item/tri_haraate
-	name = "Haraate (Brigandine)"
-	path = /obj/item/clothing/suit/roguetown/armor/brigandine/haraate
-	triumph_cost = 5
-
 /datum/loadout_item/tri_hierophant_gambeson
 	name = "Hierophant Gambeson"
 	path = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/hierophant
-	triumph_cost = 4
-
-/datum/loadout_item/tri_gronn_ownel_helmet
-	name = "Gronn Ownel Helmet"
-	path = /obj/item/clothing/head/roguetown/helmet/bascinet/atgervi/gronn/ownel
-	triumph_cost = 5
-
-/datum/loadout_item/tri_gronn_ravager_helm
-	name = "Gronn Ravager Helm"
-	path = /obj/item/clothing/head/roguetown/helmet/bascinet/atgervi/gronn
-	triumph_cost = 4
+	triumph_cost = 3
 
 /datum/loadout_item/tri_gronn_ravager_mantle
 	name = "Gronn Ravager Mantle"
 	path = /obj/item/clothing/suit/roguetown/armor/leather/heavy/gronn
-	triumph_cost = 4
-
-/datum/loadout_item/tri_heavy_leather_coat
-	name = "Heavy Leather Coat"
-	path = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
-	triumph_cost = 4
-
-/datum/loadout_item/tri_heavy_leather_armor
-	name = "Heavy Leather Armor"
-	path = /obj/item/clothing/suit/roguetown/armor/leather/heavy
-	triumph_cost = 4
-
-/datum/loadout_item/tri_hide_armor
-	name = "Hide Armor"
-	path = /obj/item/clothing/suit/roguetown/armor/leather/hide
 	triumph_cost = 3
 
 /datum/loadout_item/tri_huus_quyaq
@@ -1446,7 +1267,7 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/tri_kurche
 	name = "Kurche (Gronn)"
 	path = /obj/item/clothing/suit/roguetown/armor/kurche
-	triumph_cost = 5
+	triumph_cost = 3
 
 /datum/loadout_item/tri_leather_cuirass
 	name = "Leather Cuirass"
@@ -1461,17 +1282,17 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/tri_moose_hood
 	name = "Moose Hood (Shaman)"
 	path = /obj/item/clothing/head/roguetown/helmet/leather/shaman_hood
-	triumph_cost = 6
+	triumph_cost = 4
 
 /datum/loadout_item/tri_newmoon_hood
 	name = "New Moon Hood"
 	path = /obj/item/clothing/head/roguetown/roguehood/reinforced/newmoon
-	triumph_cost = 5
+	triumph_cost = 2
 
 /datum/loadout_item/tri_newmoon_jacket
 	name = "New Moon Jacket"
 	path = /obj/item/clothing/suit/roguetown/armor/leather/newmoon_jacket
-	triumph_cost = 4
+	triumph_cost = 3
 
 /datum/loadout_item/tri_newmoon_tunic
 	name = "New Moon Tunic"
@@ -1481,32 +1302,32 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/tri_otavan_gambeson
 	name = "Otavan Gambeson"
 	path = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/otavan
-	triumph_cost = 4
+	triumph_cost = 3
 
 /datum/loadout_item/tri_padded_caftan
 	name = "Padded Caftan"
 	path = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/chargah
-	triumph_cost = 4
+	triumph_cost = 3
 
 /datum/loadout_item/tri_pontifex_gambeson
 	name = "Pontifex Gambeson"
 	path = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/pontifex
-	triumph_cost = 4
+	triumph_cost = 3
 
 /datum/loadout_item/tri_psyaltrist_leather
 	name = "Psyaltrist Leather"
 	path = /obj/item/clothing/suit/roguetown/armor/leather/studded/psyaltrist
-	triumph_cost = 5
+	triumph_cost = 3
 
 /datum/loadout_item/tri_raneshen_coat
 	name = "Raneshen Coat"
 	path = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat/raneshen
-	triumph_cost = 4
+	triumph_cost = 3
 
 /datum/loadout_item/tri_raneshen_gambeson
 	name = "Raneshen Gambeson"
 	path = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/raneshen
-	triumph_cost = 4
+	triumph_cost = 3
 
 /datum/loadout_item/tri_regen_skin
 	name = "Regenerating Skin"
@@ -1516,207 +1337,164 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/tri_shamanic_coat
 	name = "Shamanic Coat"
 	path = /obj/item/clothing/suit/roguetown/armor/leather/heavy/atgervi
-	triumph_cost = 5
+	triumph_cost = 3
 
 /datum/loadout_item/tri_spellcaster_hat
 	name = "Spellcaster Hat"
 	path = /obj/item/clothing/head/roguetown/spellcasterhat
-	triumph_cost = 4
+	triumph_cost = 2
 
 /datum/loadout_item/tri_steppe_coat
 	name = "Steppe Coat"
 	path = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat/steppe
-	triumph_cost = 4
+	triumph_cost = 3
 
 // HELMETS AND HEADWEAR (Alphabetically Ordered)
 /datum/loadout_item/tri_grenzelhoft_hat
 	name = "Grenzelhoft Hat"
 	path = /obj/item/clothing/head/roguetown/grenzelhofthat
-	triumph_cost = 4
+	triumph_cost = 2
 
 /datum/loadout_item/tri_hierophant_hood
 	name = "Hierophant Hood"
 	path = /obj/item/clothing/head/roguetown/roguehood/hierophant
-	triumph_cost = 5
-
-/datum/loadout_item/tri_jingasa
-	name = "Jingasa"
-	path = /obj/item/clothing/head/roguetown/helmet/kettle/jingasa
-	triumph_cost = 4
-
-/datum/loadout_item/tri_kabuto
-	name = "Kabuto"
-	path = /obj/item/clothing/head/roguetown/helmet/heavy/kabuto
-	triumph_cost = 6
-
-/datum/loadout_item/tri_leather_helmet
-	name = "Leather Helmet"
-	path = /obj/item/clothing/head/roguetown/helmet/leather
-	triumph_cost = 3
-
-/datum/loadout_item/tri_otavan_helmet
-	name = "Otavan Helmet"
-	path = /obj/item/clothing/head/roguetown/helmet/otavan
-	triumph_cost = 5
-
-/datum/loadout_item/tri_owl_helmet
-	name = "Owl Helmet (Atgervi)"
-	path = /obj/item/clothing/head/roguetown/helmet/bascinet/atgervi
-	triumph_cost = 6
-
-/datum/loadout_item/tri_padded_cap
-	name = "Padded Cap"
-	path = /obj/item/clothing/head/roguetown/paddedcap
 	triumph_cost = 2
 
 /datum/loadout_item/tri_pontifex_hood
 	name = "Pontifex Hood"
 	path = /obj/item/clothing/head/roguetown/roguehood/pontifex
-	triumph_cost = 5
+	triumph_cost = 2
 
 /datum/loadout_item/tri_raneshen_hijab
 	name = "Raneshen Hijab"
 	path = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/raneshen
-	triumph_cost = 3
+	triumph_cost = 2
 
-/datum/loadout_item/tri_raneshen_sallet
-	name = "Raneshen Sallet"
-	path = /obj/item/clothing/head/roguetown/helmet/sallet/raneshen
-	triumph_cost = 5
-
-/datum/loadout_item/tri_skullcap
-	name = "Skull Cap"
-	path = /obj/item/clothing/head/roguetown/helmet/skullcap
-	triumph_cost = 4
 
 // GLOVES (Alphabetically Ordered)
 /datum/loadout_item/tri_atgervi_gloves
 	name = "Atgervi Gloves"
 	path = /obj/item/clothing/gloves/roguetown/angle/atgervi
-	triumph_cost = 3
+	triumph_cost = 2
 
 /datum/loadout_item/tri_eastern_gloves
 	name = "Eastern Gloves"
 	path = /obj/item/clothing/gloves/roguetown/eastgloves2
-	triumph_cost = 3
+	triumph_cost = 2
 
 /datum/loadout_item/tri_grenzelhoft_gloves
 	name = "Grenzelhoft Gloves"
 	path = /obj/item/clothing/gloves/roguetown/angle/grenzelgloves
-	triumph_cost = 3
+	triumph_cost = 2
 
 /datum/loadout_item/tri_kote_gloves
 	name = "Kote Gauntlets"
 	path = /obj/item/clothing/gloves/roguetown/plate/kote
-	triumph_cost = 5
+	triumph_cost = 2
 
 /datum/loadout_item/tri_otavan_gloves
 	name = "Otavan Gloves"
 	path = /obj/item/clothing/gloves/roguetown/otavan
-	triumph_cost = 3
+	triumph_cost = 2
 
 /datum/loadout_item/tri_pontifex_gloves
 	name = "Pontifex Gloves"
 	path = /obj/item/clothing/gloves/roguetown/angle/pontifex
-	triumph_cost = 4
+	triumph_cost = 2
 
 // BOOTS & SHOES (Alphabetically Ordered)
 /datum/loadout_item/tri_atgervi_boots
 	name = "Atgervi Boots"
 	path = /obj/item/clothing/shoes/roguetown/boots/leather/atgervi
-	triumph_cost = 3
+
 
 /datum/loadout_item/tri_grenzelhoft_boots
 	name = "Grenzelhoft Boots"
 	path = /obj/item/clothing/shoes/roguetown/grenzelhoft
-	triumph_cost = 3
+
 
 /datum/loadout_item/tri_kazengun_boots
 	name = "Kazengun Boots"
 	path = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/kazengun
-	triumph_cost = 4
+
 
 /datum/loadout_item/tri_otavan_boots
 	name = "Otavan Boots"
 	path = /obj/item/clothing/shoes/roguetown/boots/otavan
-	triumph_cost = 3
+
 
 /datum/loadout_item/tri_rumaclan_boots
 	name = "Ruma Clan Boots"
 	path = /obj/item/clothing/shoes/roguetown/armor/rumaclan
-	triumph_cost = 3
+
 
 /datum/loadout_item/tri_shalal_boots
 	name = "Shalal Boots"
 	path = /obj/item/clothing/shoes/roguetown/shalal
-	triumph_cost = 3
+
 
 // PANTS (Alphabetically Ordered)
 /datum/loadout_item/tri_atgervi_pants
 	name = "Atgervi Fur Pants"
 	path = /obj/item/clothing/under/roguetown/trou/leather/atgervi
-	triumph_cost = 3
+	triumph_cost = 2
 
 /datum/loadout_item/tri_eastern_pants_1
 	name = "Eastern Pants (Black)"
 	path = /obj/item/clothing/under/roguetown/heavy_leather_pants/eastpants1
-	triumph_cost = 3
+	triumph_cost = 2
 
 /datum/loadout_item/tri_eastern_pants_2
 	name = "Eastern Pants (White)"
 	path = /obj/item/clothing/under/roguetown/heavy_leather_pants/eastpants2
-	triumph_cost = 3
+	triumph_cost = 2
 
 /datum/loadout_item/tri_grenzelhoft_pants
 	name = "Grenzelhoft Pants"
 	path = /obj/item/clothing/under/roguetown/heavy_leather_pants/grenzelpants
-	triumph_cost = 3
+	triumph_cost = 2
 
 /datum/loadout_item/tri_otavan_pants
 	name = "Otavan Pants"
 	path = /obj/item/clothing/under/roguetown/heavy_leather_pants/otavan
-	triumph_cost = 3
+	triumph_cost = 2
 
 /datum/loadout_item/tri_otavan_generic_pants
 	name = "Otavan Pants (Generic)"
 	path = /obj/item/clothing/under/roguetown/heavy_leather_pants/otavan/generic
-	triumph_cost = 3
+	triumph_cost = 2
 
 /datum/loadout_item/tri_kazengun_pants
 	name = "Kazengun Pants"
 	path = /obj/item/clothing/under/roguetown/heavy_leather_pants/kazengun
-	triumph_cost = 3
+	triumph_cost = 2
 
 /datum/loadout_item/tri_pontifex_pants
 	name = "Pontifex Pants"
 	path = /obj/item/clothing/under/roguetown/trou/leather/pontifex
-	triumph_cost = 3
+	triumph_cost = 2
 
 /datum/loadout_item/tri_raneshen_pants
 	name = "Raneshen Pants"
 	path = /obj/item/clothing/under/roguetown/trou/leather/pontifex/raneshen
-	triumph_cost = 3
+	triumph_cost = 2
 
-/datum/loadout_item/tri_splint_legs
-	name = "Splint Legs"
-	path = /obj/item/clothing/under/roguetown/splintlegs
-	triumph_cost = 5
 
 // CLOAKS & CAPES (Alphabetically Ordered)
 /datum/loadout_item/tri_eastern_cloak_1
 	name = "Eastern Cloak"
 	path = /obj/item/clothing/cloak/eastcloak1
-	triumph_cost = 4
+
 
 /datum/loadout_item/tri_hierophant_cloak
 	name = "Hierophant Cloak"
 	path = /obj/item/clothing/cloak/hierophant
-	triumph_cost = 4
+
 
 /datum/loadout_item/tri_kazengun_cloak
 	name = "Kazengun Cloak"
 	path = /obj/item/clothing/cloak/kazengun
-	triumph_cost = 4
+
 
 // NECK ACCESSORIES (Alphabetically Ordered)
 
@@ -1725,15 +1503,9 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	path = /obj/item/clothing/neck/roguetown/fencerguard
 	triumph_cost = 4
 
-/datum/loadout_item/tri_kazengun_gorget
-	name = "Kazengun Steel Gorget"
-	path = /obj/item/clothing/neck/roguetown/gorget/steel/kazengun
-	triumph_cost = 4
-
 /datum/loadout_item/tri_naledi_cross
 	name = "Naledi Psicross"
 	path = /obj/item/clothing/neck/roguetown/psicross/naledi
-	triumph_cost = 5
 
 // MASKS (Alphabetically Ordered)
 
@@ -1741,18 +1513,18 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/tri_hierophant_robe
 	name = "Hierophant Robe"
 	path = /obj/item/clothing/suit/roguetown/shirt/robe/hierophant
-	triumph_cost = 3
+	triumph_cost = 2
 
 /datum/loadout_item/tri_pontifex_robe
 	name = "Pontifex Robe"
 	path = /obj/item/clothing/suit/roguetown/shirt/robe/pointfex
-	triumph_cost = 3
+	triumph_cost = 2
 
 // POLEARMS & STAVES
 /datum/loadout_item/tri_naledi_staff
 	name = "Naledi Staff (Decorative)"
 	path = /obj/item/rogueweapon/woodstaff/decorative
-	triumph_cost = 5
+	triumph_cost = 3
 
 
 //─────────────────────────────────────────────────────────────

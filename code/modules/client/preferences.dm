@@ -23,6 +23,12 @@ GLOBAL_LIST_EMPTY(chosen_names)
 	var/tip_delay = 500 //tip delay in milliseconds
 	// Commend variable on prefs instead of client to prevent reconnect abuse (is persistant on prefs, opposed to not on client)
 	var/commendedsomeone = FALSE
+	// History tracking for character customization undo
+	var/list/customization_history = list()
+	// Loadout preset storage - 3 slots for saving/loading character customization
+	var/list/loadout_preset_1
+	var/list/loadout_preset_2
+	var/list/loadout_preset_3
 
 	//Antag preferences
 	var/list/be_special = list()		//Special role selection

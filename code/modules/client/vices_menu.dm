@@ -229,6 +229,309 @@ GLOBAL_LIST_EMPTY(cached_loadout_icons)
 // Maximum cache size to prevent unbounded growth (200 is enough for ~100-150 unique items)
 #define MAX_ICON_CACHE_SIZE 200
 
+/datum/preferences/proc/save_to_history()
+	// Initialize history list if null
+	if(!customization_history)
+		customization_history = list()
+	
+	// Save current state to history (max 10 entries)
+	var/list/snapshot = list(
+		"statpack" = statpack,
+		"virtue" = virtue,
+		"virtuetwo" = virtuetwo,
+		"vice1" = vice1,
+		"vice2" = vice2,
+		"vice3" = vice3,
+		"vice4" = vice4,
+		"vice5" = vice5,
+		"loadout" = loadout,
+		"loadout2" = loadout2,
+		"loadout3" = loadout3,
+		"loadout4" = loadout4,
+		"loadout5" = loadout5,
+		"loadout6" = loadout6,
+		"loadout7" = loadout7,
+		"loadout8" = loadout8,
+		"loadout9" = loadout9,
+		"loadout10" = loadout10,
+		"loadout_1_name" = loadout_1_name,
+		"loadout_2_name" = loadout_2_name,
+		"loadout_3_name" = loadout_3_name,
+		"loadout_4_name" = loadout_4_name,
+		"loadout_5_name" = loadout_5_name,
+		"loadout_6_name" = loadout_6_name,
+		"loadout_7_name" = loadout_7_name,
+		"loadout_8_name" = loadout_8_name,
+		"loadout_9_name" = loadout_9_name,
+		"loadout_10_name" = loadout_10_name,
+		"loadout_1_desc" = loadout_1_desc,
+		"loadout_2_desc" = loadout_2_desc,
+		"loadout_3_desc" = loadout_3_desc,
+		"loadout_4_desc" = loadout_4_desc,
+		"loadout_5_desc" = loadout_5_desc,
+		"loadout_6_desc" = loadout_6_desc,
+		"loadout_7_desc" = loadout_7_desc,
+		"loadout_8_desc" = loadout_8_desc,
+		"loadout_9_desc" = loadout_9_desc,
+		"loadout_10_desc" = loadout_10_desc,
+		"loadout_1_hex" = loadout_1_hex,
+		"loadout_2_hex" = loadout_2_hex,
+		"loadout_3_hex" = loadout_3_hex,
+		"loadout_4_hex" = loadout_4_hex,
+		"loadout_5_hex" = loadout_5_hex,
+		"loadout_6_hex" = loadout_6_hex,
+		"loadout_7_hex" = loadout_7_hex,
+		"loadout_8_hex" = loadout_8_hex,
+		"loadout_9_hex" = loadout_9_hex,
+		"loadout_10_hex" = loadout_10_hex,
+		"extra_language" = extra_language,
+		"extra_language_1" = extra_language_1,
+		"extra_language_2" = extra_language_2
+	)
+	
+	// Add to history
+	customization_history.Insert(1, snapshot)
+	
+	// Keep only last 10 entries
+	if(customization_history.len > 10)
+		customization_history.Cut(11)
+
+/datum/preferences/proc/undo_last_change()
+	if(!customization_history || !customization_history.len)
+		return FALSE
+	
+	// Get the last snapshot
+	var/list/snapshot = customization_history[1]
+	
+	// Restore all values
+	statpack = snapshot["statpack"]
+	virtue = snapshot["virtue"]
+	virtuetwo = snapshot["virtuetwo"]
+	vice1 = snapshot["vice1"]
+	vice2 = snapshot["vice2"]
+	vice3 = snapshot["vice3"]
+	vice4 = snapshot["vice4"]
+	vice5 = snapshot["vice5"]
+	loadout = snapshot["loadout"]
+	loadout2 = snapshot["loadout2"]
+	loadout3 = snapshot["loadout3"]
+	loadout4 = snapshot["loadout4"]
+	loadout5 = snapshot["loadout5"]
+	loadout6 = snapshot["loadout6"]
+	loadout7 = snapshot["loadout7"]
+	loadout8 = snapshot["loadout8"]
+	loadout9 = snapshot["loadout9"]
+	loadout10 = snapshot["loadout10"]
+	loadout_1_name = snapshot["loadout_1_name"]
+	loadout_2_name = snapshot["loadout_2_name"]
+	loadout_3_name = snapshot["loadout_3_name"]
+	loadout_4_name = snapshot["loadout_4_name"]
+	loadout_5_name = snapshot["loadout_5_name"]
+	loadout_6_name = snapshot["loadout_6_name"]
+	loadout_7_name = snapshot["loadout_7_name"]
+	loadout_8_name = snapshot["loadout_8_name"]
+	loadout_9_name = snapshot["loadout_9_name"]
+	loadout_10_name = snapshot["loadout_10_name"]
+	loadout_1_desc = snapshot["loadout_1_desc"]
+	loadout_2_desc = snapshot["loadout_2_desc"]
+	loadout_3_desc = snapshot["loadout_3_desc"]
+	loadout_4_desc = snapshot["loadout_4_desc"]
+	loadout_5_desc = snapshot["loadout_5_desc"]
+	loadout_6_desc = snapshot["loadout_6_desc"]
+	loadout_7_desc = snapshot["loadout_7_desc"]
+	loadout_8_desc = snapshot["loadout_8_desc"]
+	loadout_9_desc = snapshot["loadout_9_desc"]
+	loadout_10_desc = snapshot["loadout_10_desc"]
+	loadout_1_hex = snapshot["loadout_1_hex"]
+	loadout_2_hex = snapshot["loadout_2_hex"]
+	loadout_3_hex = snapshot["loadout_3_hex"]
+	loadout_4_hex = snapshot["loadout_4_hex"]
+	loadout_5_hex = snapshot["loadout_5_hex"]
+	loadout_6_hex = snapshot["loadout_6_hex"]
+	loadout_7_hex = snapshot["loadout_7_hex"]
+	loadout_8_hex = snapshot["loadout_8_hex"]
+	loadout_9_hex = snapshot["loadout_9_hex"]
+	loadout_10_hex = snapshot["loadout_10_hex"]
+	extra_language = snapshot["extra_language"]
+	extra_language_1 = snapshot["extra_language_1"]
+	extra_language_2 = snapshot["extra_language_2"]
+	
+	// Remove this snapshot from history
+	customization_history.Cut(1, 2)
+	
+	return TRUE
+
+/datum/preferences/proc/save_preset(preset_slot)
+	if(preset_slot < 1 || preset_slot > 3)
+		return FALSE
+	
+	var/list/preset = list(
+		"statpack" = statpack,
+		"virtue" = virtue,
+		"virtuetwo" = virtuetwo,
+		"vice1" = vice1,
+		"vice2" = vice2,
+		"vice3" = vice3,
+		"vice4" = vice4,
+		"vice5" = vice5,
+		"loadout" = loadout,
+		"loadout2" = loadout2,
+		"loadout3" = loadout3,
+		"loadout4" = loadout4,
+		"loadout5" = loadout5,
+		"loadout6" = loadout6,
+		"loadout7" = loadout7,
+		"loadout8" = loadout8,
+		"loadout9" = loadout9,
+		"loadout10" = loadout10,
+		"loadout_1_name" = loadout_1_name,
+		"loadout_2_name" = loadout_2_name,
+		"loadout_3_name" = loadout_3_name,
+		"loadout_4_name" = loadout_4_name,
+		"loadout_5_name" = loadout_5_name,
+		"loadout_6_name" = loadout_6_name,
+		"loadout_7_name" = loadout_7_name,
+		"loadout_8_name" = loadout_8_name,
+		"loadout_9_name" = loadout_9_name,
+		"loadout_10_name" = loadout_10_name,
+		"loadout_1_desc" = loadout_1_desc,
+		"loadout_2_desc" = loadout_2_desc,
+		"loadout_3_desc" = loadout_3_desc,
+		"loadout_4_desc" = loadout_4_desc,
+		"loadout_5_desc" = loadout_5_desc,
+		"loadout_6_desc" = loadout_6_desc,
+		"loadout_7_desc" = loadout_7_desc,
+		"loadout_8_desc" = loadout_8_desc,
+		"loadout_9_desc" = loadout_9_desc,
+		"loadout_10_desc" = loadout_10_desc,
+		"loadout_1_hex" = loadout_1_hex,
+		"loadout_2_hex" = loadout_2_hex,
+		"loadout_3_hex" = loadout_3_hex,
+		"loadout_4_hex" = loadout_4_hex,
+		"loadout_5_hex" = loadout_5_hex,
+		"loadout_6_hex" = loadout_6_hex,
+		"loadout_7_hex" = loadout_7_hex,
+		"loadout_8_hex" = loadout_8_hex,
+		"loadout_9_hex" = loadout_9_hex,
+		"loadout_10_hex" = loadout_10_hex,
+		"extra_language" = extra_language,
+		"extra_language_1" = extra_language_1,
+		"extra_language_2" = extra_language_2
+	)
+	
+	vars["loadout_preset_[preset_slot]"] = preset
+	return TRUE
+
+/datum/preferences/proc/load_preset(preset_slot)
+	if(preset_slot < 1 || preset_slot > 3)
+		return FALSE
+	
+	var/list/preset = vars["loadout_preset_[preset_slot]"]
+	if(!preset || !preset.len)
+		return FALSE
+	
+	// Save current state to history before loading preset
+	save_to_history()
+	
+	// Restore all values from preset
+	statpack = preset["statpack"]
+	virtue = preset["virtue"]
+	virtuetwo = preset["virtuetwo"]
+	vice1 = preset["vice1"]
+	vice2 = preset["vice2"]
+	vice3 = preset["vice3"]
+	vice4 = preset["vice4"]
+	vice5 = preset["vice5"]
+	loadout = preset["loadout"]
+	loadout2 = preset["loadout2"]
+	loadout3 = preset["loadout3"]
+	loadout4 = preset["loadout4"]
+	loadout5 = preset["loadout5"]
+	loadout6 = preset["loadout6"]
+	loadout7 = preset["loadout7"]
+	loadout8 = preset["loadout8"]
+	loadout9 = preset["loadout9"]
+	loadout10 = preset["loadout10"]
+	loadout_1_name = preset["loadout_1_name"]
+	loadout_2_name = preset["loadout_2_name"]
+	loadout_3_name = preset["loadout_3_name"]
+	loadout_4_name = preset["loadout_4_name"]
+	loadout_5_name = preset["loadout_5_name"]
+	loadout_6_name = preset["loadout_6_name"]
+	loadout_7_name = preset["loadout_7_name"]
+	loadout_8_name = preset["loadout_8_name"]
+	loadout_9_name = preset["loadout_9_name"]
+	loadout_10_name = preset["loadout_10_name"]
+	loadout_1_desc = preset["loadout_1_desc"]
+	loadout_2_desc = preset["loadout_2_desc"]
+	loadout_3_desc = preset["loadout_3_desc"]
+	loadout_4_desc = preset["loadout_4_desc"]
+	loadout_5_desc = preset["loadout_5_desc"]
+	loadout_6_desc = preset["loadout_6_desc"]
+	loadout_7_desc = preset["loadout_7_desc"]
+	loadout_8_desc = preset["loadout_8_desc"]
+	loadout_9_desc = preset["loadout_9_desc"]
+	loadout_10_desc = preset["loadout_10_desc"]
+	loadout_1_hex = preset["loadout_1_hex"]
+	loadout_2_hex = preset["loadout_2_hex"]
+	loadout_3_hex = preset["loadout_3_hex"]
+	loadout_4_hex = preset["loadout_4_hex"]
+	loadout_5_hex = preset["loadout_5_hex"]
+	loadout_6_hex = preset["loadout_6_hex"]
+	loadout_7_hex = preset["loadout_7_hex"]
+	loadout_8_hex = preset["loadout_8_hex"]
+	loadout_9_hex = preset["loadout_9_hex"]
+	loadout_10_hex = preset["loadout_10_hex"]
+	extra_language = preset["extra_language"]
+	extra_language_1 = preset["extra_language_1"]
+	extra_language_2 = preset["extra_language_2"]
+	
+	return TRUE
+
+/datum/preferences/proc/clear_preset(preset_slot)
+	if(preset_slot < 1 || preset_slot > 3)
+		return FALSE
+	
+	vars["loadout_preset_[preset_slot]"] = null
+	return TRUE
+
+/datum/preferences/proc/get_preset_summary(preset_slot)
+	if(preset_slot < 1 || preset_slot > 3)
+		return "Invalid Slot"
+	
+	var/list/preset = vars["loadout_preset_[preset_slot]"]
+	if(!preset || !preset.len)
+		return "Empty"
+	
+	// Build summary string
+	var/summary = ""
+	var/datum/statpack/sp = preset["statpack"]
+	if(sp)
+		summary += "[sp.name]"
+	
+	var/datum/virtue/v = preset["virtue"]
+	if(v && v.name != "None")
+		summary += " | [v.name]"
+	
+	// Count vices
+	var/vice_count = 0
+	for(var/i = 1 to 5)
+		if(preset["vice[i]"])
+			vice_count++
+	if(vice_count > 0)
+		summary += " | [vice_count] vice[vice_count > 1 ? "s" : ""]"
+	
+	// Count loadout items
+	var/loadout_count = 0
+	for(var/i = 1 to 10)
+		var/loadout_var = i == 1 ? "loadout" : "loadout[i]"
+		if(preset[loadout_var])
+			loadout_count++
+	if(loadout_count > 0)
+		summary += " | [loadout_count] item[loadout_count > 1 ? "s" : ""]"
+	
+	return summary
+
 /datum/preferences/proc/open_vices_menu(mob/user)
 	if(!user || !user.client)
 		return
@@ -543,6 +846,9 @@ GLOBAL_LIST_EMPTY(cached_loadout_icons)
 			<div class="header">
 				<h1>Character Customization</h1>
 				<p>Configure all your character features</p>
+				<div style="margin-top: 10px;">
+					<a class='btn' href='byond://?src=\ref[src];undo_action=undo' style='font-size: 0.85em;'>⟲ Undo Last Change ([customization_history.len] available)</a>
+				</div>
 			</div>
 			
 			<div class="tabs">
@@ -902,6 +1208,34 @@ GLOBAL_LIST_EMPTY(cached_loadout_icons)
 	
 	html += {"
 		</div>
+		
+		<div style='margin-top: 20px; padding: 10px; background: [theme["panel"]]; border: 1px solid [theme["border"]];'>
+			<div style='font-weight: bold; margin-bottom: 8px; color: [theme["text"]];'>📋 LOADOUT PRESETS</div>
+			<div style='display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;'>
+				<div style='padding: 8px; background: [theme["panel_dark"]]; border: 1px solid [theme["border"]];'>
+					<div style='font-weight: bold; margin-bottom: 3px;'>Preset 1</div>
+					<div style='font-size: 0.75em; color: [theme["label"]]; margin-bottom: 5px; min-height: 30px;'>[get_preset_summary(1)]</div>
+					<a class='btn' href='byond://?src=\ref[src];preset_action=save;slot=1' style='font-size: 0.7em; padding: 3px 6px; margin: 2px;'>💾 Save</a>
+					<a class='btn' href='byond://?src=\ref[src];preset_action=load;slot=1' style='font-size: 0.7em; padding: 3px 6px; margin: 2px;'>📂 Load</a>
+					<a class='btn' href='byond://?src=\ref[src];preset_action=clear;slot=1' style='font-size: 0.7em; padding: 3px 6px; margin: 2px;'>🗑️ Clear</a>
+				</div>
+				<div style='padding: 8px; background: [theme["panel_dark"]]; border: 1px solid [theme["border"]];'>
+					<div style='font-weight: bold; margin-bottom: 3px;'>Preset 2</div>
+					<div style='font-size: 0.75em; color: [theme["label"]]; margin-bottom: 5px; min-height: 30px;'>[get_preset_summary(2)]</div>
+					<a class='btn' href='byond://?src=\ref[src];preset_action=save;slot=2' style='font-size: 0.7em; padding: 3px 6px; margin: 2px;'>💾 Save</a>
+					<a class='btn' href='byond://?src=\ref[src];preset_action=load;slot=2' style='font-size: 0.7em; padding: 3px 6px; margin: 2px;'>📂 Load</a>
+					<a class='btn' href='byond://?src=\ref[src];preset_action=clear;slot=2' style='font-size: 0.7em; padding: 3px 6px; margin: 2px;'>🗑️ Clear</a>
+				</div>
+				<div style='padding: 8px; background: [theme["panel_dark"]]; border: 1px solid [theme["border"]];'>
+					<div style='font-weight: bold; margin-bottom: 3px;'>Preset 3</div>
+					<div style='font-size: 0.75em; color: [theme["label"]]; margin-bottom: 5px; min-height: 30px;'>[get_preset_summary(3)]</div>
+					<a class='btn' href='byond://?src=\ref[src];preset_action=save;slot=3' style='font-size: 0.7em; padding: 3px 6px; margin: 2px;'>💾 Save</a>
+					<a class='btn' href='byond://?src=\ref[src];preset_action=load;slot=3' style='font-size: 0.7em; padding: 3px 6px; margin: 2px;'>📂 Load</a>
+					<a class='btn' href='byond://?src=\ref[src];preset_action=clear;slot=3' style='font-size: 0.7em; padding: 3px 6px; margin: 2px;'>🗑️ Clear</a>
+				</div>
+			</div>
+		</div>
+		
 	</body>
 	</html>
 	"}
@@ -972,10 +1306,55 @@ GLOBAL_LIST_EMPTY(cached_loadout_icons)
 		open_vices_menu(usr)
 		return
 	
+	// Handle preset actions
+	if(href_list["preset_action"])
+		var/action = href_list["preset_action"]
+		var/slot = text2num(href_list["slot"])
+		
+		if(!slot || slot < 1 || slot > 3)
+			return
+		
+		switch(action)
+			if("save")
+				if(save_preset(slot))
+					to_chat(usr, span_notice("Saved current setup to Preset [slot]!"))
+					save_character()
+					open_vices_menu(usr)
+				else
+					to_chat(usr, span_warning("Failed to save preset."))
+			if("load")
+				if(load_preset(slot))
+					to_chat(usr, span_notice("Loaded Preset [slot]!"))
+					save_character()
+					open_vices_menu(usr)
+				else
+					to_chat(usr, span_warning("Preset [slot] is empty or invalid."))
+			if("clear")
+				if(clear_preset(slot))
+					to_chat(usr, span_notice("Cleared Preset [slot]."))
+					save_character()
+					open_vices_menu(usr)
+				else
+					to_chat(usr, span_warning("Failed to clear preset."))
+		return
+	
+	// Handle undo action
+	if(href_list["undo_action"])
+		if(href_list["undo_action"] == "undo")
+			if(undo_last_change())
+				to_chat(usr, span_notice("Undid last change."))
+				save_character()
+				open_vices_menu(usr)
+			else
+				to_chat(usr, span_warning("No more changes to undo!"))
+		return
+	
 	if(href_list["virtue_action"])
 		var/action = href_list["virtue_action"]
 		
 		if(action == "change_primary")
+			// Save state before change
+			save_to_history()
 			// Build virtue list
 			var/list/virtues_available = list()
 			for(var/path as anything in GLOB.virtues)
@@ -999,6 +1378,9 @@ GLOBAL_LIST_EMPTY(cached_loadout_icons)
 			if(statpack.name != "Virtuous")
 				to_chat(usr, span_warning("Second virtue is only available with the Virtuous statpack!"))
 				return
+			
+			// Save state before change
+			save_to_history()
 			
 			// Build virtue list
 			var/list/virtues_available = list()
@@ -1035,6 +1417,9 @@ GLOBAL_LIST_EMPTY(cached_loadout_icons)
 	
 	if(href_list["statpack_action"])
 		if(href_list["statpack_action"] == "change")
+			// Save state before change
+			save_to_history()
+			
 			// Build statpack list
 			var/list/statpacks_available = list()
 			for (var/path as anything in GLOB.statpacks)
@@ -1078,6 +1463,9 @@ GLOBAL_LIST_EMPTY(cached_loadout_icons)
 		
 		switch(action)
 			if("select", "change")
+				// Save state before change
+				save_to_history()
+				
 				// Show vice selection menu
 				var/list/vices_available = list()
 				
@@ -1160,6 +1548,9 @@ GLOBAL_LIST_EMPTY(cached_loadout_icons)
 				open_vices_menu(usr)
 	
 	if(href_list["loadout_action"])
+		// Save state before any loadout change
+		save_to_history()
+		
 		var/action = href_list["loadout_action"]
 		var/slot = text2num(href_list["slot"])
 		
@@ -1425,6 +1816,9 @@ GLOBAL_LIST_EMPTY(cached_loadout_icons)
 				return
 	
 	if(href_list["language_action"])
+		// Save state before any language change
+		save_to_history()
+		
 		var/action = href_list["language_action"]
 		
 		// Handle free language
