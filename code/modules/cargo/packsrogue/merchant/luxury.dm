@@ -163,7 +163,7 @@
 	cost = 30
 	contains = list(/obj/item/rogueweapon/mace/parasol)
 
-/datum/supply_pack/rogue/luxury/parasol
+/datum/supply_pack/rogue/luxury/fineparasol
 	name = "Fine Parasol"
 	cost = 65
 	contains = list(/obj/item/rogueweapon/mace/parasol/noble)
