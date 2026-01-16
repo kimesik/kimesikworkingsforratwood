@@ -88,6 +88,7 @@
 		/datum/customizer/bodypart_feature/face_detail,
 		/datum/customizer/bodypart_feature/underwear,
 		/datum/customizer/organ/ears/harpy,
+		/datum/customizer/organ/horns/anthro,
 		/datum/customizer/organ/tail/harpy,
 		/datum/customizer/organ/wings/harpy,
 		/datum/customizer/organ/testicles/anthro,
