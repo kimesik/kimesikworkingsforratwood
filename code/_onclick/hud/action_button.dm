@@ -80,7 +80,7 @@
 	if(modifiers["shift"])
 		if(linked_action.desc)//just in case it's null- make sure to give your actions descriptions!
 			to_chat(usr, "[linked_action.desc]\n[span_medradio("Alt-click: Reset Position | Ctrl-click: Toggle lock | Middle-click: Rebind slot")]") // Yes I just stole the medical_radio color
-			return
+			return TRUE
 	if(usr.next_click > world.time)
 		return
 	usr.next_click = world.time + 1
