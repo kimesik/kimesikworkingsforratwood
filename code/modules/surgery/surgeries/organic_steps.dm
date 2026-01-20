@@ -10,7 +10,7 @@
 	target_mobtypes = list(/mob/living/carbon/human, /mob/living/carbon/monkey)
 	time = 1.6 SECONDS
 	surgery_flags = SURGERY_BLOODY
-	surgery_flags_blocked = SURGERY_INCISED | SURGERY_CONSTRUCT
+	surgery_flags_blocked = SURGERY_INCISED
 	skill_min = SKILL_LEVEL_NOVICE
 	skill_median = SKILL_LEVEL_APPRENTICE
 	preop_sound = 'sound/surgery/scalpel1.ogg'
@@ -39,7 +39,7 @@
 		TOOL_IMPROVISED_HEMOSTAT = 38,
 	)
 	time = 2.4 SECONDS
-	surgery_flags_blocked = SURGERY_CLAMPED | SURGERY_CONSTRUCT
+	surgery_flags_blocked = SURGERY_CLAMPED
 	skill_min = SKILL_LEVEL_APPRENTICE
 	skill_median = SKILL_LEVEL_JOURNEYMAN
 	preop_sound = 'sound/surgery/hemostat1.ogg'
@@ -68,7 +68,7 @@
 		TOOL_IMPROVISED_RETRACTOR = 38,
 	)
 	time = 2.4 SECONDS
-	surgery_flags_blocked = SURGERY_RETRACTED | SURGERY_CONSTRUCT
+	surgery_flags_blocked = SURGERY_RETRACTED
 	skill_min = SKILL_LEVEL_APPRENTICE
 	skill_median = SKILL_LEVEL_JOURNEYMAN
 	preop_sound = 'sound/surgery/retractor1.ogg'
@@ -97,7 +97,6 @@
 	)
 	time = 2.4 SECONDS
 	surgery_flags = SURGERY_BLOODY
-	surgery_flags_blocked = SURGERY_CONSTRUCT
 	skill_min = SKILL_LEVEL_NOVICE
 	skill_median = SKILL_LEVEL_APPRENTICE
 	preop_sound = 'sound/surgery/cautery1.ogg'
@@ -161,7 +160,7 @@
 	)
 	time = 5 SECONDS
 	surgery_flags = SURGERY_INCISED | SURGERY_RETRACTED
-	surgery_flags_blocked = SURGERY_BROKEN | SURGERY_CONSTRUCT
+	surgery_flags_blocked = SURGERY_BROKEN
 	skill_min = SKILL_LEVEL_JOURNEYMAN
 	skill_median = SKILL_LEVEL_EXPERT
 	preop_sound = 'sound/surgery/scalpel1.ogg'
@@ -204,7 +203,7 @@
 	)
 	time = 3 SECONDS
 	surgery_flags = SURGERY_BLOODY | SURGERY_INCISED | SURGERY_RETRACTED
-	surgery_flags_blocked = SURGERY_BROKEN | SURGERY_CONSTRUCT
+	surgery_flags_blocked = SURGERY_BROKEN
 	skill_min = SKILL_LEVEL_JOURNEYMAN
 	skill_median = SKILL_LEVEL_EXPERT
 
