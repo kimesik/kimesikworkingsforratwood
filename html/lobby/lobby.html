@@ -293,6 +293,39 @@
             color: #ffffff;
         }
         .severity img { display: inline-block; vertical-align: middle; }
+        
+        .tooltip {
+        position: relative;
+        display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 220px;
+            background-color: #000000;
+            color: #aa8f8f;
+            text-align: left;
+            padding: 6px;
+            border: 1px solid #2f1c37;
+            border-radius: 4px;
+
+            position: absolute;
+            z-index: 100;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -110px;
+
+            opacity: 0;
+            transition: opacity 0.2s;
+            font-size: 12px;
+            line-height: 150%;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+
     </style>
 
     <script>
@@ -309,6 +342,21 @@
     <div id="readycount"></div>
 
     <div id="readybonus"></div>
+    <div id="explainbonus">
+        <br>
+        <br>
+        <br>
+        <span class='tooltip'>
+            <a class='linkOn'>What is the Bonus(?)</a>
+            <span class='tooltiptext'>
+                Ready up before the round starts to gain:<br>
+                20 mammons in a stashed pouch<br>
+                Full Hydration<br>
+                Great Meal bonus<br>
+                +1 Triumph<br>
+            </span>
+        </span>
+    </div>
 </center>
 
 <div id="jobs"></div>

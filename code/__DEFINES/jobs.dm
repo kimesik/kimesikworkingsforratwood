@@ -224,6 +224,20 @@
 #define JCOLOR_WANDERER  "#c86e3a"
 #define JCOLOR_INQUISITION "#FF0000"
 
+/// Key value for taking the department's string and getting a color back
+#define JCOLOR_BY_DEPARTMENT list(\
+	"Noblemen" = JCOLOR_NOBLE,\
+	"Courtiers" = JCOLOR_COURTIER,\
+	"Garrison" = JCOLOR_SOLDIER,\
+	"Church" = JCOLOR_CHURCH,\
+	"Inquisition" = JCOLOR_INQUISITION,\
+	"Yeomen" = JCOLOR_YEOMAN,\
+	"Guildsmen" = JCOLOR_GUILD,\
+	"Peasants" = JCOLOR_PEASANT,\
+	"Youngfolk" = "grey",\
+	"Wanderers" = JCOLOR_WANDERER,\
+)
+
 // job display orders //
 
 // Nobles

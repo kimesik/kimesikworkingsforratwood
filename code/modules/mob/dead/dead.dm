@@ -90,7 +90,6 @@ INITIALIZE_IMMEDIATE(/mob/dead)
 		bonus_html = span_good("Ready Bonus!")
 	else
 		bonus_html = span_highlight("No bonus! Ready up!")
-	bonus_html += "<a href='?src=[REF(src)];explainreadyupbonus=1'>(?)</a>"
 	src << output(bonus_html, "lobby_window.browser:update_ready_bonus")
 	var/list/dat = list()
 	var/list/ready_players_by_job = list()
@@ -127,45 +126,9 @@ INITIALIZE_IMMEDIATE(/mob/dead)
 		"Youngfolk" = list(), // Yung strugglers
 		"Wanderers" = list(), // Nobodies.
 	)
-	var/list/job_department_colors = list( // Colors KV
-		"Noblemen" = JCOLOR_NOBLE,
-		"Courtiers" = JCOLOR_COURTIER,
-		"Garrison" = JCOLOR_SOLDIER,
-		"Church" = JCOLOR_CHURCH,
-		"Inquisition" = JCOLOR_INQUISITION,
-		"Yeomen" = JCOLOR_YEOMAN,
-		"Guildsmen" = JCOLOR_GUILD,
-		"Peasants" = JCOLOR_PEASANT,
-		"Youngfolk" = "grey",
-		"Wanderers" = JCOLOR_WANDERER,
-	)
 	for(var/job_name in ready_players_by_job)
 		var/datum/job/J = SSjob.GetJob(job_name)
-		var/key = "Wanderers"
-		if(J)
-			switch(J.department_flag) // Omega tier slop.
-				if(NOBLEMEN)
-					key = "Noblemen"
-				if(COURTIERS)
-					key = "Courtiers"
-				if(GARRISON)
-					key = "Garrison"
-				if(CHURCHMEN)
-					key = "Church"
-				if(INQUISITION)
-					key = "Inquisition"
-				if(YEOMEN)
-					key = "Yeomen"
-				if(GUILDSMEN)
-					key = "Guildsmen"
-				if(PEASANTS)
-					key = "Peasants"
-				if(YOUNGFOLK)
-					key = "Youngfolk"
-				if(WANDERER)
-					key = "Wanderers"
-				else
-					key = "Wanderers"
+		var/key = SSjob.bitflag_to_department(J.department_flag)
 
 		var/list/job_players = ready_players_by_job[job_name]
 		job_list_by_department[key] += "<B>[job_name]</B> ([job_players.len]) - [job_players.Join(", ")]"
@@ -174,7 +137,7 @@ INITIALIZE_IMMEDIATE(/mob/dead)
 		var/list/jobs_under_department = job_list_by_department[department]
 		if(jobs_under_department.len)
 			sortTim(jobs_under_department, cmp = GLOBAL_PROC_REF(cmp_text_asc))
-			dat += "<h3><center><font color='[job_department_colors[department]]'>----- [department] -----</font></center></h3>"
+			dat += "<h3><center><font color='[JCOLOR_BY_DEPARTMENT[department]]'>----- [department] -----</font></center></h3>"
 			dat += jobs_under_department
 
 	src << output(dat.Join(), "lobby_window.browser:update_jobs")
