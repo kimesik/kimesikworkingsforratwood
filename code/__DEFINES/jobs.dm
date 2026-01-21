@@ -119,6 +119,7 @@
 #define BOGGUARD	(1<<4)
 #define SERGEANT	(1<<5)
 #define SHERIFF		(1<<6)
+#define VETERAN		(1<<7)
 
 #define CHURCHMEN		(1<<2)
 
@@ -177,13 +178,12 @@
 
 #define WANDERERS		(1<<7)
 
-#define VETERAN			(1<<1)
-#define WANDERER		(1<<2)
-#define ADVENTURER      (1<<3)
-#define BANDIT		    (1<<4)
-#define COURTAGENT	    (1<<5)
-#define WRETCH          (1<<6)
-#define TRADER			(1<<7)
+#define WANDERER		(1<<1)
+#define ADVENTURER      (1<<2)
+#define BANDIT		    (1<<3)
+#define COURTAGENT	    (1<<4)
+#define WRETCH          (1<<5)
+#define TRADER			(1<<6)
 
 #define TRIBAL		(1<<8)
 
@@ -269,6 +269,7 @@
 #define JDO_SHERIFF 8.6
 #define JDO_TOWNGUARD 8.7
 #define JDO_DUNGEONEER 8.8
+#define JDO_VET 8.9
 #define JDO_BOGGUARD 9.1
 
 #define JDO_PRIEST 10
@@ -312,7 +313,6 @@
 #define JDO_MERCENARY 31
 #define JDO_GRENZELHOFT 31.1
 #define JDO_DESERT_RIDER 31.2
-#define JDO_VET 31.4
 
 #define JDO_VAGRANT 33
 #define JDO_ORPHAN 34
@@ -337,7 +337,6 @@
 
 #define MANOR_ROLES \
 	/datum/job/roguetown/jester,\
-	/datum/job/roguetown/veteran,\
 	/datum/job/roguetown/clerk,\
 	/datum/job/roguetown/wapprentice,\
 	/datum/job/roguetown/servant,\
@@ -406,6 +405,7 @@
 #define GARRISON_ROLES \
 	/datum/job/roguetown/bogguardsman,\
 	/datum/job/roguetown/sergeant,\
+	/datum/job/roguetown/veteran,\
 	/datum/job/roguetown/dungeoneer,\
 	/datum/job/roguetown/gatemaster,\
 	/datum/job/roguetown/manorguard,\

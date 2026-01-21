@@ -87,6 +87,7 @@ GLOBAL_LIST_INIT(garrison_positions, list(
 	"Watchman",
 	"Warden",
 	"Sergeant",
+	"Veteran",
 	"Man at Arms",
 	"Squire",
 	"Dungeoneer",
@@ -152,11 +153,10 @@ GLOBAL_LIST_INIT(youngfolk_positions, list(
 ))
 
 GLOBAL_LIST_INIT(wanderer_positions, list(
-	"Veteran",
-	"Adventurer",
 	"Mercenary",
-	"Bandit",
+	"Adventurer",
 	"Court Agent",
+	"Bandit",
 	"Wretch",
 ))
 
