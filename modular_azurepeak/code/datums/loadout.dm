@@ -402,6 +402,10 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Poncho"
 	path = /obj/item/clothing/cloak/poncho
 
+/datum/loadout_item/guardhood
+	name = "Guard's Hood"
+	path = /obj/item/clothing/cloak/stabard/guardhood
+
 //SHOES
 /datum/loadout_item/darkboots
 	name = "Dark Boots"
