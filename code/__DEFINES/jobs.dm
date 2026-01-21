@@ -107,6 +107,8 @@
 #define MARSHAL		(1<<6)
 #define HOSTAGE		(1<<7)
 #define SUITOR		(1<<8)
+#define PRINCE		(1<<9)
+#define CLERK 		(1<<10)
 
 #define GARRISON		(1<<1)
 
@@ -132,6 +134,9 @@
 #define PHYSICIAN 	(1<<2)
 #define BUTLER		(1<<3)
 #define COUNCILLOR	(1<<4)
+#define SERVANT		(1<<5)
+#define MAGEASSOCIATE	(1<<6)
+#define APOTHECARY	(1<<7)
 
 #define YEOMEN		(1<<4)
 
@@ -167,13 +172,8 @@
 
 #define APPRENTICE	(1<<0)
 #define CHURCHLING	(1<<1)
-#define SERVANT		(1<<2)
-#define ORPHAN		(1<<3)
-#define PRINCE		(1<<4)
-#define SHOPHAND	(1<<5)
-#define CLERK 		(1<<6)
-#define MAGEAPPRENTICE	(1<<7)
-#define APOTHECARY	(1<<8)
+#define ORPHAN		(1<<2)
+#define SHOPHAND	(1<<3)
 
 #define WANDERERS		(1<<7)
 
@@ -253,7 +253,7 @@
 
 // Courtiers
 #define JDO_MAGICIAN 5
-#define JDO_MAGEAPPRENTICE 5.1
+#define JDO_MAGEASSOCIATE 5.1
 #define JDO_PHYSICIAN 6
 #define JDO_APOTHECARY 6.1
 #define JDO_JESTER 7
