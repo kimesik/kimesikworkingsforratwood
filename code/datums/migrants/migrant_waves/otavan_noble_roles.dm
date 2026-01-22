@@ -72,7 +72,7 @@
 /datum/migrant_role/otavan/knight
 	name = "Gendarme"
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_NO_CONSTRUCT
+	allowed_races = NON_DWARVEN_RACE_TYPES
 	advclass_cat_rolls = list(CTAG_OTAVAN_KNIGHT = 20)
 
 /datum/advclass/otavan_knight
@@ -131,9 +131,9 @@
 
 /datum/migrant_role/otavan/guard
 	name = "Otavan Arbalétrier"
-	greet_text = "With sharp eyes and a strong body, you are one of the many famous Heavy Crossbowmens that fill the ranks of the Otavan Principality. Keep the Emmisary safe, with sword and bolts."
+	greet_text = "With sharp eyes and a strong body, you are one of the many famous Heavy Crossbowmen that fill the ranks of the Otavan Principality. Keep the Emmisary safe, with sword and bolts."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_NO_CONSTRUCT
+	allowed_races = RACES_ALL_KINDS
 	advclass_cat_rolls = list(CTAG_OTAVAN_GUARD = 20)
 
 /datum/advclass/otavan_guard
@@ -257,7 +257,7 @@
 /datum/migrant_role/otavan/scribe
 	name = "Otavan Scribe"
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_NO_CONSTRUCT
+	allowed_races = RACES_ALL_KINDS
 	greet_text = "Coin, quill, and words, these have defined your life since you were a mere youngling. Now? You are the renowned Scribe to this diplomatic mission's Emissary. Take notes, ask questions, and give funds when asked."
 	advclass_cat_rolls = list(CTAG_OTAVAN_SCRIBE = 20)
 
