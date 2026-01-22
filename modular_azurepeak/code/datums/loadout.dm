@@ -841,6 +841,10 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Surgcollar"
 	path = /obj/item/clothing/neck/roguetown/collar/surgcollar
 
+/datum/loadout_item/scarf
+	name = "Scarf"
+	path = /obj/item/clothing/head/roguetown/scarf
+
 // MASKS
 /datum/loadout_item/skullmask
 	name = "Skull Mask"
