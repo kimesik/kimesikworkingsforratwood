@@ -32,8 +32,8 @@
 	name = "GRAGGITE ARENA"
 	icon_state = "indoors"
 	first_time_text = "BLOODY ARENA"
-	droning_sound = 'sound/ambience/inferno.ogg'
-	droning_sound_dusk = 'sound/ambience/inferno.ogg'
-	droning_sound_night = 'sound/ambience/inferno.ogg'
+	droning_sound = 'sound/music/inferno.ogg'
+	droning_sound_dusk = 'sound/music/inferno.ogg'
+	droning_sound_night = 'sound/music/inferno.ogg'
 	converted_type = /area/rogue/outdoors/dungeon1
 	detail_text = DETAIL_TEXT_BLOODY_ARENA
