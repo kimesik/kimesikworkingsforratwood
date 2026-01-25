@@ -74,7 +74,6 @@ At least, it should. Fingers crossed.
 	var/load_time = 50
 	var/gunpowder = FALSE
 	var/obj/item/ramrod/myrod = null
-	var/gunchannel
 
 /obj/item/gun/ballistic/firearm/getonmobprop(tag)
 	. = ..()
@@ -180,10 +179,8 @@ At least, it should. Fingers crossed.
 
 
 /obj/item/gun/ballistic/firearm/attackby(obj/item/A, mob/user, params)
-	user.stop_sound_channel(gunchannel)
 	var/firearm_skill = (user.get_skill_level(/datum/skill/combat/firearms))
 	var/load_time_skill = load_time - (firearm_skill*2)
-	//gunchannel = SSsounds.random_available_channel()
 
 	if(istype(A, /obj/item/ammo_casing))
 		if(chambered)
@@ -208,7 +205,6 @@ At least, it should. Fingers crossed.
 				user.visible_message("<span class='notice'>[user] fills the [src] with smokepowder.</span>")
 				gunpowder = TRUE
 			return
-		user.stop_sound_channel(gunchannel)
 	if(istype(A, /obj/item/ramrod))
 		var/obj/item/ramrod/R=A
 		if(!reloaded)
@@ -232,7 +228,6 @@ At least, it should. Fingers crossed.
 		if(!myrod == null)
 			to_chat(user, span_warning("There's already a [R.name] inside of the [name]."))
 			return
-		user.stop_sound_channel(gunchannel)
 
 /obj/item/gun/ballistic/firearm/process_fire(atom/target, mob/living/user, message = TRUE, params = null, zone_override = "", bonus_spread = 0)
 	var/accident_chance = 0
