@@ -218,4 +218,8 @@
 			rid = /datum/reagent/water
 			target.reagents.add_reagent(rid, ramount)
 			if(prob(10))
-				target.werewolf_infect_attempt(CHEST)
+    			for(var/obj/item/bodypart/BP in target.bodyparts)
+        			if(!BP?.wounds)
+            			continue
+        			for(var/datum/wound/W in BP.wounds)
+          				W.werewolf_infect_attempt()
