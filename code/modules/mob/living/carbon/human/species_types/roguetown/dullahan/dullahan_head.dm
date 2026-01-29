@@ -12,6 +12,7 @@
 	var/list/traits_to_remove = list( // Keep this list up to date with traits that are unbalanced for Revenants to have.
 		TRAIT_DODGEEXPERT,
 		TRAIT_CRITICAL_RESISTANCE,
+		TRAIT_HARDDISMEMBER,
 		TRAIT_NOPAIN,
 		TRAIT_NOPAINSTUN,
 		TRAIT_HEAVYARMOR,
