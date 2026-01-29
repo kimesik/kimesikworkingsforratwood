@@ -37,7 +37,6 @@ SUBSYSTEM_DEF(familytree)
 		"Suitor",
 		"Hand",
 		"Prince",
-		"Wretch",
 		"Bandit",
 		"Absolver",
 		"Orthodoxist",
