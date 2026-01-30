@@ -246,6 +246,8 @@
 	for(var/trait_to_add in traits_removed)
 		ADD_TRAIT(user, trait_to_add, TRAIT_GENERIC)
 	traits_removed = list()
+	user.remove_client_colour(/datum/client_colour/monochrome/blind/dullahan)
+	user.clear_fullscreen("dullahan_body_vision")
 
 /obj/item/bodypart/head/dullahan/proc/insert_worn_items()
 	// Sorry. Roguetown hardcodes variables and I don't want to do that.
