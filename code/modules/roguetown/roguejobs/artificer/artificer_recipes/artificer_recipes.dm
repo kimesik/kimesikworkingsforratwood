@@ -587,70 +587,10 @@
 	hammers_per_item = 5
 	skill_level = 5
 
-/datum/artificer_recipe/general/impactexplosive
-	name = "Explosive Grenade"
-	required_item = /obj/item/ingot/copper
-	additional_items = list(/obj/item/paper/scroll,
-							/obj/item/alch/coaldust,
-							/obj/item/alch/airdust,
-						 	/obj/item/alch/firedust)
-	created_item = /obj/item/impact_grenade/explosion
-	hammers_per_item = 5
-	skill_level = 4
-
-/datum/artificer_recipe/general/impactsmoke
-	name = "Smoke Grenade"
-	required_item = /obj/item/ingot/copper
-	additional_items = list(/obj/item/paper/scroll,
-							/obj/item/alch/coaldust,
-							/obj/item/alch/coaldust,
-							/obj/item/alch/coaldust,
-							/obj/item/alch/airdust,
-						 	/obj/item/alch/firedust)
-	created_item = /obj/item/impact_grenade/smoke
-	hammers_per_item = 5
-	skill_level = 4
-
-/datum/artificer_recipe/general/impactpoisonsmoke
-	name = "Poison Smoke Grenade"
-	required_item = /obj/item/ingot/copper
-	additional_items = list(/obj/item/paper/scroll,
-							/obj/item/alch/coaldust,
-							/obj/item/alch/coaldust,
-							/obj/item/alch/coaldust,
-							/obj/item/alch/airdust,
-						 	/obj/item/alch/firedust,
-						 	/obj/item/alch/atropa)
-	created_item = /obj/item/impact_grenade/smoke/poison_gas
-	hammers_per_item = 5
-	skill_level = 4
-
-/datum/artificer_recipe/general/impactfiresmoke
-	name = "Conflagration Smoke Grenade"
-	required_item = /obj/item/ingot/copper
-	additional_items = list(/obj/item/paper/scroll,
-							/obj/item/alch/coaldust,
-							/obj/item/alch/coaldust,
-							/obj/item/alch/coaldust,
-							/obj/item/alch/airdust,
-						 	/obj/item/alch/firedust,
-						 	/obj/item/reagent_containers/food/snacks/grown/rogue/fyritius)
-	created_item = /obj/item/impact_grenade/smoke/fire_gas
-	hammers_per_item = 5
-	skill_level = 4
-
-/datum/artificer_recipe/general/impactblindingsmoke
-	name = "Blinding Smoke Grenade"
-	required_item = /obj/item/ingot/copper
-	additional_items = list(/obj/item/paper/scroll,
-							/obj/item/alch/coaldust,
-							/obj/item/alch/coaldust,
-							/obj/item/alch/coaldust,
-							/obj/item/alch/airdust,
-						 	/obj/item/alch/firedust,
-						 	/obj/item/ash,
-						 	/obj/item/ash,
-						 	/obj/item/ash)
-	created_item = /obj/item/impact_grenade/smoke/blind_gas
-	hammers_per_item = 5
-	skill_level = 4
+/datum/anvil_recipe/engineering/bronze/smokebomb
+	name = "gas belcher shells (x3) (+Cog)"
+	req_bar = /obj/item/ingot/bronze
+	created_item = /obj/item/smokeshell
+	additional_items = list(/obj/item/roguegear)
+	createditem_num = 3
+	craftdiff = 3
