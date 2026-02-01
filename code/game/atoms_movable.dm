@@ -1076,7 +1076,7 @@ GLOBAL_VAR_INIT(pixel_diff_time, 1)
 
 		var/pri = initial(langtype.default_priority)
 		if(!highest_priority || (pri > highest_priority))
-			chosen_langtype = langtype
+			chosen_langtype = langtype.type
 			highest_priority = pri
 
 	H.selected_default_language = .
