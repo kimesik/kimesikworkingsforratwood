@@ -35,6 +35,9 @@
 	/// The bed (if) we're occupying, update on starting an action
 	var/obj/structure/bed/rogue/bed = null
 	var/target_on_bed = FALSE
+	/// If this person has a collar that rings on
+	var/collar_bell_user = FALSE
+	var/collar_bell_target = FALSE
 	/// Arousal won't change if active.
 	var/arousal_frozen = FALSE
 	var/last_arousal_increase_time = 0
@@ -71,6 +74,8 @@
 	user = null
 	target = null
 	bed = null
+	collar_bell_user = FALSE
+	collar_bell_target = FALSE
 	if(knotted_status)
 		knot_exit()
 	//receiving = list()
@@ -117,6 +122,9 @@
 			animate(pixel_y = oldy, time = time)
 		bed.damage_bed(force > SEX_FORCE_HIGH ? 0.5 : 0.25)
 	
+	if((collar_bell_user || collar_bell_target) && (force > SEX_FORCE_MID))
+		playsound(collar_bell_target && target ? target : user, SFX_COLLARJINGLE, 50, TRUE, ignore_walls = FALSE)
+
 /obj/structure/bed/rogue
 	var/broken_matress = FALSE
 	var/broken_percentage = 0
@@ -814,6 +822,8 @@
 	current_action = null
 	bed = null
 	target_on_bed = FALSE
+	collar_bell_user = FALSE
+	collar_bell_target = FALSE
 	using_zones = list()
 
 /datum/sex_controller/proc/try_start_action(action_type)
@@ -833,6 +843,8 @@
 	current_action = action_type
 	bed = null
 	target_on_bed = FALSE
+	collar_bell_user = FALSE
+	collar_bell_target = FALSE
 	var/datum/sex_action/action = SEX_ACTION(current_action)
 	log_combat(user, target, "Started sex action: [action.name]")
 	INVOKE_ASYNC(src, PROC_REF(sex_action_loop))
@@ -859,6 +871,7 @@
 		if(desire_stop)
 			break
 		find_occupying_bed()
+		find_ringing_collar()
 		action.on_perform(user, target)
 		// It could want to finish afterwards the performed action
 		if(action.is_finished(user, target))
@@ -885,6 +898,16 @@
 		target_on_bed = TRUE
 	if(!bed && !(user.mobility_flags & MOBILITY_STAND) && isturf(user.loc)) // find our bed
 		bed = locate() in user.loc
+
+/datum/sex_controller/proc/find_ringing_collar()
+	var/obj/item/clothing/neck/roguetown/collar/collar
+	collar = user.get_item_by_slot(SLOT_NECK)
+	collar_bell_user = collar && istype(collar) && collar.bellsound
+	if(!target)
+		collar_bell_target = FALSE
+		return
+	collar = target.get_item_by_slot(SLOT_NECK)
+	collar_bell_target = collar && istype(collar) && collar.bellsound
 
 /datum/sex_controller/proc/inherent_perform_check(action_type, incapacitated)
 	var/datum/sex_action/action = SEX_ACTION(action_type)
