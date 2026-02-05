@@ -29,6 +29,10 @@
 	user.visible_message(user.sexcon.spanify_force("[user] [user.sexcon.get_generic_force_adjective()] forces [target] to suck on the dildo..."))
 	target.make_sucking_noise()
 
+	var/obj/item/dildo/dildo = get_dildo_in_either_hand(user)
+	if(dildo)
+		dildo.do_silver_check(target)
+
 /datum/sex_action/toy_other_oral/on_finish(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	var/obj/item/dildo/dildo = pegging ? get_dildo_in_either_hand(user) : get_dildo_on_belt(user)
 	user.visible_message(span_warning("[user] pulls \the [dildo] from [target]'s mouth."))
@@ -58,3 +62,7 @@
 	if(oxy_damage)
 		user.sexcon.perform_deepthroat_oxyloss(target, 2.6)
 	target.sexcon.handle_passive_ejaculation()
+
+	var/obj/item/dildo/dildo = get_dildo_on_belt(user)
+	if(dildo)
+		dildo.do_silver_check(target)

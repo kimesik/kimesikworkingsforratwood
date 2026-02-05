@@ -29,6 +29,10 @@
 	user.visible_message(user.sexcon.spanify_force("[user] [user.sexcon.get_generic_force_adjective()] [chosen_verb]..."))
 	playsound(user, 'sound/misc/mat/fingering.ogg', 30, TRUE, -2, ignore_walls = FALSE)
 
+	var/obj/item/dildo/dildo = get_dildo_on_belt(target)
+	if(dildo)
+		dildo.do_silver_check(user)
+
 /datum/sex_action/toy_other_masturbate/on_finish(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	var/obj/item/dildo/dildo = get_dildo_on_belt(target)
 	if(dildo)
