@@ -377,6 +377,11 @@
 /obj/structure/roguewindow,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/shop)
+"agg" = (
+/obj/structure/flora/roguegrass,
+/obj/structure/flora/roguegrass/bush/wall/tall,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/exposed/town/keep)
 "agj" = (
 /obj/structure/fluff/railing/border{
 	pixel_y = -7
@@ -417,7 +422,8 @@
 /obj/structure/arcyne_wall,
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "agA" = (
 /turf/closed/wall/mineral/rogue/tent{
@@ -617,7 +623,8 @@
 /obj/structure/bookcase/random,
 /turf/open/floor/rogue/volcanic,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "akW" = (
 /turf/closed/wall/mineral/rogue/roofwall/outercorner/dir4,
@@ -719,14 +726,15 @@
 "amz" = (
 /obj/item/roguebin/water,
 /turf/open/floor/rogue/hay,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "amD" = (
 /turf/open/floor/rogue/woodturned,
 /area/rogue/outdoors/bograt/above)
 "amL" = (
 /turf/closed/wall/mineral/rogue/decowood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "amU" = (
 /turf/open/water/swamp/deep,
@@ -1033,7 +1041,7 @@
 	pixel_y = 7
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "arH" = (
 /obj/effect/decal/cobbleedge{
 	icon_state = "borderfall";
@@ -1354,7 +1362,8 @@
 "avY" = (
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "awa" = (
 /obj/structure/fluff/railing/border{
@@ -1405,7 +1414,8 @@
 "awR" = (
 /turf/open/floor/rogue/volcanic,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "awV" = (
 /obj/structure/flora/rogueshroom{
@@ -1421,7 +1431,8 @@
 	dir = 1
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "axa" = (
 /obj/item/reagent_containers/glass/cup/wooden,
@@ -1479,7 +1490,7 @@
 "axJ" = (
 /obj/structure/fluff/statue/tdummy,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "axK" = (
 /turf/closed/wall/mineral/rogue/decostone/mossy/end,
 /area/rogue/indoors/town/manor/rockhill)
@@ -1817,7 +1828,7 @@
 "aCz" = (
 /obj/structure/ladder,
 /turf/open/floor/rogue/rooftop/green,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "aCD" = (
 /obj/machinery/light/rogue/firebowl/stump,
 /turf/open/floor/rogue/grassyel,
@@ -1854,7 +1865,7 @@
 	pixel_y = 2
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "aDc" = (
 /turf/open/floor/rogue/blocks{
 	icon_state = "paving"
@@ -2398,6 +2409,11 @@
 /obj/structure/rack/rogue/shelf/biggest,
 /turf/open/floor/rogue/concrete,
 /area/rogue/under/town/basement/keep)
+"aMc" = (
+/turf/open/floor/rogue/rooftop/green/corner1{
+	dir = 6
+	},
+/area/rogue/outdoors/town/roofs/keep)
 "aMi" = (
 /mob/living/carbon/human/species/orc/npc/marauder,
 /turf/open/floor/rogue/grasscold,
@@ -2416,7 +2432,7 @@
 	},
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "aMJ" = (
 /obj/machinery/light/rogue/firebowl,
 /turf/open/floor/rogue/concrete,
@@ -2543,7 +2559,8 @@
 	icon_state = "greenstone"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "aOZ" = (
 /obj/structure/fluff/statue/tdummy,
@@ -3144,7 +3161,7 @@
 "aXF" = (
 /obj/structure/fluff/statue/gargoyle,
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "aXJ" = (
 /obj/structure/bars/grille{
 	dir = 8
@@ -3242,7 +3259,8 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "aZz" = (
 /turf/open/floor/rogue/herringbone,
@@ -3611,7 +3629,8 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "bfN" = (
 /obj/structure/closet/crate/roguecloset,
@@ -3684,6 +3703,10 @@
 /obj/structure/table/wood/poor,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors)
+"bgM" = (
+/obj/structure/flora/roguegrass/bush/wall/tall,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/exposed/town/keep)
 "bgS" = (
 /obj/structure/flora/roguegrass/bush/wall,
 /turf/open/floor/rogue/grassred,
@@ -4099,7 +4122,8 @@
 	},
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "bmQ" = (
 /obj/structure/flora/ausbushes/reedbush{
@@ -4396,7 +4420,7 @@
 	},
 /obj/structure/flora/roguegrass/herb/rosa,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "btf" = (
 /obj/structure/fluff/railing/border{
 	dir = 6
@@ -4610,7 +4634,7 @@
 	pixel_y = 7
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "bwp" = (
 /turf/open/floor/rogue/blocks/flipped,
 /area/rogue/indoors/town/church/basement)
@@ -4724,7 +4748,8 @@
 /obj/effect/wisp/prestidigitation,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "bxR" = (
 /obj/structure/table/vtable,
@@ -4886,7 +4911,7 @@
 /obj/structure/fluff/railing/wood,
 /obj/structure/telescope,
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "bBa" = (
 /obj/effect/decal/cobbleedge{
 	dir = 9
@@ -4983,6 +5008,16 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/bograt/above)
+"bCC" = (
+/obj/effect/wisp/prestidigitation{
+	pixel_x = 0;
+	pixel_y = -10
+	},
+/turf/open/water/pond{
+	water_color = "#3459a3";
+	color = "#366ad1"
+	},
+/area/rogue/under/cavewet)
 "bCE" = (
 /turf/closed/mineral/random/rogue,
 /area/rogue/outdoors/bograt/south)
@@ -5124,7 +5159,8 @@
 /obj/structure/arcyne_wall,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "bEO" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/bigrat,
@@ -5795,7 +5831,7 @@
 "bOL" = (
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "bOU" = (
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_y = -32
@@ -6096,7 +6132,8 @@
 /obj/item/natural/feather,
 /turf/open/floor/carpet/stellar,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "bSL" = (
 /obj/structure/roguewindow/harem3{
@@ -6120,7 +6157,8 @@
 /obj/item/ash,
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "bSW" = (
 /obj/structure/bed/rogue/inn/wool{
@@ -6188,6 +6226,16 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town/rockhill)
+"bTL" = (
+/obj/effect/wisp/prestidigitation{
+	pixel_x = 25;
+	pixel_y = 8
+	},
+/turf/open/water/pond{
+	water_color = "#3459a3";
+	color = "#366ad1"
+	},
+/area/rogue/under/cavewet)
 "bUb" = (
 /obj/structure/stairs{
 	dir = 4
@@ -6264,7 +6312,7 @@
 "bVb" = (
 /obj/effect/decal/cleanable/food/flour,
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "bVe" = (
 /obj/effect/decal/cobbleedge{
 	dir = 4;
@@ -6485,7 +6533,8 @@
 /obj/machinery/gear_painter,
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "bXv" = (
 /obj/structure/fluff/railing/wood{
@@ -6556,7 +6605,8 @@
 /obj/machinery/light/rogue/firebowl/standing/green,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "bYP" = (
 /obj/structure/stairs{
@@ -6622,7 +6672,8 @@
 /obj/effect/wisp/prestidigitation,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "caA" = (
 /obj/structure/bed/rogue/shit,
@@ -6720,7 +6771,8 @@
 	},
 /turf/open/floor/rogue/greenstone/runed,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "ccf" = (
 /obj/structure/chair/wood{
@@ -6752,6 +6804,13 @@
 	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/outdoors/town/rockhill)
+"ccH" = (
+/obj/structure/shisha/hookah{
+	pixel_x = -2;
+	pixel_y = 13
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet)
 "ccP" = (
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/ruinedwood,
@@ -6811,7 +6870,8 @@
 	icon_state = "horzw"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "cdS" = (
 /obj/structure/fluff/railing/border{
@@ -6855,6 +6915,11 @@
 /obj/structure/bookcase/random,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/under/cavewet/wizarddungeon)
+"cek" = (
+/turf/open/floor/rogue/rooftop/green/corner1{
+	dir = 1
+	},
+/area/rogue/outdoors/town/roofs/keep)
 "cep" = (
 /obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/cobble,
@@ -7081,7 +7146,8 @@
 "cip" = (
 /turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "cix" = (
 /obj/item/natural/stone,
@@ -7212,7 +7278,7 @@
 	pixel_y = -9
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "ckt" = (
 /obj/structure/mineral_door/wood/deadbolt{
 	dir = 4;
@@ -7974,7 +8040,7 @@
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/roguegrass/bush/wall/tall,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "cwU" = (
 /obj/machinery/light/rogue/firebowl{
 	pixel_y = 9
@@ -8096,7 +8162,8 @@
 /obj/item/roguecoin/copper/pile,
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "cyV" = (
 /obj/structure/mineral_door/wood/donjon{
@@ -8227,7 +8294,8 @@
 "cBa" = (
 /turf/open/floor/rogue/underworld/road,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "cBc" = (
 /turf/open/floor/rogue/rooftop/green/corner1/direight,
@@ -8283,7 +8351,8 @@
 /obj/item/rope/chain,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "cBV" = (
 /obj/structure/table/wood{
@@ -8649,7 +8718,7 @@
 	dir = 4
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "cGu" = (
 /obj/structure/fluff/railing/border{
 	dir = 9
@@ -8767,7 +8836,8 @@
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "cHD" = (
 /obj/structure/stairs{
@@ -8828,7 +8898,8 @@
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "cIK" = (
 /obj/structure/flora/roguegrass,
@@ -8957,6 +9028,12 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/manor/rockhill)
+"cKb" = (
+/obj/structure/fluff/railing/border{
+	dir = 1
+	},
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/town/roofs/keep)
 "cKn" = (
 /obj/structure/closet/crate/roguecloset,
 /obj/item/kitchen/spoon,
@@ -9209,6 +9286,9 @@
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town)
+"cNO" = (
+/turf/open/floor/rogue/greenstone/runed,
+/area/rogue/under/cavewet)
 "cNQ" = (
 /obj/structure/fluff/railing/border{
 	dir = 6
@@ -9313,7 +9393,8 @@
 /obj/structure/stairs,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "cPj" = (
 /obj/structure/fluff/railing/border/north,
@@ -9398,7 +9479,7 @@
 "cQi" = (
 /obj/machinery/light/rogue/lanternpost,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "cQl" = (
 /obj/structure/flora/newleaf,
 /obj/structure/fluff/railing/border{
@@ -9510,6 +9591,12 @@
 /obj/structure/chair/wood,
 /turf/open/floor/carpet/inn,
 /area/rogue/indoors/town/tavern)
+"cRS" = (
+/turf/open/water/pond{
+	water_color = "#3459a3";
+	color = "#366ad1"
+	},
+/area/rogue/under/cavewet)
 "cSb" = (
 /obj/item/natural/rock,
 /obj/structure/spider/stickyweb,
@@ -9839,7 +9926,7 @@
 	},
 /obj/machinery/light/rogue/firebowl/stump,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "cXo" = (
 /obj/structure/chair/wood/rogue,
 /turf/open/floor/rogue/tile,
@@ -10518,7 +10605,7 @@
 	},
 /obj/machinery/light/rogue/wallfire/candle,
 /turf/open/transparent/openspace,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "dgM" = (
 /obj/structure/closet/crate/chest,
 /turf/open/floor/rogue/tile,
@@ -10535,7 +10622,7 @@
 /obj/machinery/light/rogue/torchholder/l,
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "dhI" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -10598,7 +10685,7 @@
 /area/rogue/indoors/town/warden)
 "diJ" = (
 /turf/closed/wall/mineral/rogue/stonebrick,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "diZ" = (
 /obj/structure/fluff/railing/border{
 	dir = 9
@@ -10818,7 +10905,8 @@
 "dmS" = (
 /turf/closed/wall/mineral/rogue/stone/blue_moss,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "dmX" = (
 /obj/structure/spider/stickyweb,
@@ -10967,7 +11055,8 @@
 	},
 /turf/open/floor/carpet/inn,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "dpp" = (
 /obj/structure/table/wood{
@@ -11075,7 +11164,8 @@
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "dqu" = (
 /obj/structure/flora/ausbushes/ywflowers,
@@ -11425,7 +11515,8 @@
 	icon_state = "horzw"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "dwj" = (
 /obj/item/natural/cloth,
@@ -11455,6 +11546,10 @@
 	icon_state = "plating2"
 	},
 /area/rogue/outdoors/town/rockhill)
+"dwD" = (
+/obj/structure/table/finestone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet)
 "dwG" = (
 /obj/item/natural/rock,
 /turf/open/water/swamp,
@@ -11575,6 +11670,10 @@
 	},
 /turf/closed/wall/mineral/rogue/decostone/long,
 /area/rogue/indoors/town/bath)
+"dyD" = (
+/obj/machinery/light/rogue/firebowl,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/town/roofs/keep)
 "dyK" = (
 /obj/machinery/light/roguestreet/walllamp{
 	dir = 8
@@ -12162,6 +12261,12 @@
 "dHt" = (
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/warden)
+"dHu" = (
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/exposed/town/keep)
 "dHz" = (
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/grassyel,
@@ -12522,7 +12627,8 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "dNt" = (
 /obj/effect/decal/cobbleedge{
@@ -12601,9 +12707,8 @@
 /turf/open/floor/rogue/herringbone,
 /area/rogue/underworld/adventurespawn)
 "dOA" = (
-/obj/structure/ladder,
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "dOF" = (
 /mob/living/carbon/human/species/goblin/npc/cave,
 /turf/open/floor/rogue/cobble,
@@ -12736,7 +12841,7 @@
 "dQJ" = (
 /obj/structure/flora/roguegrass/herb/rosa,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "dQP" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8;
@@ -12796,7 +12901,7 @@
 "dRr" = (
 /obj/structure/closet/crate/roguecloset/inn/chest,
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "dRx" = (
 /obj/structure/lever/wall{
 	dir = 4;
@@ -12957,7 +13062,7 @@
 "dUm" = (
 /obj/structure/chair/bench,
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "dUn" = (
 /turf/open/floor/rogue/twig,
 /area/rogue/under/town/basement)
@@ -12994,7 +13099,8 @@
 /obj/structure/fluff/walldeco/mageguild,
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "dUZ" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/spider/rock,
@@ -13196,9 +13302,8 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cavewet)
 "dYd" = (
-/obj/structure/rack/rogue,
-/turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/manor/rockhill)
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/exposed/town/keep)
 "dYh" = (
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/Academy)
@@ -13270,6 +13375,12 @@
 	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/tavern)
+"dZq" = (
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/town/roofs/keep)
 "dZu" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 4;
@@ -13344,6 +13455,10 @@
 /obj/structure/stairs/stone,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/beach/harbor)
+"eam" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/blocks,
+/area/rogue/outdoors/exposed/town/keep)
 "eaq" = (
 /obj/structure/flora/roguetree,
 /turf/open/floor/rogue/grassred,
@@ -13548,11 +13663,11 @@
 "ecB" = (
 /obj/effect/decal/cleanable/food/flour,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "ecC" = (
 /obj/structure/fluff/statue/tdummy,
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "ecE" = (
 /obj/structure/table/wood,
 /obj/item/trash/candle,
@@ -13583,7 +13698,7 @@
 	opened = 1
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "edh" = (
 /obj/structure/lever/wall{
 	dir = 8;
@@ -13865,7 +13980,8 @@
 	},
 /turf/open/floor/rogue/greenstone/runed,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "ehq" = (
 /obj/structure/stairs/stone{
@@ -13999,7 +14115,8 @@
 /obj/structure/roguemachine/withdraw,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "eiZ" = (
 /obj/structure/fluff/railing/wood{
@@ -14023,7 +14140,8 @@
 /obj/structure/fermentation_keg/water,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "ejl" = (
 /obj/structure/fluff/clock,
@@ -14046,6 +14164,10 @@
 	},
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/bath)
+"ejP" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/exposed/town/keep)
 "ekg" = (
 /obj/structure/stairs,
 /turf/open/floor/rogue/ruinedwood{
@@ -14197,7 +14319,8 @@
 "emy" = (
 /turf/closed/wall/mineral/rogue/decostone/cand,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "emz" = (
 /obj/structure/table/wood{
@@ -14228,7 +14351,8 @@
 /obj/effect/wisp/prestidigitation,
 /turf/open/floor/rogue/grasscold,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "emP" = (
 /obj/structure/chair/wood{
@@ -14306,14 +14430,8 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cave/rhgoblinencampment)
 "enB" = (
-/obj/structure/feedinghole{
-	pixel_x = -32;
-	pixel_y = 0
-	},
-/turf/open/floor/rogue/tile{
-	icon_state = "bfloorz"
-	},
-/area/rogue/indoors/town/manor/rockhill)
+/turf/closed/wall/mineral/rogue/stone/moss,
+/area/rogue/outdoors/town/roofs/keep)
 "enF" = (
 /obj/structure/table/wood,
 /turf/open/floor/carpet/royalblack,
@@ -14534,7 +14652,7 @@
 	dir = 5
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "erU" = (
 /obj/machinery/light/rogue/wallfire/candle/floorcandle{
 	icon_state = "floorcandlee1";
@@ -14575,7 +14693,8 @@
 /obj/structure/roguewindow/openclose,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "esK" = (
 /obj/structure/mineral_door/wood/deadbolt{
@@ -14896,7 +15015,7 @@
 "eyF" = (
 /obj/structure/flora/roguegrass/bush/wall/tall,
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "eyH" = (
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/outdoors/woodsrat/north)
@@ -15105,7 +15224,7 @@
 "eBw" = (
 /obj/effect/wisp/prestidigitation,
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "eBC" = (
 /obj/structure/closet/crate/roguecloset{
 	keylock = 1;
@@ -15316,7 +15435,7 @@
 "eFa" = (
 /obj/structure/fluff/statue/gargoyle,
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "eFi" = (
 /obj/structure/stone_rack,
 /turf/open/floor/rogue/concrete,
@@ -15549,7 +15668,8 @@
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "eIx" = (
 /obj/structure/fluff/railing/wood,
@@ -15697,7 +15817,8 @@
 	},
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "eKK" = (
 /obj/structure/mineral_door/wood/deadbolt{
@@ -15730,7 +15851,7 @@
 /obj/machinery/light/rogue/torchholder/r,
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "eLj" = (
 /obj/machinery/light/rogue/wallfire/candle/l{
 	pixel_x = 32
@@ -15806,9 +15927,10 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town)
 "eMc" = (
-/obj/structure/ladder,
+/obj/structure/fluff/railing/border,
+/obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "eMi" = (
 /obj/structure/fluff/railing/border,
 /obj/structure/fermentation_keg/water,
@@ -15953,6 +16075,13 @@
 	},
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/inq)
+"ePf" = (
+/obj/item/paper,
+/obj/item/natural/feather,
+/obj/structure/table/wood/poor,
+/obj/machinery/light/rogue/wallfire/candle/blue/l,
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/town/manor/rockhill)
 "ePi" = (
 /obj/structure/roguemachine/goldface/public/apothecary,
 /turf/closed/wall/mineral/rogue/decowood,
@@ -16070,7 +16199,7 @@
 "eRa" = (
 /obj/machinery/light/rogue/firebowl,
 /turf/open/floor/rogue/ruinedwood/turned,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "eRi" = (
 /obj/effect/landmark/start/villager,
 /obj/effect/decal/cobbleedge{
@@ -16142,6 +16271,10 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/rtfield/rockhill)
+"eSy" = (
+/obj/structure/stairs/stone,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/manor/rockhill)
 "eSz" = (
 /obj/structure/chair/wood/rogue/chair3{
 	dir = 4
@@ -16545,7 +16678,7 @@
 "eYs" = (
 /obj/structure/fluff/statue/gargoyle/moss,
 /turf/open/floor/rogue/concrete,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "eYt" = (
 /turf/closed/wall/mineral/rogue/roofwall/innercorner,
 /area/rogue/indoors/inq)
@@ -16945,7 +17078,7 @@
 	lockid = "walls"
 	},
 /turf/open/floor/rogue/ruinedwood/turned,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "ffc" = (
 /obj/structure/fermentation_keg/beer,
 /turf/open/floor/rogue/blocks,
@@ -17078,7 +17211,7 @@
 	lockid = "walls"
 	},
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/indoors/town/manor/rockhill)
 "fhs" = (
 /obj/structure/mineral_door/wood/deadbolt{
 	lockid = "farm";
@@ -17246,7 +17379,8 @@
 /obj/structure/fluff/wallclock,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "fja" = (
 /obj/structure/fluff/walldeco/chains,
@@ -17268,7 +17402,8 @@
 	icon_state = "greenstone"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "fjr" = (
 /obj/structure/fermentation_keg,
@@ -17361,7 +17496,8 @@
 "fkC" = (
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "fkN" = (
 /obj/machinery/light/rogue/firebowl/stump,
@@ -17689,7 +17825,8 @@
 /obj/item/book/rogue/noc,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "frk" = (
 /obj/structure/stairs{
@@ -18004,7 +18141,8 @@
 	icon_state = "greenstone"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "fwo" = (
 /turf/closed/mineral/rogue/bedrock,
@@ -18456,7 +18594,7 @@
 	pixel_y = 32
 	},
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "fCr" = (
 /obj/structure/chair/stool/rogue,
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
@@ -18516,7 +18654,7 @@
 "fDA" = (
 /obj/effect/decal/remains/saiga,
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "fDB" = (
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/outdoors/rtfield/rockhill)
@@ -18770,7 +18908,8 @@
 /obj/structure/closet/crate/chest,
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "fHm" = (
 /obj/structure/bed/rogue/inn{
@@ -18935,7 +19074,8 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "fIY" = (
 /turf/open/floor/rogue/rooftop/green{
@@ -19019,7 +19159,8 @@
 /obj/machinery/light/rogue/cauldron,
 /turf/open/floor/rogue/volcanic,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "fKx" = (
 /obj/machinery/light/rogue/firebowl/stump,
@@ -19211,7 +19352,8 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "fMr" = (
 /obj/structure/fluff/railing/wood{
@@ -19310,7 +19452,7 @@
 	pixel_x = 4
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "fNn" = (
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/town/cell{
@@ -20118,7 +20260,8 @@
 /obj/structure/chair/bench/couch/r,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "fYb" = (
 /obj/structure/chair/bench/church/mid{
@@ -20176,7 +20319,7 @@
 	dir = 4
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "fYY" = (
 /obj/structure/flora/roguetree/burnt,
 /turf/open/water/swamp,
@@ -20260,6 +20403,12 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cave/rhgoblinencampment)
+"gan" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/town/roofs/keep)
 "gaA" = (
 /obj/structure/mineral_door/wood,
 /turf/open/floor/rogue/concrete,
@@ -20330,7 +20479,7 @@
 	dir = 4
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "gbD" = (
 /obj/structure/spider/stickyweb/solo,
 /mob/living/simple_animal/hostile/retaliate/rogue/spider/rock,
@@ -20343,7 +20492,7 @@
 	dir = 1
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "gch" = (
 /obj/structure/fluff/walldeco/church/line{
 	layer = 2.2
@@ -20496,6 +20645,9 @@
 /obj/item/clothing/suit/roguetown/shirt/tunic,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors)
+"geS" = (
+/turf/open/floor/rogue/rooftop/green/corner1,
+/area/rogue/outdoors/town/roofs/keep)
 "geY" = (
 /obj/structure/table/wood,
 /turf/open/floor/rogue/wood,
@@ -20656,7 +20808,8 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "ghd" = (
 /obj/structure/fluff/railing/wood{
@@ -20691,6 +20844,7 @@
 	},
 /obj/structure/fluff/walldeco/church/line,
 /obj/structure/table/wood/poor,
+/obj/structure/roguemachine/contractledger,
 /turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/town/manor/rockhill)
 "ghO" = (
@@ -20888,7 +21042,8 @@
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "glb" = (
 /obj/structure/fluff/railing/wood{
@@ -20896,7 +21051,7 @@
 	pixel_y = 10
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "glc" = (
 /obj/structure/stairs/stone,
 /turf/open/floor/rogue/greenstone/runed,
@@ -21031,7 +21186,7 @@
 	lockid = "walls"
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "gmK" = (
 /obj/structure/mineral_door/wood,
 /turf/open/floor/rogue/ruinedwood,
@@ -21110,6 +21265,13 @@
 /obj/structure/closet/crate/roguecloset/dark,
 /turf/open/floor/rogue/tile/brownbrick,
 /area/rogue/under/town/sewer)
+"gnV" = (
+/obj/structure/shisha/hookah{
+	pixel_x = 4;
+	pixel_y = 14
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet)
 "gnW" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/wolf,
 /turf/open/floor/rogue/naturalstone,
@@ -21436,7 +21598,8 @@
 	icon_state = "horzw"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "gsM" = (
 /obj/structure/chair/wood/rogue,
@@ -21618,7 +21781,8 @@
 /obj/structure/table/vtable/v2,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "gvu" = (
 /obj/structure/table/wood{
@@ -21957,7 +22121,7 @@
 	pixel_y = 26
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "gAg" = (
 /obj/structure/rack/rogue/shelf/biggest,
 /obj/item/rogueweapon/huntingknife/idagger/steel,
@@ -22049,7 +22213,8 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "gBp" = (
 /turf/closed/mineral/random/rogue,
@@ -22163,6 +22328,12 @@
 	icon_state = "wooden_floor2"
 	},
 /area/rogue/indoors)
+"gDp" = (
+/obj/structure/fluff/railing/border{
+	dir = 9
+	},
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/town/roofs/keep)
 "gDx" = (
 /obj/structure/fluff/nest,
 /obj/item/reagent_containers/food/snacks/crow{
@@ -22597,7 +22768,8 @@
 	icon_state = "horzw"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "gLf" = (
 /turf/open/floor/rogue/greenstone,
@@ -22829,7 +23001,8 @@
 /obj/structure/mannequin/male,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "gPd" = (
 /obj/structure/fluff/walldeco/church/line{
@@ -22965,6 +23138,9 @@
 /obj/item/rogueweapon/woodstaff,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors)
+"gQH" = (
+/turf/open/floor/rogue/blocks,
+/area/rogue/outdoors/town/roofs/keep)
 "gQT" = (
 /obj/structure/chair/wood/rogue/fancy{
 	dir = 8;
@@ -23095,7 +23271,8 @@
 /obj/effect/wisp/prestidigitation,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "gTj" = (
 /obj/machinery/light/rogue/chand{
@@ -23286,7 +23463,7 @@
 	pixel_x = -32
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "gVE" = (
 /obj/structure/fermentation_keg/distiller,
 /turf/open/floor/rogue/cobblerock,
@@ -23347,7 +23524,8 @@
 /obj/item/paper/scroll,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "gWX" = (
 /obj/structure/fluff/railing/border/west,
@@ -23555,7 +23733,8 @@
 	icon_state = "horzw"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "gZs" = (
 /turf/open/floor/rogue/greenstone,
@@ -23974,7 +24153,8 @@
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "hgt" = (
 /obj/structure/fluff/railing/wood{
@@ -24117,6 +24297,12 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town)
+"hiO" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/exposed/town/keep)
 "hiU" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -24266,7 +24452,7 @@
 /area/rogue/outdoors/woodsrat/south)
 "hkI" = (
 /turf/closed/wall/mineral/rogue/decostone/cand,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "hkN" = (
 /obj/structure/bed/rogue/shit,
 /obj/item/bedsheet/rogue/wool,
@@ -24292,7 +24478,8 @@
 /obj/effect/turf_decal/magedecal,
 /turf/open/floor/carpet/stellar,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "hlt" = (
 /obj/structure/bookcase/random/religion,
@@ -24533,7 +24720,8 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "hox" = (
 /turf/open/floor/rogue/rooftop/green/corner1{
@@ -24613,7 +24801,8 @@
 "hpY" = (
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "hqe" = (
 /obj/structure/mineral_door/wood/fancywood{
@@ -24632,7 +24821,8 @@
 /obj/structure/fluff/clockwork/alloy_shards,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "hqK" = (
 /obj/structure/fluff/railing/border,
@@ -24705,7 +24895,8 @@
 /obj/item/soap,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "hrn" = (
 /obj/structure/fluff/railing/fence{
@@ -24792,7 +24983,8 @@
 /obj/item/book/rogue/arcyne,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "hsk" = (
 /obj/item/reagent_containers/glass/bucket,
@@ -24813,12 +25005,8 @@
 /turf/open/floor/rogue/blocks/newstone/alt,
 /area/rogue/indoors/town/warehouse)
 "hsP" = (
-/obj/structure/fluff/walldeco/steward{
-	name = "Steward";
-	pixel_x = -3
-	},
-/turf/open/transparent/openspace,
-/area/rogue/outdoors/town/rockhill)
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/outdoors/exposed/town/keep)
 "hsR" = (
 /obj/machinery/light/rogue/torchholder/r,
 /obj/structure/fermentation_keg/water,
@@ -24855,7 +25043,7 @@
 	},
 /obj/structure/flora/roguegrass/herb/salvia,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "htD" = (
 /obj/machinery/light/rogue/torchholder/c,
 /turf/open/floor/rogue/cobble,
@@ -24934,7 +25122,7 @@
 	},
 /obj/structure/flora/roguegrass/herb/salvia,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "huO" = (
 /obj/structure/fluff/railing/border,
 /obj/machinery/light/rogue/wallfire/candle{
@@ -25522,7 +25710,8 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "hFc" = (
 /obj/structure/fluff/railing/border{
@@ -25567,7 +25756,7 @@
 	dir = 1
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "hGf" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
@@ -25579,7 +25768,7 @@
 	pixel_x = -20
 	},
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "hGp" = (
 /obj/structure/closet/crate/chest{
 	locked = 1;
@@ -25612,7 +25801,7 @@
 	lockid = "walls"
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "hGE" = (
 /obj/structure/fermentation_keg/water,
 /turf/open/floor/rogue/naturalstone,
@@ -25721,12 +25910,14 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "hHW" = (
-/obj/structure/flora/roguegrass/water/reeds,
-/turf/open/water/river,
-/area/rogue/under/town/sewer)
+/turf/open/floor/rogue/rooftop/green/corner1{
+	dir = 5
+	},
+/area/rogue/outdoors/town/roofs/keep)
 "hIa" = (
 /obj/machinery/light/rogue/forge,
 /turf/open/floor/rogue/dirt/road,
@@ -26113,7 +26304,8 @@
 /obj/item/reagent_containers/food/snacks/grown/rogue/pipeweeddry,
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "hOJ" = (
 /obj/structure/fluff/railing/border{
@@ -26170,7 +26362,8 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "hPn" = (
 /obj/structure/bars/pipe{
@@ -26473,6 +26666,9 @@
 /obj/structure/bars,
 /turf/open/water/swamp,
 /area/rogue/under/town/sewer)
+"hTI" = (
+/turf/open/floor/rogue/rooftop/green,
+/area/rogue/outdoors/town/roofs/keep)
 "hTM" = (
 /obj/structure/ladder,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -26541,7 +26737,7 @@
 	pixel_x = 2
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "hUy" = (
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/wood,
@@ -26836,7 +27032,8 @@
 	},
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "hZa" = (
 /obj/structure/fluff/railing/wood{
@@ -26850,7 +27047,8 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "hZc" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/chicken,
@@ -27063,7 +27261,8 @@
 /obj/effect/landmark/chest_or_mimic,
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "icc" = (
 /obj/item/roguecoin/gold/pile,
@@ -27108,7 +27307,8 @@
 	},
 /turf/open/floor/carpet/stellar,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "idc" = (
 /turf/open/floor/rogue/twig,
@@ -27201,7 +27401,8 @@
 	},
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "iea" = (
 /obj/structure/curtain/blue{
@@ -27209,7 +27410,8 @@
 	},
 /turf/open/floor/rogue/greenstone/runed,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "ieb" = (
 /obj/structure/roguemachine/atm{
@@ -27451,7 +27653,8 @@
 	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "ihm" = (
 /obj/structure/fluff/railing/wood{
@@ -27762,7 +27965,8 @@
 	},
 /turf/open/floor/carpet/stellar,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "inN" = (
 /turf/open/floor/rogue/rooftop/green/corner1{
@@ -28113,7 +28317,8 @@
 /obj/item/clothing/gloves/roguetown/nomagic,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "itG" = (
 /obj/structure/flora/roguegrass/water/reeds{
@@ -28146,7 +28351,8 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "iuc" = (
 /obj/effect/decal/remains/human,
@@ -28292,7 +28498,7 @@
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "iwy" = (
 /obj/structure/fluff/railing/border{
 	dir = 8
@@ -28303,7 +28509,7 @@
 /obj/structure/fluff/railing/border,
 /obj/structure/fluff/nest,
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "iwD" = (
 /obj/machinery/light/rogue/chand,
 /turf/open/transparent/openspace,
@@ -28387,7 +28593,8 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "ixC" = (
 /turf/open/floor/rogue/ruinedwood{
@@ -28650,7 +28857,7 @@
 	},
 /obj/structure/flora/roguegrass/bush/wall,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "iCj" = (
 /obj/structure/table/wood/fancy/red,
 /obj/item/rogueweapon/huntingknife/idagger/silver/elvish,
@@ -29040,7 +29247,8 @@
 	},
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "iHm" = (
 /turf/open/floor/rogue/wood,
@@ -29152,7 +29360,6 @@
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors)
 "iIw" = (
-/obj/structure/flora/roguegrass,
 /obj/structure/chair/bench{
 	pixel_y = 7
 	},
@@ -29516,7 +29723,7 @@
 /area/rogue/outdoors/bograt/sunken)
 "iPg" = (
 /turf/open/floor/rogue/tile,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "iPu" = (
 /obj/effect/decal/cobbleedge{
 	icon_state = "borderfall"
@@ -29620,6 +29827,10 @@
 /obj/structure/flora/roguegrass/herb/random,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woodsrat/north)
+"iRv" = (
+/obj/structure/fluff/railing/border,
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/town/roofs/keep)
 "iRA" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8;
@@ -29694,7 +29905,8 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "iSF" = (
 /turf/open/floor/rogue/concrete,
@@ -29809,7 +30021,8 @@
 /obj/machinery/light/rogue/firebowl/standing/green,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "iUW" = (
 /obj/structure/flora/roguegrass/water/reeds,
@@ -29975,7 +30188,8 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "iXc" = (
 /obj/structure/closet/crate/drawer,
@@ -30648,6 +30862,9 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/mudcrab,
 /turf/open/water/cleanshallow,
 /area/rogue/outdoors/town/grove)
+"jiy" = (
+/turf/closed/mineral/rogue,
+/area/rogue/outdoors/town/roofs/keep)
 "jiB" = (
 /obj/structure/fluff/statue/gargoyle/moss{
 	pixel_y = 20
@@ -30767,13 +30984,14 @@
 "jkw" = (
 /obj/structure/fluff/statue/tdummy,
 /turf/open/floor/rogue/cobblerock,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "jkz" = (
 /turf/open/floor/rogue/tile{
 	icon_state = "greenstone"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "jkC" = (
 /obj/structure/table/church/m{
@@ -30973,7 +31191,7 @@
 	dir = 8
 	},
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "jmz" = (
 /obj/structure/roguemachine/atm{
 	location_tag = "Church Kitchen"
@@ -31003,7 +31221,7 @@
 	},
 /obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/hay,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "jmL" = (
 /obj/structure/curtain/black,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -31030,7 +31248,8 @@
 /obj/machinery/light/rogue/firebowl/standing/green,
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "jna" = (
 /obj/machinery/light/rogue/torchholder/c,
@@ -31307,7 +31526,6 @@
 	dir = 4;
 	pixel_x = 2
 	},
-/obj/structure/roguemachine/contractledger,
 /obj/structure/table/wood/poor,
 /turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/town/manor/rockhill)
@@ -31383,6 +31601,13 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/town/roofs)
+"jsi" = (
+/obj/effect/wisp/prestidigitation{
+	pixel_x = 4;
+	pixel_y = -11
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet)
 "jsj" = (
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/bograt/sunken)
@@ -31463,7 +31688,7 @@
 	dir = 6
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "jtH" = (
 /obj/item/natural/rock,
 /turf/open/floor/rogue/twig,
@@ -31535,7 +31760,8 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "jvD" = (
 /obj/structure/fluff/nest,
@@ -31587,7 +31813,8 @@
 	},
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "jwp" = (
 /obj/structure/winch{
@@ -31636,7 +31863,8 @@
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "jxo" = (
 /obj/structure/stairs{
@@ -31723,7 +31951,8 @@
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "jzl" = (
 /obj/machinery/light/rogue/wallfire/candle,
@@ -31797,6 +32026,11 @@
 "jAW" = (
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/beach/harbor)
+"jAX" = (
+/turf/open/floor/rogue/rooftop{
+	icon_state = "roofg"
+	},
+/area/rogue/outdoors/town/roofs/keep)
 "jAY" = (
 /obj/structure/fermentation_keg/water,
 /turf/open/floor/rogue/wood,
@@ -31832,7 +32066,8 @@
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "jBw" = (
 /obj/structure/mineral_door/wood/fancywood{
@@ -31866,6 +32101,12 @@
 "jCh" = (
 /turf/open/transparent/openspace,
 /area/rogue/indoors)
+"jCm" = (
+/obj/machinery/light/rogue/torchholder{
+	pixel_y = 26
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/exposed/town/keep)
 "jCr" = (
 /obj/structure/fluff/railing/border{
 	dir = 1;
@@ -31918,7 +32159,8 @@
 /obj/effect/wisp/prestidigitation,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "jCM" = (
 /obj/structure/fluff/walldeco/church/line{
@@ -32081,7 +32323,7 @@
 "jEU" = (
 /obj/item/reagent_containers/food/snacks/rogue/fryfish/carp,
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "jEW" = (
 /turf/open/water/river{
 	dir = 4;
@@ -32339,7 +32581,7 @@
 	},
 /mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck/tame/saddled,
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "jIJ" = (
 /obj/structure/fluff/customsign{
 	icon_state = "signwrote";
@@ -32702,6 +32944,9 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town/grove)
+"jNB" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/town/manor/rockhill)
 "jNL" = (
 /turf/open/floor/rogue/tile/checkeralt,
 /area/rogue/indoors/town/church)
@@ -32716,7 +32961,7 @@
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/cobble/mossy,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "jOh" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -32879,6 +33124,12 @@
 	icon_state = "tile"
 	},
 /area/rogue/indoors/town/tavern)
+"jQk" = (
+/obj/structure/fluff/walldeco/church/line{
+	dir = 1
+	},
+/turf/open/floor/carpet/inn,
+/area/rogue/indoors/town/manor/rockhill)
 "jQo" = (
 /obj/structure/mineral_door/wood/red{
 	locked = 1;
@@ -33020,7 +33271,7 @@
 	scom_tag = "Manor - Outside Stewardry"
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "jSQ" = (
 /obj/structure/fluff/canopy/side{
 	dir = 1;
@@ -33136,7 +33387,8 @@
 /obj/structure/bars,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "jVh" = (
 /obj/structure/closet/crate/chest{
@@ -33299,7 +33551,8 @@
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "jWT" = (
 /obj/structure/table/wood{
@@ -33412,12 +33665,13 @@
 "jZd" = (
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "jZo" = (
 /obj/item/trash/candle,
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "jZw" = (
 /obj/structure/table/vtable{
 	pixel_y = 3
@@ -34026,7 +34280,7 @@
 "kiz" = (
 /obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "kiF" = (
 /obj/effect/decal/cleanable/blood,
 /obj/structure/fluff/railing/wood{
@@ -34146,7 +34400,7 @@
 /obj/machinery/light/roguestreet/orange/walllamp,
 /obj/structure/flora/roguegrass/herb/rosa,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "kkE" = (
 /obj/structure/fluff/railing/border/east,
 /turf/open/floor/rogue/tile,
@@ -34304,6 +34558,10 @@
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/tavern)
+"kmy" = (
+/obj/structure/ladder,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/town/roofs/keep)
 "kmB" = (
 /obj/structure/table/wood{
 	dir = 6;
@@ -34892,7 +35150,8 @@
 /obj/item/natural/stone,
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "kwz" = (
 /obj/item/fishingrod,
@@ -35152,7 +35411,8 @@
 /obj/structure/arcyne_wall,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "kAM" = (
 /obj/structure/fluff/clock,
@@ -35175,15 +35435,15 @@
 	dir = 1
 	},
 /obj/structure/fluff/walldeco/church/line{
-	dir = 4;
-	pixel_x = 2
+	dir = 8
 	},
 /obj/structure/lever/wall{
-	dir = 4;
+	dir = 8;
 	name = "Internal Shutters";
-	redstone_id = "stw_in"
+	redstone_id = "stw_in";
+	pixel_y = -12
 	},
-/turf/open/floor/rogue/churchrough,
+/turf/open/floor/carpet/inn,
 /area/rogue/indoors/town/manor/rockhill)
 "kBg" = (
 /obj/structure/stairs/stone{
@@ -35284,6 +35544,10 @@
 /obj/structure/bed/rogue/inn/wool,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/physician)
+"kDp" = (
+/obj/structure/ladder,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/town/roofs/keep)
 "kDH" = (
 /obj/structure/fluff/railing/border,
 /turf/open/water/ocean,
@@ -35410,7 +35674,8 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "kFW" = (
 /turf/open/floor/rogue/hexstone,
@@ -36015,7 +36280,7 @@
 	dir = 10
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "kPn" = (
 /obj/structure/chair/bench/couchablack,
 /obj/machinery/light/rogue/wallfire/candle/blue,
@@ -36147,7 +36412,7 @@
 "kRZ" = (
 /obj/structure/fluff/railing/wood,
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "kSc" = (
 /obj/structure/winch{
 	gid = "firebigger";
@@ -36356,7 +36621,8 @@
 /obj/item/reagent_containers/powder/spice,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "kWe" = (
 /obj/structure/chair/wood/rogue{
@@ -36455,7 +36721,7 @@
 /obj/structure/flora/roguegrass/bush/wall/tall,
 /obj/effect/wisp/prestidigitation,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "kXx" = (
 /obj/item/gun/ballistic/revolver/grenadelauncher/bow,
 /obj/structure/rack/rogue,
@@ -36713,7 +36979,8 @@
 	},
 /turf/open/water/cleanshallow,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "laK" = (
 /obj/effect/decal/cobbleedge{
@@ -36815,7 +37082,8 @@
 /obj/structure/closet/crate/roguecloset,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "lcK" = (
 /obj/structure/fluff/traveltile/magicportal{
@@ -37025,10 +37293,10 @@
 "lgW" = (
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "lhb" = (
-/turf/open/water/river,
-/area/rogue/under/cavewet)
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/outdoors/town/roofs/keep)
 "lhd" = (
 /obj/structure/flora/roguegrass/bush/wall,
 /turf/open/floor/rogue/dirt/road,
@@ -37156,6 +37424,10 @@
 /obj/structure/table/wood/poor,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/cell)
+"ljL" = (
+/obj/structure/well,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/exposed/town/keep)
 "ljM" = (
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/bograt/north)
@@ -37265,9 +37537,14 @@
 /turf/open/floor/rogue/greenstone,
 /area/rogue/under/cavewet/wizarddungeon)
 "llU" = (
-/obj/structure/chair/smallbench,
-/turf/open/floor/rogue/churchmarble,
-/area/rogue/indoors/town/manor/rockhill)
+/turf/open/floor/rogue/rooftop/green{
+	dir = 8
+	},
+/area/rogue/outdoors/town/roofs/keep)
+"lmb" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/exposed/town/keep)
 "lmf" = (
 /obj/structure/stairs/stone,
 /obj/structure/fluff/railing/border{
@@ -37440,7 +37717,8 @@
 	},
 /turf/open/floor/carpet/stellar,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "loW" = (
 /obj/structure/table/wood{
@@ -37463,7 +37741,7 @@
 "lpa" = (
 /obj/structure/fluff/railing/wood,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "lpc" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -37550,7 +37828,8 @@
 /obj/structure/mirror,
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "lqg" = (
 /obj/structure/fluff/railing/border/west,
@@ -37766,7 +38045,8 @@
 	icon_state = "greenstone"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "lux" = (
 /obj/structure/fluff/railing/border{
@@ -37905,7 +38185,7 @@
 /area/rogue/indoors/town/church)
 "lwm" = (
 /turf/open/floor/rogue/hay,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "lwu" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -37923,6 +38203,12 @@
 /obj/item/storage/roguebag,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/town/basement/tavern)
+"lwR" = (
+/obj/machinery/light/roguestreet/orange/midlamp{
+	pixel_y = 8
+	},
+/turf/open/floor/rogue/metal/barograte,
+/area/rogue/outdoors/exposed/town/keep)
 "lwY" = (
 /turf/closed/wall/mineral/rogue/roofwall/middle{
 	dir = 4
@@ -37958,7 +38244,8 @@
 	icon_state = "greenstone"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "lxn" = (
 /obj/structure/stairs{
@@ -38223,7 +38510,7 @@
 	},
 /mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck/tame/saddled,
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "lCp" = (
 /obj/structure/lever/wall{
 	icon_state = "leverwall1";
@@ -38941,7 +39228,8 @@
 	icon_state = "greenstone"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "lOc" = (
 /turf/closed/wall/mineral/rogue/craftstone,
@@ -39053,7 +39341,7 @@
 	dir = 4
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "lQe" = (
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -39078,6 +39366,14 @@
 /obj/structure/bed/rogue/shit,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/garrison)
+"lQB" = (
+/obj/structure/fluff/pillow/blue{
+	color = "#2762cf";
+	dir = 1;
+	pixel_y = -4
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet)
 "lQG" = (
 /obj/item/natural/stone,
 /turf/open/floor/rogue/grassyel,
@@ -39780,7 +40076,8 @@
 	dir = 4
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "maJ" = (
 /obj/structure/bars/steel,
@@ -39844,17 +40141,16 @@
 /obj/structure/bookcase/random,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "mbM" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 4;
 	pixel_x = 2
 	},
-/obj/structure/lever/wall{
-	dir = 4;
-	name = "External Shutters";
-	redstone_id = "stw_out"
+/obj/structure/fluff/walldeco/church/line{
+	dir = 1
 	},
 /turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/town/manor/rockhill)
@@ -40080,7 +40376,8 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "mfy" = (
 /obj/structure/fluff/statue{
@@ -40107,7 +40404,8 @@
 "mfK" = (
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "mfL" = (
 /obj/effect/decal/cobbleedge{
@@ -40166,6 +40464,12 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/garrison)
+"mgE" = (
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/town/roofs/keep)
 "mgF" = (
 /obj/structure/fluff/big_chain,
 /obj/structure/fluff/railing/border,
@@ -40463,7 +40767,7 @@
 	},
 /obj/structure/fluff/nest,
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "mjY" = (
 /obj/structure/stairs/stone{
 	dir = 1
@@ -40557,7 +40861,7 @@
 	dir = 8
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "mlo" = (
 /obj/machinery/light/rogue/torchholder/c,
 /turf/open/floor/rogue/woodturned,
@@ -40575,7 +40879,8 @@
 	},
 /turf/open/floor/carpet/stellar,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "mlu" = (
 /obj/structure/fluff/railing/border{
@@ -40877,7 +41182,8 @@
 /obj/item/natural/worms/leech,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "mpT" = (
 /obj/machinery/light/rogue/torchholder/r,
@@ -40947,7 +41253,7 @@
 	pixel_y = -6
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "mrb" = (
 /obj/effect/decal/cobbleedge{
 	dir = 8;
@@ -41038,7 +41344,8 @@
 	},
 /turf/open/floor/rogue/greenstone/runed,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "msH" = (
 /obj/structure/fluff/walldeco/customflag/rockhill,
@@ -41590,7 +41897,8 @@
 	},
 /turf/open/floor/rogue/greenstone/runed,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "mBL" = (
 /turf/open/floor/rogue/grass,
@@ -41784,12 +42092,17 @@
 /obj/structure/fluff/railing/border{
 	pixel_y = -3
 	},
-/turf/open/floor/rogue/hexstone,
+/turf/open/floor/rogue/tile{
+	icon_state = "bfloorz"
+	},
 /area/rogue/indoors/town/manor/rockhill)
 "mEU" = (
 /obj/structure/fluff/railing/border{
 	dir = 9;
 	pixel_y = -3
+	},
+/obj/structure/fluff/walldeco/church/line{
+	dir = 1
 	},
 /turf/open/floor/carpet/inn,
 /area/rogue/indoors/town/manor/rockhill)
@@ -41856,6 +42169,23 @@
 	},
 /turf/open/floor/rogue/tile/masonic/inverted,
 /area/rogue/indoors/town/manor/rockhill)
+"mFV" = (
+/obj/structure/bell_common{
+	dir = 4;
+	pixel_x = -11;
+	pixel_y = -12
+	},
+/obj/structure/fluff/walldeco/steward{
+	name = "Steward";
+	pixel_x = -3
+	},
+/obj/structure/roguemachine/atm{
+	location_tag = "Stewardry";
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/exposed/town/keep)
 "mGk" = (
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town/grove)
@@ -41897,7 +42227,8 @@
 /obj/machinery/light/rogue/firebowl/standing/green,
 /turf/open/floor/rogue/volcanic,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "mGT" = (
 /obj/machinery/light/rogue/lanternpost,
@@ -42217,7 +42548,8 @@
 /obj/item/reagent_containers/food/snacks/grown/berries/rogue,
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "mMD" = (
 /obj/structure/fluff/statue/knight/interior,
@@ -42513,9 +42845,8 @@
 /turf/open/floor/rogue/greenstone,
 /area/rogue/under/town/basement)
 "mRr" = (
-/obj/structure/ladder,
-/turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/town/roofs/keep)
 "mRB" = (
 /obj/structure/roguewindow,
 /turf/open/floor/rogue/blocks,
@@ -42560,6 +42891,10 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/cell)
+"mSq" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/exposed/town/keep)
 "mSr" = (
 /obj/structure/chair/wood/rogue{
 	dir = 4;
@@ -42582,7 +42917,8 @@
 "mSU" = (
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "mTo" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
@@ -43019,7 +43355,8 @@
 /obj/structure/fluff/walldeco/mageguild2,
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "nbq" = (
 /obj/item/reagent_containers/glass/bowl,
@@ -43044,7 +43381,8 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "nbv" = (
 /obj/structure/chair/wood/rogue/fancy{
@@ -43063,18 +43401,8 @@
 /turf/open/floor/rogue/greenstone,
 /area/rogue/under/town/sewer)
 "nbR" = (
-/obj/structure/roguemachine/atm{
-	location_tag = "Stewardry";
-	pixel_x = -32;
-	pixel_y = 0
-	},
-/obj/structure/bell_common{
-	dir = 4;
-	pixel_x = -11;
-	pixel_y = -12
-	},
-/turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/turf/open/floor/rogue/blocks,
+/area/rogue/outdoors/exposed/town/keep)
 "ncb" = (
 /obj/machinery/light/rogue/lanternpost{
 	dir = 1
@@ -43120,7 +43448,8 @@
 	},
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "ncF" = (
 /obj/effect/decal/cobbleedge{
@@ -43359,7 +43688,8 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "ngn" = (
 /obj/structure/fluff/railing/wood{
@@ -43767,7 +44097,8 @@
 	icon_state = "greenstone"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "nmX" = (
 /turf/closed/wall/mineral/rogue/wooddark/window,
@@ -43857,11 +44188,8 @@
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cave)
 "noy" = (
-/obj/structure/stairs/stone{
-	dir = 8
-	},
-/turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/roofs)
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/outdoors/town/roofs/keep)
 "noB" = (
 /turf/closed/wall/mineral/rogue/decostone/cand,
 /area/rogue/indoors/town/church)
@@ -43929,7 +44257,8 @@
 /obj/structure/bookcase/random,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "npC" = (
 /obj/machinery/light/rogue/wallfire/candle/l,
@@ -44284,6 +44613,13 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors)
+"nwm" = (
+/obj/structure/chair/smallbench,
+/obj/machinery/light/roguestreet/orange/walllamp{
+	dir = 8
+	},
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/indoors/town/manor/rockhill)
 "nwp" = (
 /obj/structure/roguewindow/openclose{
 	dir = 8
@@ -44528,10 +44864,21 @@
 /obj/structure/fluff/statue/knight/interior,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cave/dungeon1)
+"nAI" = (
+/obj/structure/fluff/pillow/blue{
+	color = "#2762cf"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet)
 "nAK" = (
 /obj/structure/bed/rogue/shit,
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
+"nAO" = (
+/turf/open/floor/rogue/rooftop/green/corner1{
+	dir = 4
+	},
+/area/rogue/outdoors/town/roofs/keep)
 "nAS" = (
 /obj/structure/chair/wood/rogue/chair4{
 	dir = 1
@@ -44821,7 +45168,7 @@
 "nEV" = (
 /obj/effect/wisp/prestidigitation,
 /turf/open/floor/rogue/cobble/mossy,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "nFn" = (
 /obj/structure/fluff/statue/gargoyle/moss,
 /turf/open/floor/rogue/cobble/mossy,
@@ -45015,7 +45362,7 @@
 	pixel_x = -32;
 	pixel_y = 0
 	},
-/turf/open/floor/carpet/royalblack,
+/turf/open/floor/rogue/ruinedwood/chevron,
 /area/rogue/indoors/town/tavern)
 "nJs" = (
 /turf/open/floor/rogue/concrete,
@@ -45117,7 +45464,8 @@
 	},
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "nKr" = (
 /obj/structure/flora/roguetree,
@@ -45598,7 +45946,7 @@
 	dir = 4
 	},
 /turf/open/floor/rogue/cobble/mossy,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "nSY" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -45668,7 +46016,8 @@
 "nTQ" = (
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "nTS" = (
 /obj/structure/table/church/end,
@@ -45936,7 +46285,7 @@
 	dir = 4
 	},
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "nXf" = (
 /turf/closed/wall/mineral/rogue/pipe,
 /area/rogue/under/town/sewer)
@@ -46094,7 +46443,7 @@
 "nZQ" = (
 /obj/structure/flora/newtree,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "nZU" = (
 /obj/structure/fluff/walldeco/sign/merchantsign,
 /obj/machinery/light/roguestreet/orange{
@@ -46135,7 +46484,8 @@
 	},
 /turf/open/floor/carpet/inn,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "oaG" = (
 /obj/structure/stairs,
@@ -46258,14 +46608,15 @@
 /turf/closed/wall/mineral/rogue/stone/window{
 	icon_state = "stonewindow"
 	},
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "ocJ" = (
 /obj/structure/fluff/railing/border{
 	dir = 9
 	},
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "ocN" = (
 /turf/open/floor/rogue/dirt,
@@ -46469,7 +46820,8 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "ofL" = (
 /obj/item/chair/rogue/fancy,
@@ -46901,7 +47253,8 @@
 /obj/item/rogueore/cinnabar,
 /turf/open/floor/rogue/greenstone/runed,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "omM" = (
 /obj/machinery/light/roguestreet/orange/walllamp{
@@ -46947,7 +47300,8 @@
 	icon_state = "horzw"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "ony" = (
 /obj/structure/fluff/railing/wood{
@@ -47134,7 +47488,7 @@
 	pixel_x = 2
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "oqe" = (
 /obj/structure/fluff/railing/border{
 	dir = 5
@@ -47356,6 +47710,10 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/inq/basement)
+"osW" = (
+/obj/structure/stairs/stone,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/town/roofs/keep)
 "otg" = (
 /turf/open/water/swamp/deep,
 /area/rogue/under/town/sewer)
@@ -47554,7 +47912,8 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "owH" = (
 /obj/structure/fluff/railing/border{
@@ -47741,6 +48100,9 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bograt/north)
+"oAh" = (
+/turf/closed/wall/mineral/rogue/stone/moss,
+/area/rogue/outdoors/exposed/town/keep)
 "oAk" = (
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/ausbushes/ywflowers,
@@ -47870,7 +48232,8 @@
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "oCg" = (
 /obj/structure/bookcase/random,
@@ -48160,7 +48523,8 @@
 /obj/effect/decal/cleanable/roguerune/arcyne/enchantment/greater,
 /turf/open/floor/rogue/greenstone/runed,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "oGO" = (
 /obj/structure/flora/roguegrass/water/reeds,
@@ -48187,7 +48551,8 @@
 /obj/structure/fluff/walldeco/mageguild,
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "oHg" = (
 /obj/machinery/light/rogue/wallfire/candle,
@@ -48229,7 +48594,7 @@
 "oHI" = (
 /obj/structure/well/fountain,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "oHL" = (
 /obj/structure/fluff/railing/border{
 	dir = 1
@@ -48843,7 +49208,7 @@
 	pixel_y = 7
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "oRP" = (
 /obj/structure/bars/passage/shutter{
 	redstone_id = "warehouse_shutter"
@@ -48864,7 +49229,8 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "oSe" = (
 /obj/structure/closet/crate/roguecloset,
@@ -48930,6 +49296,15 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/town/rockhill)
+"oSV" = (
+/obj/structure/fluff/railing/border,
+/obj/machinery/light/roguestreet/orange{
+	dir = 1;
+	pixel_x = -8;
+	pixel_y = 8
+	},
+/turf/open/floor/rogue/metal/barograte,
+/area/rogue/outdoors/exposed/town/keep)
 "oTc" = (
 /obj/effect/decal/cleanable/dirt/cobweb{
 	dir = 1
@@ -49250,7 +49625,7 @@
 /obj/item/rogueweapon/mace/woodclub,
 /obj/item/rogueweapon/mace/woodclub,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "oXa" = (
 /mob/living/carbon/human/species/human/northern/bum/ambush{
 	wander = 0
@@ -49264,6 +49639,9 @@
 	},
 /turf/open/water/cleanshallow,
 /area/rogue/outdoors/beach/harbor)
+"oXf" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/exposed/town/keep)
 "oXl" = (
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/roguegrass/herb/salvia,
@@ -49398,7 +49776,8 @@
 	},
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "oZm" = (
 /obj/structure/glowshroom,
@@ -49490,7 +49869,7 @@
 	pixel_y = -11
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "paN" = (
 /obj/structure/closet/crate/chest/gold,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/money,
@@ -49522,7 +49901,7 @@
 	dir = 8
 	},
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "pbb" = (
 /obj/structure/table/wood,
 /obj/item/candle/skull/lit,
@@ -49575,11 +49954,11 @@
 "pco" = (
 /obj/structure/fluff/statue/knight,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "pcu" = (
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "pcx" = (
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors/town/physician)
@@ -49801,7 +50180,7 @@
 	pixel_y = 7
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "pgI" = (
 /obj/structure/stairs{
 	dir = 4
@@ -49812,7 +50191,7 @@
 	pixel_y = 7
 	},
 /turf/open/floor/rogue/woodturned,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "pgM" = (
 /obj/structure/rack/rogue/shelf/biggest,
 /obj/item/rogueweapon/shield/tower/metal,
@@ -49885,7 +50264,8 @@
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "phZ" = (
 /obj/effect/decal/cleanable/vomit/old,
@@ -49908,7 +50288,7 @@
 "pis" = (
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "pit" = (
 /obj/machinery/light/rogue/hearth{
 	pixel_y = 3
@@ -49944,6 +50324,9 @@
 /obj/structure/flora/ausbushes/brflowers,
 /turf/open/floor/rogue/grass,
 /area/rogue/indoors/town/bath)
+"pjk" = (
+/turf/closed/wall/mineral/rogue/stonebrick,
+/area/rogue/outdoors/exposed/town/keep)
 "pjr" = (
 /obj/structure/mineral_door/swing_door,
 /turf/open/floor/rogue/tile,
@@ -50179,7 +50562,8 @@
 	dir = 4
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "pmk" = (
 /obj/structure/closet/crate/roguecloset{
@@ -50417,7 +50801,8 @@
 /obj/item/clothing/head/roguetown/wizhat,
 /turf/open/floor/rogue/greenstone/runed,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "ppN" = (
 /obj/structure/pillory{
@@ -50554,7 +50939,7 @@
 	},
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "psc" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
@@ -50827,7 +51212,8 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "pvG" = (
 /obj/structure/fluff/railing/border{
@@ -51011,7 +51397,7 @@
 	pixel_y = 4
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "pyW" = (
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/blocks/stonered/tiny,
@@ -51181,7 +51567,7 @@
 "pAT" = (
 /obj/structure/chair/bench,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "pAV" = (
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/indoors)
@@ -51289,7 +51675,8 @@
 /obj/structure/table/wood,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "pCR" = (
 /obj/structure/stairs{
@@ -51369,7 +51756,7 @@
 	dir = 1
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "pDY" = (
 /turf/closed/wall/mineral/rogue/stone/window/moss{
 	icon_state = "stonewindow"
@@ -51745,7 +52132,8 @@
 	},
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "pKu" = (
 /obj/structure/flora/roguegrass/bush/wall/tall,
@@ -51786,7 +52174,7 @@
 "pKR" = (
 /obj/structure/flora/roguegrass/bush/wall,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "pLf" = (
 /turf/open/floor/rogue/rooftop/green{
 	dir = 1
@@ -51829,7 +52217,8 @@
 /obj/structure/bars,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "pLA" = (
 /obj/machinery/light/rogue/wallfire/candle/r,
@@ -52001,8 +52390,8 @@
 /turf/open/floor/rogue/grassyel,
 /area/rogue/outdoors/town/grove)
 "pOf" = (
-/turf/open/water/river,
-/area/rogue/under/town/sewer)
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/exposed/town/keep)
 "pOg" = (
 /obj/structure/gate{
 	gid = "firebigger";
@@ -52443,7 +52832,7 @@
 "pTG" = (
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/indoors/town/manor/rockhill)
 "pTM" = (
 /obj/machinery/tanningrack,
 /turf/open/floor/rogue/AzureSand,
@@ -52816,7 +53205,8 @@
 /obj/machinery/light/rogue/cauldron,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "qaw" = (
 /obj/structure/stairs{
@@ -53296,7 +53686,7 @@
 	pixel_y = 2
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "qjf" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
@@ -53339,6 +53729,11 @@
 "qkr" = (
 /turf/closed/wall/mineral/rogue/stone/blue_moss,
 /area/rogue/under/cavewet/wizarddungeon)
+"qkt" = (
+/turf/open/floor/rogue/rooftop/green/corner1{
+	dir = 9
+	},
+/area/rogue/outdoors/town/roofs/keep)
 "qkG" = (
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/warden)
@@ -53597,7 +53992,7 @@
 "qnC" = (
 /obj/structure/ladder,
 /turf/open/floor/rogue/ruinedwood/turned,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "qnD" = (
 /obj/item/roguebin/trash{
 	pixel_x = 3;
@@ -53853,7 +54248,8 @@
 /obj/item/reagent_containers/food/snacks/grown/apple,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "qqj" = (
 /turf/open/floor/rogue/tile,
@@ -53928,7 +54324,7 @@
 "qso" = (
 /obj/structure/fluff/statue/knight,
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "qst" = (
 /obj/item/rogueweapon/shovel,
 /obj/item/rogueore/coal{
@@ -53947,7 +54343,7 @@
 /area/rogue/under/cavewet)
 "qsx" = (
 /turf/open/floor/rogue/ruinedwood/turned,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "qsQ" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8;
@@ -54583,7 +54979,7 @@
 	},
 /obj/structure/fluff/nest,
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "qCk" = (
 /obj/structure/curtain/brown,
 /turf/open/floor/rogue/concrete,
@@ -54609,7 +55005,7 @@
 /obj/item/rogueweapon/woodstaff,
 /obj/item/rogueweapon/woodstaff,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "qCr" = (
 /obj/item/natural/bundle/stick,
 /obj/item/natural/bundle/stick,
@@ -54789,7 +55185,7 @@
 "qFC" = (
 /obj/structure/chair/wood/rogue,
 /turf/open/floor/rogue/tile,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "qFD" = (
 /obj/effect/decal/cobbleedge{
 	dir = 1;
@@ -54803,7 +55199,7 @@
 "qFK" = (
 /obj/structure/fluff/statue/gargoyle/moss,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "qFU" = (
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/blocks,
@@ -54974,7 +55370,8 @@
 "qJQ" = (
 /turf/open/floor/carpet/stellar,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "qJR" = (
 /turf/closed/wall/mineral/rogue/decostone/mossy/red/long,
@@ -55152,7 +55549,7 @@
 "qNa" = (
 /obj/structure/well,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "qNc" = (
 /obj/effect/decal/cleanable/dirt/cobweb{
 	dir = 1
@@ -55213,7 +55610,8 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "qOp" = (
 /obj/structure/flora/roguegrass,
@@ -55340,7 +55738,8 @@
 /obj/item/broom,
 /turf/open/floor/rogue/volcanic,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "qRN" = (
 /obj/structure/fluff/railing/border{
@@ -55375,7 +55774,8 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "qSA" = (
 /obj/structure/fluff/railing/border{
@@ -55663,7 +56063,8 @@
 	icon_state = "greenstone"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "qXX" = (
 /obj/structure/closet/crate/roguecloset{
@@ -55967,7 +56368,8 @@
 /obj/structure/closet/crate/chest,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "rde" = (
 /obj/structure/closet/crate/roguecloset{
@@ -56162,7 +56564,8 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "rhe" = (
 /obj/structure/bars/grille,
@@ -56385,7 +56788,7 @@
 "rlC" = (
 /obj/machinery/light/rogue/firebowl/standing/green,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "rlK" = (
 /obj/item/grown/log/tree,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -56399,7 +56802,8 @@
 	},
 /turf/open/floor/carpet/stellar,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "rlN" = (
 /obj/structure/table/wood/poor,
@@ -56708,12 +57112,13 @@
 	icon_state = "horzw"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "rqm" = (
 /obj/structure/fermentation_keg/water,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "rqt" = (
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cavewet)
@@ -56751,6 +57156,9 @@
 	},
 /turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/town/bath)
+"rqJ" = (
+/turf/closed/wall/mineral/rogue/craftstone,
+/area/rogue/outdoors/town/roofs/keep)
 "rqO" = (
 /obj/structure/rack/rogue,
 /obj/item/natural/feather,
@@ -57081,7 +57489,7 @@
 	pixel_y = 32
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "ruJ" = (
 /obj/structure/roguemachine/crier,
 /turf/open/floor/rogue/woodturned,
@@ -57190,10 +57598,12 @@
 /obj/structure/fluff/walldeco/church/line{
 	dir = 8
 	},
-/obj/machinery/light/roguestreet/orange/walllamp{
-	dir = 4
+/obj/structure/lever/wall{
+	dir = 8;
+	name = "External Shutters";
+	redstone_id = "stw_out"
 	},
-/turf/open/floor/rogue/churchmarble,
+/turf/open/floor/carpet/inn,
 /area/rogue/indoors/town/manor/rockhill)
 "rwI" = (
 /obj/structure/fluff/railing/border{
@@ -57307,7 +57717,8 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "rzo" = (
 /obj/structure/fluff/railing/border{
@@ -57359,7 +57770,8 @@
 "rAz" = (
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "rAA" = (
 /turf/closed/wall/mineral/rogue/pipe{
@@ -57575,7 +57987,8 @@
 "rDv" = (
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "rDC" = (
 /obj/structure/mineral_door/wood{
@@ -57731,7 +58144,8 @@
 	icon_state = "greenstone"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "rHl" = (
 /obj/structure/mineral_door/wood/donjon{
@@ -57855,7 +58269,7 @@
 	lockid = "walls"
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "rIG" = (
 /obj/structure/flora/roguegrass/bush,
 /turf/open/floor/rogue/grassyel,
@@ -57887,7 +58301,8 @@
 	},
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "rJc" = (
 /obj/structure/table/wood/poor,
@@ -58067,6 +58482,12 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/church)
+"rLP" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/town/roofs/keep)
 "rLQ" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 4
@@ -58242,7 +58663,8 @@
 	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "rOi" = (
 /obj/item/roguekey/nightmaiden{
@@ -58304,7 +58726,8 @@
 /obj/item/natural/feather,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "rPg" = (
 /obj/structure/bell_common{
@@ -58584,7 +59007,8 @@
 /obj/item/clothing/suit/roguetown/shirt/robe/mageblue,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "rTC" = (
 /turf/closed/wall/mineral/rogue/stone,
@@ -58927,7 +59351,8 @@
 /obj/structure/rack/rogue/shelf/biggest,
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "rZf" = (
 /obj/effect/landmark/events/haunts,
@@ -58938,6 +59363,10 @@
 	icon_state = "roofg"
 	},
 /area/rogue/outdoors/town/roofs)
+"rZl" = (
+/obj/structure/bars/cemetery,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/exposed/town/keep)
 "rZq" = (
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/cobble,
@@ -59260,6 +59689,13 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/town/cell)
+"sej" = (
+/obj/item/carvedgem/turq/statue{
+	pixel_x = -1;
+	pixel_y = 4
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cavewet)
 "seu" = (
 /obj/structure/vine,
 /turf/open/floor/rogue/grassyel,
@@ -59294,7 +59730,8 @@
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "seS" = (
 /obj/structure/fluff/railing/wood{
@@ -59392,6 +59829,11 @@
 /obj/machinery/gear_painter,
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/rtfield/rockhill)
+"sfR" = (
+/turf/open/floor/rogue/tile{
+	icon_state = "greenstone"
+	},
+/area/rogue/under/cavewet)
 "sfX" = (
 /obj/structure/stairs/stone{
 	dir = 1
@@ -59602,7 +60044,8 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "sjc" = (
 /obj/item/natural/poo/horse,
@@ -59938,7 +60381,8 @@
 /obj/structure/table/vtable,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "soz" = (
 /turf/closed/wall/mineral/rogue/decostone/cand,
@@ -60171,7 +60615,7 @@
 "ssZ" = (
 /obj/effect/wisp/prestidigitation,
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "stb" = (
 /obj/structure/fluff/railing/corner,
 /turf/open/floor/rogue/dirt,
@@ -60513,6 +60957,12 @@
 /obj/effect/landmark/start/gravedigger,
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/town/church/chapel)
+"sxy" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/exposed/town/keep)
 "sxC" = (
 /obj/machinery/light/rogue/hearth,
 /turf/open/floor/rogue/underworld/road,
@@ -60919,7 +61369,7 @@
 /obj/structure/flora/roguegrass/bush/wall/tall,
 /obj/structure/flora/roguegrass/bush,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "sEV" = (
 /obj/structure/fluff/railing/border{
 	pixel_y = -8
@@ -60943,6 +61393,11 @@
 	},
 /turf/open/floor/rogue/grassgrey,
 /area/rogue/outdoors/bograt/above)
+"sFk" = (
+/obj/structure/flora/roguegrass/bush,
+/obj/structure/flora/roguegrass/bush/wall/tall,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/exposed/town/keep)
 "sFo" = (
 /obj/structure/fluff/walldeco/painting/seraphina{
 	pixel_x = 32
@@ -61129,7 +61584,8 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "sHK" = (
 /obj/structure/fluff/statue/knight/interior/r,
@@ -61572,11 +62028,15 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors)
 "sOx" = (
-/obj/structure/stairs/stone{
-	dir = 8
+/obj/structure/fluff/railing/border{
+	dir = 5
 	},
-/turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/manor/rockhill)
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	pixel_x = 10
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/outdoors/town/rockhill)
 "sOF" = (
 /obj/structure/chair/wood/rogue,
 /turf/open/floor/carpet/royalblack,
@@ -61850,6 +62310,13 @@
 /obj/structure/fluff/railing/corner/south_west,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/town/church/basement)
+"sTA" = (
+/obj/structure/feedinghole{
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/town/manor/rockhill)
 "sTD" = (
 /obj/structure/fluff/railing/border{
 	dir = 1
@@ -61865,12 +62332,9 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/tavern)
 "sTJ" = (
-/obj/structure/fluff/walldeco/steward{
-	name = "Steward";
-	pixel_x = -3
-	},
+/obj/structure/flora/roguegrass/bush/wall/tall,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "sTU" = (
 /obj/structure/fluff/walldeco/stone,
 /turf/closed/wall/mineral/rogue/decostone/long{
@@ -61906,7 +62370,8 @@
 	dir = 8
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "sVb" = (
 /obj/structure/flora/roguegrass,
@@ -62168,7 +62633,7 @@
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/roguegrass/herb/rosa,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "sZm" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -62295,7 +62760,7 @@
 "tbi" = (
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "tbs" = (
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/bath)
@@ -62350,7 +62815,7 @@
 /obj/structure/table/wood/poor,
 /obj/item/candle/skull/lit,
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "tbV" = (
 /obj/structure/fluff/railing/border{
 	dir = 8
@@ -62418,6 +62883,11 @@
 /obj/effect/spawner/lootdrop/roguetown/sewers,
 /turf/open/floor/rogue/concrete,
 /area/rogue/under/town/basement)
+"tcC" = (
+/obj/structure/table/wood/poor,
+/obj/item/candle/gold/lit,
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/town/manor/rockhill)
 "tcI" = (
 /obj/machinery/anvil/crafted,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
@@ -62504,7 +62974,8 @@
 	},
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "teb" = (
 /obj/structure/fluff/railing/border{
@@ -62532,7 +63003,8 @@
 /obj/item/paper/scroll,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "tel" = (
 /obj/machinery/light/rogue/wallfire/candle/r,
@@ -62671,7 +63143,8 @@
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "thi" = (
 /obj/structure/flora/newtree,
@@ -63244,6 +63717,12 @@
 	},
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/town/shop)
+"tqi" = (
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/exposed/town/keep)
 "tqo" = (
 /obj/structure/stairs/stone,
 /obj/structure/fluff/railing/border{
@@ -63256,7 +63735,8 @@
 /obj/structure/fermentation_keg/water,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "tqA" = (
 /obj/structure/fermentation_keg/random/beer,
@@ -63365,7 +63845,8 @@
 /obj/structure/chair/wood/rogue,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "tsd" = (
 /turf/open/floor/rogue/ruinedwood/platform,
@@ -63529,7 +64010,8 @@
 "tuP" = (
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "tuU" = (
 /obj/structure/rack/rogue/shelf,
@@ -63713,7 +64195,8 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "txm" = (
 /obj/structure/bars,
@@ -63842,7 +64325,8 @@
 /obj/effect/decal/cleanable/roguerune/arcyne/summoning/mid,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "tzy" = (
 /obj/structure/rack/rogue,
@@ -63851,7 +64335,7 @@
 /obj/item/rogueweapon/mace/wsword,
 /obj/item/rogueweapon/mace/wsword,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "tzK" = (
 /obj/structure/flora/roguetree,
 /turf/open/floor/rogue/dirt/road,
@@ -64235,7 +64719,8 @@
 /obj/item/clothing/suit/roguetown/shirt/robe/magered,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "tGp" = (
 /obj/effect/landmark/start/villager{
@@ -64439,7 +64924,8 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "tIK" = (
 /obj/structure/fluff/railing/wood{
@@ -64620,7 +65106,7 @@
 "tLI" = (
 /obj/structure/flora/roguegrass/herb/salvia,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "tLJ" = (
 /obj/structure/rack/rogue,
 /obj/item/rogueweapon/spear,
@@ -64833,7 +65319,7 @@
 	},
 /obj/structure/flora/roguegrass/herb/rosa,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "tOU" = (
 /obj/structure/fluff/walldeco/moon{
 	pixel_x = -32
@@ -64943,7 +65429,8 @@
 	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "tQV" = (
 /mob/living/carbon/human/species/skeleton/npc/pirate,
@@ -66176,7 +66663,7 @@
 	pixel_y = 7
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "ump" = (
 /turf/open/floor/rogue/rooftop/green/corner1{
 	dir = 5
@@ -66295,6 +66782,12 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors)
+"uou" = (
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/outdoors/town/roofs/keep)
 "uov" = (
 /obj/machinery/light/roguestreet/orange{
 	pixel_x = 18;
@@ -66576,6 +67069,10 @@
 /obj/item/reagent_containers/food/snacks/smallrat,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/cavewet)
+"usR" = (
+/obj/item/roguebin/water,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/town/roofs/keep)
 "usY" = (
 /obj/structure/bookcase/random,
 /turf/open/floor/rogue/cobble,
@@ -66632,7 +67129,7 @@
 	dir = 1
 	},
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "utV" = (
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/town/cell)
@@ -66775,7 +67272,8 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "uvY" = (
 /turf/open/transparent/openspace,
@@ -66805,6 +67303,12 @@
 /obj/item/reagent_containers/glass/bowl,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/church)
+"uwC" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/town/roofs/keep)
 "uwJ" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -66816,7 +67320,7 @@
 	dir = 9
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "uwQ" = (
 /turf/open/transparent/openspace,
 /area/rogue/under/town/basement/keep)
@@ -66888,7 +67392,8 @@
 	icon_state = "greenstone"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "uxC" = (
 /obj/structure/flora/roguetree/pine,
@@ -67244,14 +67749,8 @@
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/bograt/south)
 "uFt" = (
-/obj/structure/fluff/walldeco/church/line{
-	dir = 8
-	},
-/obj/structure/chair/wood/rogue/fancy{
-	dir = 4
-	},
-/turf/open/floor/carpet/inn,
-/area/rogue/indoors/town/manor/rockhill)
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/exposed/town/keep)
 "uFv" = (
 /obj/item/reagent_containers/food/snacks/crow{
 	dir = 8
@@ -67435,7 +67934,8 @@
 "uIk" = (
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "uIv" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/infernal/imp,
@@ -67467,7 +67967,8 @@
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "uIU" = (
 /obj/structure/roguewindow/openclose/reinforced{
@@ -67584,7 +68085,7 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/roguegrass/herb/salvia,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "uKy" = (
 /obj/item/storage/roguebag,
 /turf/open/floor/rogue/dirt/road,
@@ -67683,7 +68184,8 @@
 /obj/item/reagent_containers/glass/bottle,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "uMk" = (
 /turf/closed/wall/mineral/rogue/stone,
@@ -67799,7 +68301,8 @@
 /obj/item/roguebin/water,
 /turf/open/floor/rogue/greenstone/runed,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "uNL" = (
 /obj/structure/closet/crate/drawer,
@@ -67878,7 +68381,8 @@
 	icon_state = "vertw"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "uOH" = (
 /obj/item/clothing/neck/roguetown/psicross/noc{
@@ -67979,7 +68483,8 @@
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "uQo" = (
 /obj/structure/fluff/railing/border{
@@ -68132,7 +68637,8 @@
 /obj/item/bedsheet/rogue/fabric_double,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "uSG" = (
 /obj/structure/roguewindow/openclose/reinforced{
@@ -68411,14 +68917,10 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/rtfield/rockhill)
 "uWM" = (
-/obj/structure/fluff/walldeco/church/line{
+/turf/open/floor/rogue/rooftop/green{
 	dir = 1
 	},
-/obj/structure/fluff/walldeco/church/line{
-	dir = 8
-	},
-/turf/open/floor/carpet/inn,
-/area/rogue/indoors/town/manor/rockhill)
+/area/rogue/outdoors/town/roofs/keep)
 "uWV" = (
 /obj/structure/roguewindow/openclose/reinforced{
 	dir = 4
@@ -68896,7 +69398,7 @@
 	dir = 1
 	},
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "vfN" = (
 /obj/machinery/gear_painter,
 /turf/open/floor/rogue/tile/bath{
@@ -68917,7 +69419,7 @@
 	dir = 8
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "vfT" = (
 /obj/machinery/light/rogue/torchholder{
 	dir = 1
@@ -68934,7 +69436,7 @@
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/roguegrass/bush/wall,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "vgo" = (
 /obj/structure/mineral_door/wood/red{
 	locked = 1;
@@ -69045,7 +69547,7 @@
 "viS" = (
 /obj/item/trash/applecore,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "viT" = (
 /obj/machinery/light/rogue/smelter/hiron,
 /turf/open/floor/rogue/blocks,
@@ -69389,7 +69891,7 @@
 "voY" = (
 /obj/structure/ladder,
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/indoors/town/manor/rockhill)
 "vpa" = (
 /obj/structure/stairs,
 /turf/open/floor/rogue/ruinedwood{
@@ -69408,7 +69910,7 @@
 	},
 /obj/structure/fluff/nest,
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "vpi" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/structure/chair/smallbench{
@@ -69511,7 +70013,8 @@
 	},
 /turf/open/floor/carpet/stellar,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "vqG" = (
 /turf/closed/wall/mineral/rogue/stone/moss,
@@ -70358,7 +70861,7 @@
 	pixel_y = 10
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "vDa" = (
 /obj/machinery/light/rogue/oven/south,
 /obj/machinery/light/rogue/hearth{
@@ -70556,7 +71059,7 @@
 /obj/item/reagent_containers/glass/cup/wooden,
 /obj/item/reagent_containers/glass/cup/wooden,
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "vHg" = (
 /obj/structure/roguewindow/openclose,
 /turf/open/floor/rogue/woodturned,
@@ -70575,7 +71078,8 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "vHF" = (
 /obj/structure/closet/crate/roguecloset{
@@ -70721,7 +71225,8 @@
 "vJv" = (
 /turf/open/floor/rogue/grasscold,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "vJA" = (
 /obj/structure/table/wood/long_table,
@@ -70757,7 +71262,7 @@
 	dir = 1
 	},
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "vJO" = (
 /obj/structure/mineral_door/bars,
 /turf/open/floor/rogue/naturalstone,
@@ -71125,7 +71630,8 @@
 /obj/structure/chair/bench/couch,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "vPY" = (
 /obj/structure/fluff/walldeco/bigpainting{
@@ -71380,10 +71886,9 @@
 	dir = 10;
 	pixel_y = -3
 	},
-/obj/structure/fluff/walldeco/church/line{
-	dir = 1
+/turf/open/floor/rogue/tile{
+	icon_state = "bfloorz"
 	},
-/turf/open/floor/carpet/inn,
 /area/rogue/indoors/town/manor/rockhill)
 "vUi" = (
 /obj/structure/fluff/railing/border{
@@ -71391,6 +71896,9 @@
 	},
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/tavern)
+"vUt" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/exposed/town/keep)
 "vUw" = (
 /obj/structure/chair/wood/rogue,
 /turf/open/floor/rogue/ruinedwood,
@@ -71440,7 +71948,8 @@
 	icon_state = "horzw"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "vVy" = (
 /mob/living/carbon/human/species/skeleton/npc/rockhill,
@@ -71533,9 +72042,10 @@
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/town/bath)
 "vXU" = (
-/obj/structure/table/wood/poor,
-/turf/open/floor/rogue/concrete,
-/area/rogue/indoors/town/manor/rockhill)
+/turf/open/floor/rogue/rooftop/green{
+	dir = 4
+	},
+/area/rogue/outdoors/town/roofs/keep)
 "vXX" = (
 /obj/structure/fluff/statue/small{
 	pass_flags = 1
@@ -71550,7 +72060,8 @@
 /obj/item/clothing/suit/roguetown/shirt/robe/mage,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "vYh" = (
 /obj/structure/rack/rogue,
@@ -71880,7 +72391,7 @@
 	pixel_x = -8
 	},
 /turf/open/transparent/openspace,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "wbZ" = (
 /obj/structure/mineral_door/wood/deadbolt{
 	dir = 8;
@@ -71913,7 +72424,8 @@
 /obj/item/spellbook_unfinished/pre_arcyne,
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "wcx" = (
 /obj/structure/fluff/railing/border{
@@ -72107,7 +72619,7 @@
 	pixel_y = 2
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "wgg" = (
 /obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/blocks/stonered/tiny,
@@ -72503,7 +73015,8 @@
 	icon_state = "horzw"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "wmq" = (
 /obj/structure/fluff/railing/border{
@@ -72513,7 +73026,8 @@
 	icon_state = "greenstone"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "wmA" = (
 /obj/structure/flora/roguegrass,
@@ -72664,7 +73178,8 @@
 	},
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "woC" = (
 /obj/structure/bed/rogue/inn/double{
@@ -72735,7 +73250,8 @@
 	icon_state = "greenstone"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "wpu" = (
 /turf/open/water/bath,
@@ -72939,6 +73455,11 @@
 /obj/structure/flora/roguegrass/herb/salvia,
 /turf/open/floor/rogue/grass,
 /area/rogue/indoors/town/church)
+"wte" = (
+/turf/open/floor/rogue/rooftop/green/corner1{
+	dir = 8
+	},
+/area/rogue/outdoors/town/roofs/keep)
 "wti" = (
 /obj/structure/fluff/walldeco/customflag/rockhill{
 	pixel_y = 32
@@ -73120,7 +73641,8 @@
 /obj/structure/fluff/walldeco/mageguild2,
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "wwz" = (
 /obj/structure/closet/crate/drawer{
@@ -73180,7 +73702,8 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "wxn" = (
 /obj/structure/fluff/railing/wood{
@@ -73303,7 +73826,8 @@
 "wyk" = (
 /turf/open/floor/rogue/greenstone/runed,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "wyl" = (
 /obj/structure/stairs/stone,
@@ -73325,7 +73849,7 @@
 	dir = 4
 	},
 /turf/open/floor/rogue/woodturned,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "wyS" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -73416,7 +73940,8 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "wAu" = (
 /obj/structure/stairs,
@@ -73429,7 +73954,8 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "wAC" = (
 /obj/structure/stairs,
@@ -73470,7 +73996,7 @@
 "wBf" = (
 /obj/effect/wisp/prestidigitation,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "wBz" = (
 /mob/living/carbon/human/species/skeleton/npc/pirate,
 /turf/open/floor/rogue/wood,
@@ -73517,7 +74043,11 @@
 /turf/open/floor/rogue/rooftop/green{
 	dir = 4
 	},
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
+"wBR" = (
+/obj/structure/mineral_door/bars,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/exposed/town/keep)
 "wBW" = (
 /obj/machinery/light/rogue/firebowl/standing,
 /turf/open/floor/rogue/twig,
@@ -73578,7 +74108,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "wCP" = (
 /obj/item/reagent_containers/glass/mortar,
 /obj/item/pestle,
@@ -73793,7 +74323,7 @@
 	pixel_y = 26
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "wFV" = (
 /obj/item/grown/log/tree,
 /turf/open/floor/rogue/ruinedwood,
@@ -74027,7 +74557,7 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/roguegrass/herb/salvia,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "wJo" = (
 /obj/structure/curtain/magenta,
 /obj/structure/chair/stool/rogue{
@@ -74171,7 +74701,8 @@
 /obj/effect/decal/cleanable/roguerune/arcyne/enchantment,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "wNb" = (
 /obj/structure/stairs/stone,
@@ -74313,7 +74844,7 @@
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/roguegrass/herb/salvia,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "wOy" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/roguegrass/herb/salvia,
@@ -74408,7 +74939,7 @@
 	pixel_y = 7
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "wPu" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -74420,7 +74951,8 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "wPz" = (
 /obj/structure/fluff/railing/fence{
@@ -74677,7 +75209,8 @@
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
 /turf/open/floor/rogue/volcanic,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "wTx" = (
 /obj/machinery/light/roguestreet/orange/walllamp{
@@ -75156,6 +75689,10 @@
 "xbD" = (
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors)
+"xbO" = (
+/obj/structure/fluff/railing/border,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/exposed/town/keep)
 "xcd" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
@@ -75301,7 +75838,7 @@
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/roguegrass/bush/wall,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "xez" = (
 /obj/structure/fluff/railing/border{
 	dir = 5
@@ -75383,7 +75920,8 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "xfQ" = (
 /obj/structure/table/wood/poor,
@@ -75437,7 +75975,8 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "xhp" = (
 /obj/structure/mineral_door/wood/red{
@@ -75555,9 +76094,8 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/beach/harbor)
 "xiN" = (
-/obj/item/roguebin/water/gross,
-/turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/town/roofs/keep)
 "xiQ" = (
 /obj/structure/bed/rogue/shit,
 /obj/effect/landmark/start/prisonerr{
@@ -75696,6 +76234,9 @@
 "xlm" = (
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/manor/rockhill)
+"xlo" = (
+/turf/closed/wall/mineral/rogue/craftstone,
+/area/rogue/outdoors/exposed/town/keep)
 "xls" = (
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/manor{
@@ -75790,7 +76331,7 @@
 	dir = 8
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "xmQ" = (
 /obj/structure/fluff/walldeco/chains,
 /obj/effect/decal/cleanable/blood/old,
@@ -76054,6 +76595,10 @@
 /obj/structure/table/wood/poor,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors)
+"xrq" = (
+/obj/structure/flora/roguegrass/bush,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/exposed/town/keep)
 "xrr" = (
 /obj/structure/fluff/railing/border{
 	dir = 10
@@ -76135,7 +76680,8 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "xsy" = (
 /obj/structure/rack/rogue,
@@ -76268,7 +76814,8 @@
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "xuZ" = (
 /obj/effect/decal/cleanable/debris/woody,
@@ -76436,7 +76983,8 @@
 	icon_state = "horzw"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "xxv" = (
 /turf/open/water/river{
@@ -76491,7 +77039,8 @@
 "xyC" = (
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "xyD" = (
 /obj/item/roguecoin/silver/pile,
@@ -76923,7 +77472,7 @@
 	pixel_y = 26
 	},
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "xEE" = (
 /obj/structure/fluff/railing/border{
 	dir = 6
@@ -77175,6 +77724,11 @@
 "xIS" = (
 /turf/closed/wall/mineral/rogue/craftstone,
 /area/rogue/indoors/inq/basement)
+"xIU" = (
+/turf/open/floor/rogue/rooftop/green/corner1{
+	dir = 10
+	},
+/area/rogue/outdoors/town/roofs/keep)
 "xIY" = (
 /obj/structure/rack/rogue,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
@@ -77385,19 +77939,9 @@
 /turf/open/water/bath,
 /area/rogue/indoors/town/church)
 "xMy" = (
-/obj/structure/table/wood/poor,
-/obj/structure/fluff/walldeco/church/line{
-	dir = 4;
-	pixel_x = 2
-	},
-/obj/item/paper,
-/obj/machinery/light/rogue/wallfire/candle/blue/l{
-	pixel_x = 32
-	},
-/obj/item/candle/gold/lit,
-/obj/item/natural/feather,
-/turf/open/floor/rogue/concrete,
-/area/rogue/indoors/town/manor/rockhill)
+/obj/structure/bars/cemetery,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/exposed/town/keep)
 "xMB" = (
 /obj/structure/stairs/stone{
 	dir = 4
@@ -77440,7 +77984,7 @@
 /turf/closed/wall/mineral/rogue/stone/window{
 	icon_state = "stonewindow"
 	},
-/area/rogue/outdoors/town/roofs)
+/area/rogue/outdoors/town/roofs/keep)
 "xNj" = (
 /obj/structure/stairs,
 /turf/open/floor/rogue/twig,
@@ -77576,7 +78120,8 @@
 	},
 /turf/open/floor/carpet/inn,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "xQg" = (
 /obj/structure/closet/crate/drawer,
@@ -77753,7 +78298,8 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "xSV" = (
 /obj/structure/closet/crate/drawer/inn{
@@ -77778,7 +78324,7 @@
 	},
 /obj/structure/fluff/nest,
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "xTm" = (
 /obj/structure/mineral_door/wood{
 	locked = 1;
@@ -77871,6 +78417,13 @@
 /obj/structure/vine,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woodsrat/north)
+"xUh" = (
+/obj/effect/wisp/prestidigitation{
+	pixel_x = -5;
+	pixel_y = 9
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet)
 "xUi" = (
 /obj/structure/chair/wood/rogue/chair3,
 /turf/open/floor/rogue/cobble,
@@ -77922,7 +78475,7 @@
 	pixel_x = -20
 	},
 /turf/open/floor/rogue/cobble/mossy,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "xVw" = (
 /obj/machinery/light/rogue/wallfire/candle,
 /turf/open/floor/carpet/royalblack,
@@ -78055,7 +78608,8 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "xXO" = (
 /obj/structure/fluff/railing/fence{
@@ -78185,8 +78739,12 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
+"xZt" = (
+/turf/closed/mineral/rogue,
+/area/rogue/indoors/town/manor/rockhill)
 "xZv" = (
 /obj/item/roguebin/water/gross,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -78268,7 +78826,7 @@
 	pixel_y = 2
 	},
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "yba" = (
 /obj/structure/closet/crate/roguecloset,
 /obj/item/candle/yellow,
@@ -78379,7 +78937,7 @@
 	name = "Vishar"
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/outdoors/exposed/town/keep)
 "ycI" = (
 /obj/structure/fluff/walldeco/rpainting{
 	pixel_x = -32
@@ -78884,7 +79442,8 @@
 	icon_state = "horzw"
 	},
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "ykd" = (
 /obj/item/reagent_containers/food/snacks/crow{
@@ -78957,7 +79516,8 @@
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician{
-	name = "Mage's Tower"
+	name = "Mage's Tower";
+	first_time_text = "Tower of the Magos"
 	})
 "ykS" = (
 /turf/open/floor/rogue/metal/barograte,
@@ -243681,16 +244241,16 @@ vRu
 vRu
 vRu
 vRu
-pOf
-pOf
+uDH
+uDH
 cmH
 dAf
 cmH
 vRu
 vRu
 vRu
-pOf
-pOf
+uDH
+uDH
 cmH
 uEX
 gLf
@@ -244107,22 +244667,22 @@ vRu
 vRu
 vRu
 vRu
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
 cmH
 uEX
 gLf
@@ -244524,37 +245084,37 @@ vRu
 vRu
 vRu
 vRu
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
 lrs
 lrs
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
 cmH
 mXk
 gLf
@@ -244955,38 +245515,38 @@ vRu
 vRu
 vRu
 vRu
-pOf
-pOf
-pOf
-hHW
+uDH
+uDH
+uDH
+fMw
 iyZ
-pOf
-pOf
-hHW
+uDH
+uDH
+fMw
 iyZ
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
 lrs
 lrs
 lrs
-pOf
-pOf
-pOf
-pOf
-pOf
+uDH
+uDH
+uDH
+uDH
+uDH
 lrs
-pOf
+uDH
 mXk
 gLf
 gLf
@@ -245386,39 +245946,39 @@ vRu
 vRu
 uDH
 fMw
-pOf
-pOf
-pOf
-pOf
-hHW
+uDH
+uDH
+uDH
+uDH
+fMw
 iyZ
-pOf
-pOf
-hHW
+uDH
+uDH
+fMw
 iyZ
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
 lrs
 lrs
-pOf
+uDH
 uEX
 gLf
 lrs
@@ -245818,39 +246378,39 @@ vRu
 tTj
 cmH
 vRu
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
+uDH
+rRb
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
 mXk
 mXk
 uEX
 mXk
 fIL
 uEX
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
-pOf
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
+uDH
 dAf
-pOf
-pOf
-pOf
+uDH
+uDH
+uDH
 dAf
 lrs
-hHW
+fMw
 uEX
 gLf
 lrs
@@ -246270,18 +246830,18 @@ gLf
 gLf
 fIL
 mXk
-pOf
-pOf
-pOf
-hHW
-pOf
+uDH
+uDH
+uDH
+fMw
+uDH
 mXk
 uEX
 uEX
 uEX
-pOf
-hHW
-pOf
+uDH
+fMw
+uDH
 aLO
 uEX
 udz
@@ -247115,7 +247675,7 @@ qAw
 uEX
 vRu
 fIL
-cmH
+gRz
 cmH
 cmH
 cmH
@@ -247547,7 +248107,7 @@ uEX
 uEX
 nBA
 uEX
-gRz
+rRb
 cmH
 gRz
 cmH
@@ -253985,7 +254545,7 @@ vRu
 vRu
 vRu
 fjw
-fIc
+fjw
 fjw
 vRu
 vRu
@@ -255285,7 +255845,7 @@ vRu
 vRu
 vRu
 fjw
-fjw
+fIc
 fjw
 fjw
 vRu
@@ -283077,7 +283637,7 @@ ilZ
 jsk
 ilZ
 vTW
-lhb
+vTW
 vRu
 vRu
 vRu
@@ -283511,7 +284071,7 @@ ilZ
 vTW
 vTW
 vTW
-lhb
+vTW
 vRu
 vRu
 vTW
@@ -348191,11 +348751,11 @@ vIa
 vIa
 vIa
 vIa
+cPO
 vIa
+cPO
 vIa
-vIa
-vIa
-vIa
+cPO
 vIa
 vIa
 vIa
@@ -348622,13 +349182,13 @@ vIa
 vIa
 vIa
 vIa
-vIa
-vIa
-vIa
-vIa
-vIa
-vIa
-vIa
+cPO
+cRS
+bTL
+sej
+bCC
+cRS
+cPO
 vIa
 vIa
 vIa
@@ -349054,13 +349614,13 @@ vIa
 vIa
 vIa
 vIa
-vIa
-vIa
-vIa
-vIa
-vIa
-vIa
-vIa
+aaf
+cRS
+cRS
+cRS
+cRS
+cRS
+aaf
 vIa
 vIa
 vIa
@@ -349485,15 +350045,15 @@ vIa
 vIa
 vIa
 vIa
-vIa
-vIa
-vIa
-vIa
-vIa
-vIa
-vIa
-vIa
-vIa
+cPO
+aaf
+aaf
+cRS
+cRS
+cRS
+aaf
+xUh
+cPO
 vIa
 vIa
 vIa
@@ -349917,14 +350477,14 @@ vIa
 vIa
 vIa
 vIa
-vIa
-vIa
-vIa
-vIa
-vIa
-vIa
-vIa
-vIa
+dwD
+jsi
+aaf
+sfR
+cNO
+sfR
+aaf
+aaf
 vIa
 vIa
 vIa
@@ -350350,13 +350910,13 @@ vIa
 vIa
 vIa
 vIa
-vIa
-vIa
-vIa
-vIa
-vIa
-vIa
-vIa
+lQB
+gnV
+aaf
+sfR
+aaf
+ccH
+nAI
 vIa
 vIa
 vIa
@@ -350773,9 +351333,9 @@ vIa
 vIa
 vIa
 vIa
-rfx
-rfx
-rfx
+gPy
+gPy
+gPy
 vIa
 vIa
 vIa
@@ -350783,11 +351343,11 @@ vIa
 vIa
 vIa
 vIa
-vIa
-vIa
-vIa
-vIa
-vIa
+lQB
+aaf
+sfR
+aaf
+nAI
 vIa
 vIa
 vIa
@@ -351204,29 +351764,29 @@ vIa
 vIa
 vIa
 vIa
-rfx
-rfx
+gPy
+gPy
 voY
-rfx
-rfx
-rfx
-pQd
-pQd
-pQd
-pQd
-pQd
-pQd
-pQd
-pQd
-pQd
-pQd
-pQd
-pQd
-pQd
-pQd
-pQd
-pQd
-rfx
+gPy
+gPy
+gPy
+xZt
+xZt
+xZt
+xZt
+xZt
+xZt
+dds
+yhZ
+dds
+xZt
+xZt
+xZt
+xZt
+xZt
+xZt
+xZt
+gPy
 vIa
 vIa
 vIa
@@ -351636,29 +352196,29 @@ vIa
 vIa
 vIa
 vIa
-rfx
-wbg
-wbg
-wbg
-wbg
-wbg
-wVI
-wVI
+gPy
+yhZ
+yhZ
+yhZ
+yhZ
+yhZ
+dds
+dds
 fhh
-wVI
-wVI
-wbg
-wbg
-wVI
-wVI
-wbg
-wVI
-wVI
-gmG
-wbg
-wbg
-wbg
-rfx
+dds
+dds
+yhZ
+yhZ
+dds
+dds
+yhZ
+dds
+dds
+pOG
+yhZ
+yhZ
+yhZ
+gPy
 vIa
 vIa
 vIa
@@ -352068,30 +352628,30 @@ vIa
 vIa
 vIa
 vIa
-rfx
-wbg
-wbg
+gPy
+yhZ
+yhZ
 pTG
-wbg
-wbg
-wbg
-wVI
-rfx
-wVI
-wbg
+yhZ
+yhZ
+yhZ
+dds
+gPy
+dds
+yhZ
 pTG
-wbg
-wbg
-wbg
+yhZ
+yhZ
+yhZ
 pTG
-wbg
-wbg
-rfx
-wbg
-wVI
-wbg
-rfx
-rfx
+yhZ
+yhZ
+gPy
+yhZ
+dds
+yhZ
+gPy
+gPy
 vIa
 vIa
 vIa
@@ -352493,37 +353053,37 @@ vIa
 vIa
 vIa
 vIa
-rfx
-rfx
-rfx
-rfx
-rfx
-rfx
-rfx
-rfx
-rfx
-gmG
-rfx
-rfx
-rfx
-rfx
-rfx
-rfx
-rfx
-aOn
-rfx
-aOn
-rfx
-aOn
-rfx
-aOn
-rfx
-rfx
-wbg
+tUS
+hsP
+hsP
+hsP
+hsP
+hsP
+hsP
+gPy
+gPy
+pOG
+gPy
+gPy
+gPy
+gPy
+gPy
+gPy
+gPy
+jNB
+gPy
+jNB
+gPy
+jNB
+gPy
+jNB
+gPy
+gPy
+yhZ
 pTG
-wbg
-wbg
-pQd
+yhZ
+yhZ
+xZt
 vIa
 vIa
 vIa
@@ -352925,7 +353485,7 @@ vIa
 vIa
 vIa
 vIa
-rfx
+tUS
 nSK
 pKR
 pKR
@@ -352933,29 +353493,29 @@ pKR
 pKR
 pKR
 vgn
-yeD
-fnA
-mwE
-mwE
-mwE
+agg
+uFt
+dYd
+dYd
+dYd
 dQJ
-xRC
-mwE
+xMy
+dYd
 viS
-mwE
+dYd
 pco
-mwE
-mwE
+dYd
+dYd
 jZo
 qso
-mwE
+dYd
 viS
-rfx
-rfx
-rfx
-wbg
-wbg
-pQd
+gPy
+gPy
+gPy
+yhZ
+yhZ
+xZt
 vIa
 vIa
 vIa
@@ -353357,37 +353917,37 @@ vIa
 vIa
 vIa
 vIa
-pQd
-fnA
-fnA
+vIa
+uFt
+uFt
 pKR
-fnA
-fnA
-fnA
+uFt
+uFt
+uFt
 xew
 cwM
-fCu
-yeD
-hOh
-mwE
+ejP
+agg
+sTJ
+dYd
 tLI
-xRC
+xMy
 hGg
-aOn
-wbg
-wbg
-wbg
-wbg
-wbg
+oXf
+uFt
+uFt
+pOf
+pOf
+pOf
 eBw
-wbg
-aOn
+uFt
+oXf
 jkw
 tLI
-rfx
-wVI
-wbg
-pQd
+gPy
+dds
+yhZ
+xZt
 vIa
 vIa
 vIa
@@ -353789,37 +354349,37 @@ vIa
 vIa
 vIa
 vIa
-pQd
+vIa
 pKR
-fnA
-fnA
-fnA
+uFt
+uFt
+uFt
 pKR
-mwE
+dYd
 pKR
-hOh
+sTJ
 jOb
-auT
-auT
+mSq
+mSq
 wBf
 dQJ
-tDA
+rZl
 ecB
 jEU
-wbg
+pOf
 ycG
-wbg
+pOf
 fDA
-wbg
-wbg
-wbg
-wbg
-wbg
-aOn
-rfx
-wbg
-wVI
-rfx
+uFt
+uFt
+pOf
+pOf
+uFt
+oXf
+gPy
+yhZ
+dds
+gPy
 vIa
 vIa
 vIa
@@ -354221,7 +354781,7 @@ vIa
 vIa
 vIa
 vIa
-pQd
+vIa
 pKR
 pKR
 iCh
@@ -354229,29 +354789,29 @@ pKR
 pKR
 wBf
 pKR
-hOh
-fnA
+sTJ
+uFt
 iwv
 iwv
-mwE
+dYd
 tLI
-tDA
-aOn
+rZl
+oXf
 bVb
 ede
 jZo
-aOn
-mwE
-mwE
-aOn
-mwE
+oXf
+dYd
+dYd
+oXf
+dYd
 axJ
-wbg
-mwE
-rfx
-wbg
-wbg
-rfx
+pOf
+dYd
+gPy
+yhZ
+yhZ
+gPy
 vIa
 vIa
 vIa
@@ -354653,19 +355213,19 @@ vIa
 vIa
 vIa
 vIa
-pQd
+vIa
 xVd
 pKR
-mwE
-auT
-auT
-mwE
-mwE
-fnA
-fnA
-hOh
-hOh
-mwE
+dYd
+mSq
+mSq
+dYd
+dYd
+uFt
+uFt
+sTJ
+sTJ
+dYd
 dQJ
 cip
 cip
@@ -354677,13 +355237,13 @@ dmS
 dmS
 fkC
 eFa
-mwE
-wbg
+dYd
+pOf
 jkw
-rfx
-njq
-wVI
-rfx
+gPy
+bOK
+dds
+gPy
 vIa
 xAt
 xAt
@@ -355085,19 +355645,19 @@ vIa
 vIa
 vIa
 vIa
-pQd
-fnA
+vIa
+uFt
 pKR
-fnA
+uFt
 xew
 xew
 pKR
-hOh
-hOh
-fnA
-hOh
-mwE
-mwE
+sTJ
+sTJ
+uFt
+sTJ
+dYd
+dYd
 fkC
 fkC
 wpr
@@ -355109,13 +355669,13 @@ uQm
 mfK
 fkC
 dmS
-aOn
-wbg
-mwE
-rfx
-wbg
-wVI
-rfx
+oXf
+pOf
+dYd
+gPy
+yhZ
+dds
+gPy
 xAt
 xAt
 xAt
@@ -355517,19 +356077,19 @@ vIa
 vIa
 vIa
 vIa
-pQd
-fnA
-fnA
-fnA
-fnA
+vIa
+uFt
+uFt
+uFt
+uFt
 vgn
-auT
-mwE
+mSq
+dYd
 pAT
-fnA
+uFt
 vfI
-mwE
-mwE
+dYd
+dYd
 fkC
 fvX
 jkz
@@ -355541,13 +356101,13 @@ awZ
 ocJ
 nmW
 dmS
-aOn
-eBw
-mwE
-rfx
-wbg
-wVI
-rfx
+oXf
+nEV
+dYd
+gPy
+yhZ
+dds
+gPy
 xAt
 xAt
 xAt
@@ -355949,19 +356509,19 @@ vIa
 vIa
 vIa
 vIa
-pQd
-fnA
+vIa
+uFt
 pKR
 pKR
 pKR
 xew
 iwv
-mwE
+dYd
 qFK
 nEV
-fnA
-fnA
-mwE
+uFt
+uFt
+dYd
 cip
 mfK
 rDv
@@ -355973,14 +356533,14 @@ mfK
 rDv
 tqy
 fkC
-aOn
-wbg
-aOn
-rfx
-wbg
-wbg
-rfx
-xAt
+oXf
+uFt
+oXf
+gPy
+yhZ
+yhZ
+gPy
+gPy
 xAt
 xAt
 xAt
@@ -356381,19 +356941,19 @@ vIa
 vIa
 vIa
 vIa
-pQd
+vIa
 xVd
-hOh
-mwE
-mwE
-yeD
-auT
-ekQ
-ekQ
-fnA
-hOh
-auT
-mwE
+sTJ
+dYd
+dYd
+agg
+mSq
+xrq
+xrq
+uFt
+sTJ
+mSq
+dYd
 cip
 ofJ
 ixB
@@ -356405,14 +356965,14 @@ ngj
 rDv
 rDv
 fkC
-aOn
-wbg
-aOn
-rfx
-wbg
-wbg
-rfx
-xAt
+oXf
+pOf
+oXf
+gPy
+yhZ
+yhZ
+yhZ
+gPy
 xAt
 xAt
 xAt
@@ -356813,19 +357373,19 @@ vIa
 vIa
 vIa
 vIa
-pQd
-mwE
-fnA
-fnA
-mwE
-auT
-auT
-mwE
-fnA
-fnA
-hOh
-auT
-auT
+vIa
+dYd
+uFt
+uFt
+dYd
+mSq
+mSq
+dYd
+uFt
+uFt
+sTJ
+mSq
+mSq
 cip
 dqs
 mft
@@ -356837,14 +357397,14 @@ qqf
 itW
 tIH
 fkC
-aOn
-wbg
-mwE
-rfx
-wbg
-wbg
-rfx
-xAt
+oXf
+pOf
+dYd
+gPy
+yhZ
+yhZ
+yhZ
+gPy
 xAt
 xAt
 xAt
@@ -357245,19 +357805,19 @@ vIa
 vIa
 vIa
 vIa
-pQd
-mwE
-hOh
-mwE
-mwE
+vIa
+dYd
+sTJ
+dYd
+dYd
 sED
-bjg
-mwE
-mwE
-fnA
-hOh
+sFk
+dYd
+dYd
+uFt
+sTJ
 kXq
-hOh
+sTJ
 fkC
 mfK
 hot
@@ -357269,14 +357829,14 @@ bfK
 rDv
 rDv
 fkC
-aOn
-wbg
-mwE
-rfx
-wbg
-wbg
-rfx
-xAt
+oXf
+pOf
+dYd
+gPy
+yhZ
+yhZ
+yhZ
+gPy
 xAt
 xAt
 xAt
@@ -357677,19 +358237,19 @@ vIa
 vIa
 vIa
 vIa
-pQd
-mwE
-mwE
+vIa
+dYd
+dYd
 qNa
-mwE
-mwE
+dYd
+dYd
 wBf
-hOh
-hOh
-fnA
-fnA
-fnA
-ekQ
+sTJ
+sTJ
+uFt
+uFt
+uFt
+xrq
 fkC
 lcI
 rDv
@@ -357701,14 +358261,14 @@ mfK
 rDv
 hrf
 fkC
-tDA
-gdv
-tDA
-rfx
-wbg
-wbg
-rfx
-xAt
+rZl
+wBR
+rZl
+gPy
+yhZ
+yhZ
+gPy
+gPy
 xAt
 xAt
 xAt
@@ -358109,19 +358669,19 @@ vIa
 vIa
 vIa
 vIa
-pQd
+vIa
 dQJ
-hOh
-mwE
-mwE
-mwE
-mwE
-hOh
-auT
-fnA
-auT
-fnA
-ekQ
+sTJ
+dYd
+dYd
+dYd
+dYd
+sTJ
+mSq
+uFt
+mSq
+uFt
+xrq
 cip
 mfK
 nTQ
@@ -358133,13 +358693,13 @@ nTQ
 maH
 mfK
 cip
-mwE
-wbg
-mwE
-rfx
-wbg
-wbg
-rfx
+dYd
+pOf
+dYd
+gPy
+yhZ
+yhZ
+gPy
 xAt
 xAt
 xAt
@@ -358541,19 +359101,19 @@ vIa
 vIa
 vIa
 vIa
-pQd
-xRC
-xRC
-xRC
-xRC
-mwE
-xRC
-xRC
-xRC
-fnA
-xRC
-fnA
-xRC
+vIa
+xMy
+xMy
+xMy
+xMy
+dYd
+xMy
+xMy
+xMy
+uFt
+xMy
+uFt
+xMy
 cip
 cip
 mfK
@@ -358565,13 +359125,13 @@ iHl
 uxy
 fkC
 cip
-wbg
-wbg
-mwE
-rfx
-njq
-wbg
-rfx
+pOf
+pOf
+dYd
+gPy
+bOK
+yhZ
+gPy
 xAt
 xAt
 xAt
@@ -358973,21 +359533,21 @@ vIa
 vIa
 vIa
 vIa
-pQd
-rfx
-rfx
-rfx
-mwE
-wbg
-mwE
-mwE
-mwE
-wbg
-wbg
-fnA
-wbg
+vIa
+gPy
+gPy
+gPy
+dYd
+pOf
+dYd
+dYd
+dYd
+pOf
+pOf
+uFt
+pOf
 eBw
-mwE
+dYd
 emy
 fkC
 fkC
@@ -358996,14 +359556,14 @@ fkC
 fkC
 fkC
 emy
-mwE
-wbg
-wbg
-rfx
-rfx
-wbg
-wVI
-rfx
+dYd
+pOf
+pOf
+wrj
+gPy
+yhZ
+dds
+gPy
 xAt
 xAt
 xAt
@@ -359405,38 +359965,38 @@ vIa
 vIa
 vIa
 vIa
-pQd
-rfx
+vIa
+gPy
 voY
-rfx
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-mwE
-tgy
-tgy
+gPy
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+dYd
+vUt
+vUt
 gVD
-wbg
-mwE
-tgy
-mwE
+pOf
+dYd
+vUt
+dYd
 ssZ
-wbg
-wbg
-rfx
-esR
-mRr
-wbg
-wbg
-rfx
-rfx
+pOf
+pOf
+wrj
+wrj
+yhZ
+yhZ
+yhZ
+gPy
+gPy
 xAt
 xAt
 xAt
@@ -359837,38 +360397,38 @@ vIa
 vIa
 vIa
 vIa
-pQd
-rfx
-wVI
-gmG
-wbg
-wbg
-wMH
-vnl
-vnl
-vnl
-xez
-wbg
-wbg
-wbg
-wbg
-mwE
-mwE
-wbg
-wbg
-wbg
-wbg
-mwE
-mwE
-wbg
-wbg
-rfx
-wVI
-wbg
-wVI
-wbg
-wbg
-rfx
+vIa
+gPy
+dds
+pOG
+pOf
+pOf
+dHu
+sxy
+sxy
+sxy
+tqi
+pOf
+pOf
+pOf
+pOf
+dYd
+dYd
+pOf
+pOf
+pOf
+pOf
+dYd
+dYd
+pOf
+pOf
+wrj
+dds
+yhZ
+dds
+yhZ
+yhZ
+gPy
 xAt
 xAt
 xAt
@@ -360269,38 +360829,38 @@ vIa
 vIa
 vIa
 vIa
-pQd
-rfx
-rfx
-rfx
-wbg
-wMH
+vIa
+gPy
+gPy
+gPy
+pOf
+dHu
 aMG
 iwv
-auT
-auT
+mSq
+mSq
 cGr
-xez
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
+tqi
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+nbR
+nbR
+nbR
+pOf
+pOf
+pOf
+nbR
 fhh
-wVI
-wbg
-wVI
-wbg
-wVI
-ocI
+dds
+yhZ
+dds
+yhZ
+dds
+gPy
 xAt
 xAt
 xAt
@@ -360701,38 +361261,38 @@ vIa
 vIa
 vIa
 vIa
-rfx
+tUS
 eLh
-auT
-mwE
-mwE
-ezt
+mSq
+dYd
+dYd
+xbO
 uKv
-hOh
+sTJ
 oHI
-hOh
+sTJ
 uKv
 prW
-mwE
-mwE
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wMH
-vnl
-vnl
-rfx
-wbg
-wbg
-wbg
-wVI
-wbg
-esR
+dYd
+dYd
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+nbR
+nbR
+dHu
+sxy
+sxy
+gPy
+yhZ
+eSy
+gPy
+dds
+yhZ
+wrj
 xAt
 xAt
 xAt
@@ -361151,20 +361711,20 @@ uhQ
 wtF
 wtF
 jTP
-wbg
-wbg
-wbg
-wbg
-ezt
+pOf
+pOf
+pOf
+pOf
+oSV
 uKv
 wJe
-esR
-rfx
-wbg
-wbg
-wbg
-esR
-esR
+wrj
+gPy
+wrj
+wrj
+wrj
+wrj
+wrj
 xAt
 xAt
 xAt
@@ -361583,15 +362143,15 @@ kIS
 sVL
 kIS
 wtF
-wbg
-wbg
-grW
+pOf
+pOf
+nbR
+sTJ
 wrj
-wrj
+wtF
 pfp
 pfp
 jxy
-wtF
 wtF
 wtF
 wtF
@@ -362015,15 +362575,15 @@ rwO
 gDZ
 kIS
 jLG
-wbg
-wbg
+pOf
+pOf
+xlo
 wrj
 wtF
 wtF
-enB
+sTA
 wxw
 cAQ
-eSd
 uOL
 iur
 ogP
@@ -362447,15 +363007,15 @@ rwO
 dya
 kIS
 wtF
-wbg
-wbg
+pOf
+pOf
+sTJ
 jxy
 wxA
 xlm
 uYE
 uYE
-uYE
-uYE
+eSd
 mET
 rWq
 xQs
@@ -362879,15 +363439,15 @@ rwO
 tJU
 kIS
 wtF
-njq
-wbg
+jCm
+pOf
+mSq
 wtF
 ivr
 wye
 uYE
 gFY
 gFY
-uYE
 vUh
 mEU
 nKx
@@ -363311,8 +363871,9 @@ rwO
 emP
 kIS
 qrC
-wbg
-wbg
+pOf
+pOf
+sTJ
 wtF
 uOL
 xWm
@@ -363320,7 +363881,6 @@ uYE
 gFY
 gFY
 uYE
-kBd
 mbM
 jqU
 ghy
@@ -363743,8 +364303,9 @@ kIS
 kIS
 kIS
 wtF
-wbg
-wbg
+pOf
+pOf
+mSq
 wtF
 hOs
 uYE
@@ -363755,9 +364316,8 @@ csp
 mvO
 jDm
 jDm
-jDm
-jDm
 pfp
+xAt
 xAt
 xAt
 eoy
@@ -364175,8 +364735,9 @@ rwO
 gDZ
 kIS
 qrC
-wbg
-wbg
+pOf
+pOf
+sTJ
 jxy
 qhW
 uYE
@@ -364184,15 +364745,14 @@ gFY
 gFY
 gFY
 uYE
-uYE
-qpE
+kBd
 rwF
-uYU
-dtp
+ePf
 pfp
-xwq
 xAt
-jqJ
+xAt
+xAt
+eoy
 wbg
 aOv
 eSt
@@ -364607,24 +365167,24 @@ rwO
 dya
 kIS
 wtF
-wbg
-wbg
+pOf
+pOf
+xlo
 wrj
 pfp
 vcZ
 uYE
 uYE
 fVD
-uWM
-uFt
-pBu
-dsW
-dsW
-etA
-fPA
-wdL
-jrZ
-yhT
+uYE
+jQk
+rco
+tcC
+pfp
+xAt
+xAt
+xAt
+eoy
 fnA
 aOv
 orb
@@ -365039,24 +365599,24 @@ rwO
 tJU
 kIS
 qrC
-wbg
-wbg
-wbg
+pOf
+pOf
+pOf
+sTJ
 wrj
 snF
 snF
 wRk
 eAu
-xMy
-vXU
 eAu
-llU
-dsW
-etA
-itI
-aZT
-aZT
-rtB
+pBu
+qpE
+pfp
+pfp
+xAt
+xAt
+xAt
+eoy
 oIh
 wbg
 lyG
@@ -365471,29 +366031,29 @@ rwO
 emP
 kIS
 wtF
-njq
-wbg
-wbg
+jCm
+pOf
+pOf
 nbR
-wbg
-wbg
-wbg
+mFV
+pOf
+pOf
+pOf
 cUy
-jDm
-jDm
 bVk
-rBl
-bbe
-wrj
-wrj
+uYU
+uYU
+dtp
+pfp
 xwq
 xAt
-eoy
+xAt
+jqJ
 wbg
 esR
 lyG
+lyG
 xan
-xOC
 nJl
 liB
 ftM
@@ -365903,30 +366463,30 @@ kIS
 thm
 kIS
 jLG
-wbg
-wVI
-wbg
-wVI
-wbg
-wVI
-wbg
-wVI
+pOf
+nbR
+pOf
+nbR
+pOf
+nbR
+pOf
+nbR
 sTJ
-esR
 wrj
-gPy
-gPy
-wrj
-hsP
-xAt
-xAt
-eoy
+dsW
+dsW
+etA
+fPA
+wdL
+wdL
+jrZ
+yhT
 wbg
 fnA
+fCu
 lyG
 jdg
 oMa
-liB
 liB
 tsY
 fGr
@@ -366335,30 +366895,30 @@ oeX
 qjD
 tsG
 wtF
-njq
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-mwE
-hOh
-gPy
-sOx
+jCm
+pOf
+pOf
+pOf
+pOf
+pOf
+nbR
+pOf
 dYd
-wrj
-xAt
-xAt
-xAt
-thL
+gPy
+nwm
+dsW
+etA
+itI
+aZT
+aZT
+aZT
+sOx
 wVI
+fnA
 fnA
 lyG
 bHq
 xOC
-liB
 liB
 uNy
 edF
@@ -366768,26 +367328,26 @@ bVr
 pXh
 wtF
 eyF
-auT
-tgy
-nYK
-mwE
-srT
-wbg
-wbg
-wbg
-wbg
-pOG
-yhZ
-yhZ
-uoM
-xAt
+mSq
+vUt
+bgM
+dYd
+lwR
+pOf
+nbR
+pOf
+gPy
+wrj
+rBl
+bbe
+wrj
+xwq
 xAt
 xAt
 xAt
 thL
 wVI
-lyG
+fnA
 lyG
 orb
 qnD
@@ -367199,19 +367759,19 @@ wtF
 wtF
 wtF
 jTP
-tgy
-mwE
+vUt
+dYd
 nZQ
-auT
-tgy
-mwE
-wbg
-wVI
-mwE
-hOh
+mSq
+vUt
+dYd
+pOf
+nbR
+dYd
+iHC
 gPy
-uoM
-uoM
+gPy
+gPy
 wrj
 xAt
 xAt
@@ -367630,16 +368190,16 @@ jDm
 jDm
 uOL
 mra
-mwE
-auT
-tgy
-mwE
-tgy
-tgy
+dYd
+mSq
+vUt
+dYd
+vUt
+vUt
 wCM
-wbg
-wbg
-mwE
+pOf
+pOf
+dYd
 iHC
 gPy
 bOK
@@ -368062,16 +368622,16 @@ eft
 ers
 sHm
 fCh
-hOh
-hOh
-hOh
-hOh
-hOh
-hOh
-uJF
+sTJ
+sTJ
+sTJ
+sTJ
+sTJ
+sTJ
+pjk
 jSJ
-wbg
-wbg
+pOf
+pOf
 bDm
 uoT
 dds
@@ -368501,9 +369061,9 @@ dQJ
 tLI
 sZg
 huK
-wbg
-wVI
-mwE
+pOf
+nbR
+dYd
 iHC
 gPy
 uoM
@@ -368925,18 +369485,18 @@ ohU
 ohU
 ohU
 hRt
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+nbR
+pOf
+pOf
 lzE
 fyE
 bbn
@@ -369357,18 +369917,18 @@ wxB
 wxB
 wxB
 uOL
-wVI
+nbR
 eYs
-wbg
-wVI
+pOf
+nbR
 eYs
-wbg
-wVI
+pOf
+nbR
 eYs
-wbg
-wbg
-wbg
-wbg
+pOf
+nbR
+nbR
+pOf
 xXq
 fyE
 eHO
@@ -369789,18 +370349,18 @@ omr
 omr
 omr
 hRt
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wVI
-wbg
-wbg
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+nbR
+pOf
+pOf
 xXq
 fyE
 bbn
@@ -370229,9 +370789,9 @@ dQJ
 wOv
 dQJ
 htA
-wbg
-wbg
-mwE
+pOf
+pOf
+dYd
 wtF
 wrj
 uoM
@@ -370654,16 +371214,16 @@ xlm
 wFa
 sHm
 fCh
-hOh
-hOh
-hOh
-hOh
-hOh
-hOh
-uJF
+sTJ
+sTJ
+sTJ
+sTJ
+sTJ
+sTJ
+pjk
 ruD
-wbg
-mwE
+pOf
+dYd
 wtF
 eWE
 jxJ
@@ -371085,17 +371645,17 @@ xlm
 rEJ
 wPV
 sHm
-auT
-mwE
-mwE
-mwE
-mwE
-mwE
-esR
+mSq
+dYd
+dYd
+dYd
+dYd
+dYd
+oAh
 cQi
-wbg
-wbg
-mwE
+pOf
+pOf
+dYd
 wtF
 mSD
 dds
@@ -371520,14 +372080,14 @@ kEN
 qCp
 nZQ
 ecC
-aOn
+oXf
 ecC
-mwE
+dYd
 lpa
-mwE
-wbg
-wbg
-mwE
+dYd
+pOf
+pOf
+dYd
 vYG
 dds
 arZ
@@ -371950,16 +372510,16 @@ rKW
 iHC
 oNx
 tzy
-aOn
-aOn
-aOn
-aOn
-aOn
+oXf
+oXf
+oXf
+oXf
+oXf
 lpa
-mwE
-wbg
-wbg
-mwE
+dYd
+pOf
+pOf
+dYd
 wtF
 jRC
 jRC
@@ -372382,16 +372942,16 @@ fdM
 eHe
 oNx
 oWX
-aOn
+oXf
 pcu
-aOn
-aOn
-aOn
+oXf
+oXf
+oXf
 lpa
-mwE
-wVI
-wbg
-mwE
+dYd
+nbR
+pOf
+dYd
 wtF
 bYR
 jRC
@@ -372523,8 +373083,8 @@ xlA
 xlA
 rBH
 eSZ
-eSZ
-eSZ
+nsr
+rBH
 eSZ
 eSZ
 hJx
@@ -372814,16 +373374,16 @@ tOz
 iHC
 kEN
 nZQ
-aOn
-aOn
-aOn
-aOn
-aOn
-fnA
-fnA
-wbg
-wbg
-mwE
+oXf
+oXf
+oXf
+oXf
+oXf
+uFt
+uFt
+pOf
+pOf
+dYd
 wtF
 wtF
 wtF
@@ -373241,23 +373801,23 @@ xNI
 iPI
 fnm
 iHC
-fdM
+rvV
 fdM
 tOz
 brD
-fnA
-aOn
-aOn
-aOn
-aOn
-aOn
+uFt
+oXf
+oXf
+oXf
+oXf
+oXf
 lpa
-mwE
-wVI
-wbg
-wbg
-wbg
-dds
+dYd
+nbR
+pOf
+pOf
+pOf
+yhZ
 dds
 dds
 wtF
@@ -373677,18 +374237,18 @@ iIw
 tOz
 fdM
 kEN
-mwE
+dYd
 pcu
-aOn
-aOn
-aOn
+oXf
+oXf
+oXf
 pcu
 lpa
-mwE
-wbg
-wbg
-wbg
-wbg
+dYd
+pOf
+nbR
+pOf
+pOf
 gPy
 unE
 lIB
@@ -374110,17 +374670,17 @@ tOz
 iHC
 oNx
 nZQ
-mwE
+dYd
 vHd
 rqm
-mwE
-aOn
+dYd
+oXf
 lpa
-mwE
-wbg
-wbg
-wbg
-srT
+dYd
+pOf
+nbR
+pOf
+lwR
 gPy
 wrj
 wrj
@@ -374541,18 +375101,18 @@ tOz
 pke
 iHC
 oNx
-esR
+oAh
 cXk
 nXd
 nXd
 nXd
 nXd
-esR
+oAh
 vJJ
-wbg
-wbg
-wbg
-mwE
+pOf
+nbR
+pOf
+dYd
 pOG
 yhZ
 unE
@@ -374973,18 +375533,18 @@ mRS
 axK
 mYV
 kEN
-nYK
+bgM
 jmv
 jmv
 jmv
-mwE
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-nYK
+dYd
+pOf
+pOf
+pOf
+pOf
+nbR
+pOf
+bgM
 wrj
 tGz
 wrj
@@ -375405,18 +375965,18 @@ eUJ
 iCg
 iur
 fnm
-nYK
-aOn
-tgy
-mwE
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
+bgM
+oXf
+vUt
+dYd
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
 tbi
-hOh
+sTJ
 wrj
 wtF
 uoM
@@ -375838,17 +376398,17 @@ pqs
 lCX
 fnm
 dUm
-aOn
-mwE
-wbg
-wbg
-wbg
-rfx
+oXf
+dYd
+pOf
+pOf
+pOf
+hsP
 umh
 umh
 bwe
-wbg
-rfx
+pOf
+hsP
 gPy
 gPy
 gPy
@@ -376269,22 +376829,22 @@ eUJ
 yhZ
 yhZ
 ahU
-hOh
-mwE
-mwE
-wbg
-wVI
-rfx
-rfx
+sTJ
+dYd
+dYd
+pOf
+nbR
+hsP
+hsP
 mjS
 ckp
-wbg
-wbg
+pOf
+pOf
 vCV
 dhh
 lwm
-rfx
-rfx
+hsP
+hsP
 xAt
 xAt
 pZg
@@ -376701,17 +377261,17 @@ eUJ
 eUJ
 qia
 sHm
-hOh
-mwE
-srT
-wbg
-wbg
+sTJ
+dYd
+lwR
+pOf
+pOf
 ocI
 jmC
 lCl
 oRO
 bwe
-wbg
+pOf
 yaW
 jIH
 xmP
@@ -376725,7 +377285,7 @@ eBW
 bDj
 siY
 pZg
-wVI
+wbg
 sIt
 sIt
 gNy
@@ -377133,22 +377693,22 @@ jDm
 uOL
 jDm
 uOL
-hOh
-auT
-mwE
-wbg
-wbg
-rfx
-tgy
-tgy
+sTJ
+mSq
+dYd
+pOf
+pOf
+hsP
+vUt
+vUt
 bwe
-wbg
-wbg
-wbg
+pOf
+pOf
+pOf
 aCY
 wfU
 qiV
-rfx
+hsP
 xAt
 xAt
 xAt
@@ -377157,7 +377717,7 @@ jmL
 hUb
 pZg
 xre
-wVI
+fnA
 sIt
 iGK
 jGE
@@ -377543,44 +378103,44 @@ uOL
 jDm
 jDm
 wrj
-mwE
-mwE
-aOn
-mwE
-mwE
-mwE
-mwE
-mwE
-mwE
-mwE
-mwE
-mwE
-mwE
-mwE
-mwE
-mwE
-mwE
-mwE
-mwE
-mwE
-mwE
-mwE
-mwE
-mwE
-mwE
-wbg
-wbg
+dYd
+dYd
+oXf
+dYd
+dYd
+dYd
+dYd
+dYd
+dYd
+dYd
+dYd
+dYd
+dYd
+dYd
+dYd
+dYd
+dYd
+dYd
+dYd
+dYd
+dYd
+dYd
+dYd
+dYd
+dYd
+pOf
+pOf
 ocI
 vpg
 erL
-wbg
-wbg
-wbg
-wbg
+pOf
+pOf
+pOf
+pOf
 pyO
 pis
 lwm
-rfx
+hsP
 xAt
 xAt
 xAt
@@ -377589,7 +378149,7 @@ eBW
 eBW
 kac
 pZg
-wVI
+fnA
 sIt
 iGK
 ohu
@@ -377971,38 +378531,38 @@ euP
 euP
 euP
 luB
-pQd
-pQd
-pQd
-rfx
-mwE
-yfn
-mwE
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wVI
-wbg
-rfx
+luB
+luB
+luB
+hsP
+dYd
+ljL
+dYd
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+nbR
+pOf
+hsP
 lwm
 pDR
 bwe
@@ -378021,7 +378581,7 @@ mnU
 eBW
 pFo
 pZg
-wVI
+wbg
 sIt
 adZ
 ohu
@@ -378403,48 +378963,48 @@ euP
 euP
 euP
 luB
-pQd
-pQd
-pQd
-rfx
-mwE
-mwE
+luB
+luB
+luB
+hsP
+dYd
+dYd
 lgW
-wbg
-mwE
-mwE
-mwE
+pOf
+dYd
+dYd
+dYd
 lgW
-mwE
-mwE
-mwE
-mwE
-mwE
-mwE
-mwE
+dYd
+dYd
+dYd
+dYd
+dYd
+dYd
+dYd
 lgW
-mwE
-mwE
-mwE
-mwE
-mwE
-mwE
-mwE
+dYd
+dYd
+dYd
+dYd
+dYd
+dYd
+dYd
 lgW
 rlC
-wbg
-wbg
-rfx
+pOf
+pOf
+hsP
 vfQ
 uwJ
 bwe
-rfx
-rfx
-wbg
+hsP
+hsP
+pOf
 wPt
-tgy
+vUt
 qCb
-rfx
+hsP
 xAt
 xAt
 xAt
@@ -378835,48 +379395,48 @@ euP
 euP
 euP
 luB
-pQd
-pQd
-rfx
-rfx
-esR
-rfx
-rfx
+luB
+luB
+hsP
+hsP
+oAh
+hsP
+hsP
 gmG
-rfx
-esR
-esR
-rfx
-esR
-esR
-esR
-rfx
-rfx
-rfx
-rfx
-rfx
-esR
-esR
-rfx
-rfx
-rfx
-esR
-esR
-rfx
-rfx
-wVI
-wVI
-rfx
-tgy
-tgy
+hsP
+oAh
+oAh
+hsP
+oAh
+oAh
+oAh
+hsP
+hsP
+hsP
+hsP
+hsP
+oAh
+oAh
+hsP
+hsP
+hsP
+oAh
+oAh
+hsP
+hsP
+nbR
+nbR
+hsP
+vUt
+vUt
 bwe
 paI
-wbg
-wbg
+pOf
+pOf
 hUw
 oqa
 oqa
-rfx
+hsP
 xAt
 xAt
 xAt
@@ -378885,7 +379445,7 @@ fDh
 nNJ
 wzc
 pZg
-wVI
+fnA
 pVg
 sIt
 pVg
@@ -379267,44 +379827,44 @@ euP
 euP
 euP
 luB
-pQd
-pQd
-rfx
-rfx
-wVI
-wbg
-hji
-wbg
-wbg
-wbg
-wVI
-rUO
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-hji
-wbg
-wbg
-wVI
-wVI
-wVI
-wbg
-wbg
-hji
-wbg
-wVI
-wVI
+luB
+luB
+hsP
+hsP
+nbR
+pOf
+lmb
+pOf
+pOf
+pOf
+nbR
+eam
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+lmb
+pOf
+pOf
+nbR
+nbR
+nbR
+pOf
+pOf
+lmb
+pOf
+nbR
+nbR
 ocI
 vpg
 erL
-wbg
-wbg
+pOf
+pOf
 lwm
-wbg
+pOf
 arz
 jtF
 lPY
@@ -379699,48 +380259,48 @@ euP
 euP
 euP
 euP
-pQd
-pQd
-rfx
-jEC
-wbg
-wbg
-wVI
-wbg
-wbg
-wbg
-wbg
-wVI
-wbg
-wbg
-wbg
-wVI
-wbg
-wbg
-wbg
-wbg
-wVI
-wVI
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wVI
-wVI
-rfx
+luB
+luB
+hsP
+hiO
+pOf
+pOf
+nbR
+pOf
+pOf
+pOf
+pOf
+nbR
+pOf
+pOf
+pOf
+nbR
+pOf
+pOf
+pOf
+pOf
+nbR
+nbR
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+pOf
+nbR
+nbR
+hsP
 lwm
 gcf
 bwe
 lwm
 amz
-wbg
+pOf
 pgz
 iwz
 lwm
-esR
+oAh
 xAt
 xAt
 xAt
@@ -380131,48 +380691,48 @@ euP
 euP
 euP
 euP
-pQd
-pQd
-rfx
-rfx
-wbg
-wVI
-esR
-esR
+luB
+luB
+hsP
+hsP
+pOf
+nbR
+oAh
+oAh
 ocI
-rfx
-rfx
-wVI
-wbg
-wbg
-rfx
-esR
+hsP
+hsP
+nbR
+pOf
+pOf
+hsP
+oAh
 ocI
-rfx
-esR
-wVI
-wbg
-wbg
-rfx
-esR
+hsP
+oAh
+nbR
+pOf
+pOf
+hsP
+oAh
 ocI
-rfx
-rfx
-wbg
-wbg
-wbg
-rfx
-esR
+hsP
+hsP
+pOf
+pOf
+pOf
+hsP
+oAh
 ocI
-rfx
-esR
-wbg
-wbg
-wbg
-esR
+hsP
+oAh
+pOf
+pOf
+pOf
+oAh
 ocI
-esR
-esR
+oAh
+oAh
 xAt
 xAt
 xAt
@@ -380565,43 +381125,43 @@ euP
 euP
 euP
 luB
-rfx
-rfx
-rfx
-rfx
-rfx
+hsP
+hsP
+hsP
+hsP
+hsP
 euP
 euP
 euP
-rfx
-rfx
+hsP
+hsP
 ocI
-rfx
-rfx
+hsP
+hsP
 euP
 euP
 euP
-esR
-esR
+oAh
+oAh
 ocI
-rfx
-oAn
+hsP
+xlo
 euP
 euP
 euP
-rfx
-rfx
+hsP
+hsP
 ocI
-rfx
-rfx
+hsP
+hsP
 euP
 euP
 euP
-esR
-esR
+oAh
+oAh
 ocI
-esR
-esR
+oAh
+oAh
 euP
 xAt
 xAt
@@ -389263,7 +389823,7 @@ xGW
 xGW
 oAn
 esR
-esR
+osv
 esR
 wbg
 wVI
@@ -389694,7 +390254,7 @@ mwE
 auT
 nGs
 xRC
-xiN
+wVI
 wbg
 wbg
 wbg
@@ -460933,10 +461493,10 @@ vIa
 vIa
 vIa
 vIa
-rTC
-rTC
-rTC
-rTC
+lhb
+lhb
+lhb
+lhb
 vIa
 vIa
 vIa
@@ -461364,30 +461924,30 @@ vIa
 vIa
 vIa
 vIa
-rTC
-rTC
-eMc
-eMc
-rTC
-abE
-abE
-rTC
-rTC
-rTC
-abE
-abE
-rTC
-rTC
-abE
-abE
-abE
-abE
-abE
-abE
-abE
-rTC
-rTC
-rTC
+lhb
+lhb
+kDp
+kDp
+lhb
+jiy
+jiy
+lhb
+lhb
+lhb
+jiy
+jiy
+lhb
+lhb
+jiy
+jiy
+jiy
+jiy
+jiy
+jiy
+jiy
+lhb
+lhb
+lhb
 vIa
 vIa
 vIa
@@ -461796,31 +462356,31 @@ vIa
 vIa
 vIa
 vIa
-rTC
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-abE
-abE
+lhb
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+jiy
+jiy
 vIa
 vIa
 vIa
@@ -462228,32 +462788,32 @@ vIa
 vIa
 vIa
 vIa
-rTC
+lhb
 bOL
-kWa
-kWa
-kWa
+xiN
+xiN
+xiN
 bOL
-kWa
-kWa
+xiN
+xiN
 bOL
-kWa
-kWa
-kWa
-kWa
-kWa
+xiN
+xiN
+xiN
+xiN
+xiN
 bOL
-kWa
-kWa
-kWa
-kWa
-kWa
-lKA
-kWa
-vwM
-vwM
-abE
-abE
+xiN
+xiN
+xiN
+xiN
+xiN
+gQH
+xiN
+noy
+noy
+jiy
+jiy
 vIa
 vIa
 vIa
@@ -462654,38 +463214,38 @@ vIa
 vIa
 vIa
 vIa
-abE
-abE
-abE
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
+jiy
+jiy
+jiy
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
 feN
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-obT
-obT
-obT
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-kWa
+lhb
+lhb
+xNa
+lhb
+lhb
+lhb
+lhb
+enB
+enB
+enB
+lhb
+lhb
+xNa
+lhb
+lhb
+lhb
+xiN
 bOL
-lKA
-vwM
-kWa
-rTC
+gQH
+noy
+xiN
+lhb
 vIa
 vIa
 vIa
@@ -463086,7 +463646,7 @@ vIa
 vIa
 vIa
 vIa
-abE
+jiy
 qsx
 qsx
 qsx
@@ -463100,24 +463660,24 @@ qsx
 qsx
 qsx
 qsx
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-rTC
-rTC
-rTC
-kWa
-vwM
-kWa
-abE
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+lhb
+lhb
+lhb
+xiN
+noy
+xiN
+jiy
 vIa
 vIa
 vIa
@@ -463518,38 +464078,38 @@ vIa
 vIa
 vIa
 vIa
-abE
-gJG
-hox
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-dld
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-rTC
-lKA
-vwM
-lKA
-abE
+jiy
+dOA
+hHW
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+geS
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+lhb
+gQH
+noy
+gQH
+jiy
 vIa
 vIa
 vIa
@@ -463950,38 +464510,38 @@ vIa
 vIa
 vIa
 vIa
-abE
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-rTC
-kWa
-vwM
-lKA
-abE
+jiy
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+lhb
+xiN
+noy
+gQH
+jiy
 vIa
 vIa
 vIa
@@ -464382,38 +464942,38 @@ vIa
 vIa
 vIa
 vIa
-abE
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-rTC
+jiy
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+lhb
 wFQ
-vwM
-kWa
-obT
+noy
+xiN
+enB
 fZJ
 vIa
 vIa
@@ -464814,20 +465374,20 @@ vIa
 vIa
 vIa
 vIa
-abE
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+jiy
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 fkC
 fkC
 hPm
@@ -464838,14 +465398,14 @@ fkC
 hPm
 cip
 cip
-fZJ
-fZJ
-fZJ
-rTC
-kWa
-vwM
-kWa
-obT
+mRr
+mRr
+mRr
+lhb
+xiN
+noy
+xiN
+enB
 fZJ
 fZJ
 vIa
@@ -465246,19 +465806,19 @@ vIa
 vIa
 vIa
 vIa
-abE
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+jiy
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 fkC
 fkC
 rza
@@ -465270,14 +465830,14 @@ amL
 rDv
 jvt
 fkC
-fZJ
-fZJ
-fZJ
-rTC
-kWa
-vwM
-kWa
-rTC
+mRr
+mRr
+mRr
+lhb
+xiN
+noy
+xiN
+lhb
 fZJ
 fZJ
 vdf
@@ -465678,19 +466238,19 @@ vIa
 vIa
 vIa
 vIa
-abE
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+jiy
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 fkC
 amL
 vYf
@@ -465702,14 +466262,14 @@ amL
 rDv
 rTu
 fkC
-fZJ
-fZJ
-fZJ
+mRr
+mRr
+mRr
 xNa
-kWa
-vwM
-kWa
-rTC
+xiN
+noy
+xiN
+lhb
 fZJ
 fZJ
 vdf
@@ -466110,19 +466670,19 @@ vIa
 vIa
 vIa
 vIa
-abE
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+jiy
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 fkC
 mfK
 mfK
@@ -466134,14 +466694,14 @@ mfK
 txb
 mfK
 fkC
-fZJ
-fZJ
-fZJ
-rTC
-lKA
-vwM
-kWa
-rTC
+mRr
+mRr
+mRr
+lhb
+gQH
+noy
+xiN
+lhb
 fZJ
 fZJ
 fZJ
@@ -466542,19 +467102,19 @@ vIa
 vIa
 vIa
 vIa
-abE
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+jiy
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 fkC
 mfK
 mfK
@@ -466566,14 +467126,14 @@ mbK
 rDv
 mbK
 dmS
-fZJ
-fZJ
-fZJ
-rTC
-kWa
-vwM
-kWa
-obT
+mRr
+mRr
+mRr
+lhb
+xiN
+noy
+xiN
+enB
 fZJ
 fZJ
 fZJ
@@ -466974,19 +467534,19 @@ vIa
 vIa
 vIa
 vIa
-abE
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+jiy
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 dmS
 hpY
 mfK
@@ -466998,14 +467558,14 @@ wyk
 nTQ
 mbK
 fkC
-fZJ
-fZJ
-fZJ
-rTC
+mRr
+mRr
+mRr
+lhb
 wFQ
-vwM
-lKA
-obT
+noy
+gQH
+enB
 fZJ
 fZJ
 fZJ
@@ -467406,19 +467966,19 @@ vIa
 vIa
 vIa
 vIa
-abE
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+jiy
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 fkC
 uOB
 dUY
@@ -467430,14 +467990,14 @@ nTQ
 fMq
 rDv
 pvF
-fZJ
-fZJ
-fZJ
-rTC
-kWa
-vwM
-kWa
-obT
+mRr
+mRr
+mRr
+lhb
+xiN
+noy
+xiN
+xNa
 fZJ
 fZJ
 fZJ
@@ -467838,19 +468398,19 @@ vIa
 vIa
 vIa
 vIa
-abE
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+jiy
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 esx
 ykQ
 rDv
@@ -467862,14 +468422,14 @@ rDv
 wyk
 mbK
 fkC
-fZJ
-fZJ
-fZJ
-rTC
-kWa
-vwM
-kWa
-rTC
+mRr
+mRr
+mRr
+lhb
+xiN
+noy
+xiN
+lhb
 fZJ
 fZJ
 fZJ
@@ -468270,19 +468830,19 @@ vIa
 vIa
 vIa
 vIa
-abE
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+jiy
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 fkC
 mfK
 gOU
@@ -468294,14 +468854,14 @@ nTQ
 nTQ
 mbK
 fkC
-fZJ
-fZJ
-fZJ
-rTC
-kWa
-vwM
-kWa
-rTC
+mRr
+mRr
+mRr
+lhb
+xiN
+noy
+xiN
+lhb
 fZJ
 fZJ
 fZJ
@@ -468702,19 +469262,19 @@ vIa
 vIa
 vIa
 vIa
-abE
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+jiy
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 cip
 cip
 mfK
@@ -468726,14 +469286,14 @@ mfK
 tek
 cip
 fkC
-fZJ
-fZJ
-fZJ
-rTC
-kWa
-vwM
-kWa
-rTC
+mRr
+mRr
+mRr
+lhb
+xiN
+noy
+xiN
+lhb
 fZJ
 fZJ
 fZJ
@@ -469134,20 +469694,20 @@ vIa
 vIa
 vIa
 vIa
-rTC
+lhb
 feN
-rTC
-rTC
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+lhb
+lhb
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 cip
 cip
 fkC
@@ -469157,15 +469717,15 @@ fkC
 fkC
 fkC
 cip
-fZJ
-fZJ
-fZJ
-obT
-obT
-kWa
-vwM
-kWa
-rTC
+mRr
+mRr
+mRr
+enB
+enB
+xiN
+noy
+xiN
+lhb
 fZJ
 fZJ
 fZJ
@@ -469566,20 +470126,20 @@ hRX
 hRX
 hRX
 hRX
-rTC
-kWa
-eMc
-rTC
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+lhb
+xiN
+kDp
+lhb
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 hZa
 xZr
 rAz
@@ -469589,15 +470149,15 @@ uvX
 rAz
 bxL
 wPu
-fZJ
-fZJ
-rTC
-rTC
-eMc
-kWa
-vwM
-kWa
-rTC
+mRr
+mRr
+lhb
+lhb
+usR
+xiN
+noy
+xiN
+lhb
 fZJ
 fZJ
 fZJ
@@ -469998,21 +470558,21 @@ hRX
 iqz
 eXV
 hRX
-rTC
-eMc
+lhb
+kDp
 bOL
-rTC
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+lhb
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 fkC
 nbs
 tsa
@@ -470020,16 +470580,16 @@ hHP
 wxj
 nbs
 fkC
-fZJ
-fZJ
-fZJ
-rTC
-kWa
-kWa
-lKA
-vwM
-kWa
-rTC
+mRr
+mRr
+mRr
+lhb
+xiN
+xiN
+gQH
+noy
+xiN
+lhb
 fZJ
 fZJ
 fZJ
@@ -470430,37 +470990,37 @@ hRX
 eJr
 eXV
 hRX
-rTC
-rTC
-rTC
-rTC
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+lhb
+lhb
+lhb
+lhb
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 xNa
-kWa
-kWa
-lKA
-vwM
-kWa
+mgE
+uwC
+uou
+noy
+xiN
 xNa
 fZJ
 fZJ
@@ -470866,34 +471426,34 @@ hRX
 hRX
 hRX
 hRX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-rTC
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+lhb
 eMc
-bOL
-kWa
-vwM
-kWa
-rTC
+mRr
+osW
+noy
+xiN
+lhb
 fZJ
 fZJ
 fZJ
@@ -471312,20 +471872,20 @@ cBj
 wtF
 wtF
 jTP
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-rTC
-jBi
-jBi
-jBi
-vwM
-kWa
-rTC
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+lhb
+rqJ
+rqJ
+rqJ
+noy
+xiN
+lhb
 fZJ
 fZJ
 fZJ
@@ -471744,9 +472304,9 @@ jRC
 jRC
 jRC
 qvB
-fZJ
-fZJ
-fZJ
+mRr
+mRr
+mRr
 hyI
 mrV
 wrj
@@ -471756,8 +472316,8 @@ kzo
 bHk
 hkI
 gAf
-kWa
-rTC
+xiN
+lhb
 fZJ
 fZJ
 fZJ
@@ -472176,8 +472736,8 @@ iur
 jRC
 iur
 qvB
-fZJ
-fZJ
+mRr
+mRr
 pfp
 oYx
 wrj
@@ -472186,10 +472746,10 @@ jxy
 oPj
 dQj
 xgG
-jBi
-vwM
-kWa
-obT
+rqJ
+noy
+xiN
+enB
 fZJ
 fZJ
 fZJ
@@ -472608,8 +473168,8 @@ iur
 jRC
 iur
 qvB
-fZJ
-fZJ
+mRr
+mRr
 hyI
 oif
 hcE
@@ -472618,10 +473178,10 @@ xLh
 nKx
 dQj
 iur
-jBi
-vwM
-kWa
-obT
+rqJ
+noy
+xiN
+enB
 fZJ
 fZJ
 fZJ
@@ -473040,8 +473600,8 @@ jRC
 jRC
 jRC
 tmE
-fZJ
-fZJ
+mRr
+mRr
 bXv
 oif
 jxy
@@ -473050,10 +473610,10 @@ oif
 oif
 hnU
 nVX
-jBi
-vwM
-kWa
-obT
+rqJ
+noy
+xiN
+enB
 fZJ
 fZJ
 fZJ
@@ -473472,8 +474032,8 @@ iur
 jRC
 iur
 qvB
-fZJ
-fZJ
+mRr
+mRr
 xMj
 oif
 pSL
@@ -473482,10 +474042,10 @@ oif
 oif
 rwO
 psA
-jBi
-vwM
-kWa
-obT
+rqJ
+noy
+xiN
+enB
 fZJ
 fZJ
 fZJ
@@ -473904,8 +474464,8 @@ iur
 jRC
 iur
 qvB
-fZJ
-fZJ
+mRr
+mRr
 wnR
 oif
 jxy
@@ -473914,11 +474474,11 @@ oif
 fGf
 rwO
 fOB
-jBi
+rqJ
 gAf
-lKA
-rTC
-rTC
+gQH
+lhb
+fZJ
 fZJ
 fZJ
 fZJ
@@ -474336,8 +474896,8 @@ iur
 jRC
 iur
 qvB
-fZJ
-fZJ
+mRr
+mRr
 fcw
 oif
 hcE
@@ -474346,11 +474906,11 @@ oif
 bHm
 tXF
 fOs
-jBi
-vwM
-kWa
-kWa
-rTC
+rqJ
+noy
+xiN
+lhb
+fZJ
 fZJ
 fZJ
 fZJ
@@ -474768,8 +475328,8 @@ jRC
 jRC
 jRC
 tmE
-fZJ
-fZJ
+mRr
+mRr
 pfp
 oYx
 pfp
@@ -474778,11 +475338,11 @@ mjR
 pfp
 jxy
 pfp
-jBi
-vwM
-lKA
-kWa
+rqJ
+noy
+gQH
 xNa
+fZJ
 fZJ
 fZJ
 fZJ
@@ -475200,21 +475760,21 @@ iur
 jRC
 iur
 qvB
-fZJ
-fZJ
-fZJ
+mRr
+mRr
+mRr
 wyS
 wrj
 pfp
-rZi
-jqs
-obT
-rTC
+jAX
+vXU
+enB
+lhb
 wFQ
-vwM
-kWa
-lKA
-obT
+noy
+xiN
+enB
+fZJ
 fZJ
 fZJ
 fZJ
@@ -475632,21 +476192,21 @@ cpf
 jRC
 iur
 qvB
+mRr
+mRr
+mRr
+mRr
+qkt
+uWM
+uWM
+aMc
+enB
+lhb
+kDp
+noy
+xiN
+enB
 fZJ
-fZJ
-fZJ
-fZJ
-ptX
-vdf
-vdf
-rpr
-obT
-rTC
-kWa
-kWa
-kWa
-obT
-obT
 fZJ
 fZJ
 fZJ
@@ -476064,20 +476624,20 @@ cpf
 cBj
 cpf
 jTP
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-obT
-obT
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+enB
+enB
 noy
-kWa
-obT
+xiN
+enB
 fZJ
 fZJ
 fZJ
@@ -476496,20 +477056,20 @@ wtF
 opB
 vto
 wtF
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-vdf
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+uWM
 xNa
-hQJ
-kWa
-obT
+noy
+xiN
+enB
 fZJ
 fZJ
 fZJ
@@ -476928,20 +477488,20 @@ lJq
 nBW
 esq
 uiW
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-vdf
-rTC
-diJ
-kWa
-rTC
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+uWM
+lhb
+noy
+xiN
+lhb
 fZJ
 fZJ
 fZJ
@@ -477360,16 +477920,16 @@ wtF
 wtF
 wtF
 wtF
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-vdf
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+uWM
 wtF
 wtF
 dAU
@@ -477791,17 +478351,17 @@ nBW
 maA
 axQ
 wtF
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-vdf
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+uWM
 wtF
 jRC
 jRC
@@ -478223,17 +478783,17 @@ nBW
 rkY
 tpQ
 wtF
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-vdf
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+uWM
 wtF
 wDU
 jRC
@@ -478655,16 +479215,16 @@ nBW
 nBW
 atV
 wtF
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 wtF
 wtF
 pjY
@@ -479087,16 +479647,16 @@ wKq
 duQ
 ohU
 tmE
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 wtF
 wtF
 wtF
@@ -479519,16 +480079,16 @@ pDF
 cHH
 sKL
 wtF
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 wtF
 aGP
 kTt
@@ -479951,16 +480511,16 @@ sFy
 pNf
 omr
 tmE
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 wtF
 xjS
 kCI
@@ -480383,16 +480943,16 @@ nBW
 nBW
 atV
 wtF
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 wtF
 fHh
 xlm
@@ -480815,16 +481375,16 @@ nBW
 nBW
 nnZ
 wtF
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 wtF
 vLf
 ilm
@@ -480857,12 +481417,12 @@ xaT
 xaT
 xaT
 lVX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+irZ
+irZ
+kWa
+kWa
+kWa
+kWa
 fZJ
 fZJ
 aMR
@@ -481247,16 +481807,16 @@ xTE
 wWi
 jXR
 wtF
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 wtF
 wtF
 wtF
@@ -481294,7 +481854,7 @@ fZJ
 fZJ
 fZJ
 fZJ
-fZJ
+kWa
 fZJ
 fZJ
 sEV
@@ -481679,17 +482239,17 @@ wtF
 wtF
 wtF
 wtF
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-vdf
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+uWM
 wtF
 eaD
 jRC
@@ -481726,7 +482286,7 @@ fZJ
 fZJ
 fZJ
 fZJ
-fZJ
+irZ
 fZJ
 fZJ
 bhA
@@ -482111,17 +482671,17 @@ kvB
 wtF
 lRX
 wtF
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-vdf
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+uWM
 uoM
 eaD
 hYw
@@ -482158,7 +482718,7 @@ fZJ
 fZJ
 fZJ
 fZJ
-fZJ
+irZ
 fZJ
 fZJ
 aMR
@@ -482543,17 +483103,17 @@ bFU
 gsV
 xdI
 uiW
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-vdf
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+uWM
 wtF
 iWG
 vFF
@@ -482590,7 +483150,7 @@ fZJ
 fZJ
 fZJ
 fZJ
-fZJ
+irZ
 fZJ
 fZJ
 bhA
@@ -482975,17 +483535,17 @@ eLj
 wtF
 ffm
 wtF
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-vdf
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+uWM
 uoM
 pjY
 dCK
@@ -483022,7 +483582,7 @@ fZJ
 fZJ
 fZJ
 fZJ
-fZJ
+kWa
 fZJ
 fZJ
 wuB
@@ -483407,17 +483967,17 @@ wtF
 wtF
 wtF
 wtF
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 wtF
 sfJ
 jRC
@@ -483449,12 +484009,12 @@ feh
 rZi
 rZi
 jqs
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+kWa
+kWa
+kWa
+irZ
+kWa
+kWa
 fZJ
 fZJ
 wuB
@@ -483839,17 +484399,17 @@ vLZ
 bwY
 abV
 wtF
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 gPy
 wtF
 ueC
@@ -484272,20 +484832,20 @@ uYE
 sPu
 wtF
 dgD
-iNa
-gly
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-rTC
-lKA
-kWa
-obT
+gan
+dZq
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+lhb
+gQH
+xiN
+enB
 fZJ
 fZJ
 fZJ
@@ -484705,19 +485265,19 @@ sPu
 oUS
 qFC
 iPg
-lCO
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-rTC
+cKb
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+lhb
 wFQ
-kWa
-obT
+xiN
+enB
 fZJ
 fZJ
 fZJ
@@ -485137,18 +485697,18 @@ uYE
 nQg
 iPg
 iPg
-lCO
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+cKb
+mRr
+mRr
+mRr
+mRr
+mRr
 aXF
-fZJ
-fZJ
-rTC
+mRr
+mRr
+lhb
 wbI
-kWa
+xiN
 xNa
 fZJ
 fZJ
@@ -485569,19 +486129,19 @@ sPu
 oUS
 iPg
 iPg
-lCO
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-kWa
-fZJ
-fZJ
-rTC
+cKb
+mRr
+mRr
+mRr
+mRr
+mRr
+xiN
+mRr
+mRr
+lhb
 gbA
-kWa
-obT
+xiN
+enB
 fZJ
 fZJ
 nET
@@ -485999,21 +486559,21 @@ oJn
 oJn
 sPu
 wtF
-hFc
-hFc
-gHt
-fZJ
-fZJ
-kNH
-vdf
-vdf
-vdf
-vdf
-vdf
-rTC
-vwM
-kWa
-obT
+rLP
+rLP
+gDp
+mRr
+mRr
+nAO
+uWM
+uWM
+uWM
+uWM
+uWM
+lhb
+noy
+xiN
+enB
 fZJ
 fZJ
 uVy
@@ -486431,21 +486991,21 @@ uYE
 uYE
 sPu
 wtF
-fZJ
-fZJ
-fZJ
-fZJ
-kNH
-rpr
-gJG
-gJG
-gJG
-gJG
-gJG
-rTC
-vwM
-kWa
-obT
+mRr
+mRr
+mRr
+mRr
+nAO
+aMc
+dOA
+dOA
+dOA
+dOA
+dOA
+lhb
+noy
+xiN
+enB
 fZJ
 fZJ
 tsL
@@ -486863,21 +487423,21 @@ qHs
 sPu
 mnu
 wtF
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
+mRr
+mRr
+mRr
+mRr
+vXU
 qsx
 qsx
-rTC
-rTC
-rTC
-rTC
-rTC
+lhb
+lhb
+lhb
+lhb
+lhb
 gAf
-kWa
-obT
+xiN
+enB
 fZJ
 fZJ
 ntd
@@ -487295,21 +487855,21 @@ wtF
 wDj
 wtF
 wtF
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
+mRr
+mRr
+mRr
+mRr
+vXU
 qsx
-rTC
-rTC
-fZJ
-fZJ
-fZJ
-rTC
-vwM
-lKA
-rTC
+lhb
+lhb
+mRr
+mRr
+mRr
+lhb
+noy
+gQH
+lhb
 fZJ
 fZJ
 fZJ
@@ -487699,49 +488259,49 @@ euP
 euP
 euP
 euP
-rTC
+lhb
 vIa
 vIa
 vIa
-rTC
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
+lhb
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
 qsx
-rTC
-fZJ
-fZJ
-fZJ
-fZJ
-rTC
-vwM
-kWa
-rTC
+lhb
+mRr
+mRr
+mRr
+mRr
+lhb
+noy
+xiN
+lhb
 fZJ
 fZJ
 fZJ
@@ -488131,48 +488691,48 @@ euP
 euP
 euP
 euP
-rTC
-kWa
-kWa
-kWa
-rTC
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
+lhb
+xiN
+xiN
+xiN
+lhb
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
 qsx
-rTC
-fZJ
-fZJ
-fZJ
-fZJ
-rTC
-vwM
-kWa
+lhb
+mRr
+mRr
+mRr
+mRr
+lhb
+noy
+xiN
 xNa
 fZJ
 fZJ
@@ -488564,48 +489124,48 @@ euP
 euP
 euP
 xNa
-kWa
-eMc
-kWa
-rTC
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
+xiN
+kDp
+xiN
+lhb
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
 qsx
-rTC
-rTC
+lhb
+lhb
 fYV
 fYV
-rTC
-rTC
+lhb
+lhb
 gAf
-kWa
-rTC
+xiN
+lhb
 fZJ
 fZJ
 fZJ
@@ -488995,49 +489555,49 @@ euP
 euP
 euP
 euP
-rTC
-kWa
-kWa
-kWa
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
-rTC
+lhb
+xiN
+xiN
+xiN
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
+lhb
 hGC
 hGC
-rTC
-kWa
-vwM
-kWa
-rTC
+lhb
+xiN
+noy
+xiN
+lhb
 fZJ
 fZJ
 fZJ
@@ -489427,49 +489987,49 @@ euP
 euP
 euP
 euP
-rTC
-rTC
-kWa
+lhb
+lhb
+xiN
 fNl
 fNl
 kiz
-kWa
-kWa
-kWa
-kWa
-kWa
-kWa
-kWa
+xiN
+xiN
+xiN
+xiN
+xiN
+xiN
+xiN
 kiz
-kWa
-kWa
-lKA
-kWa
-kWa
-kWa
-kWa
+xiN
+xiN
+gQH
+xiN
+xiN
+xiN
+xiN
 kiz
-kWa
-kWa
-lKA
-kWa
-kWa
-kWa
-lKA
+xiN
+xiN
+gQH
+xiN
+xiN
+xiN
+gQH
 kiz
-kWa
-kWa
-kWa
-kWa
-kWa
+xiN
+xiN
+xiN
+xiN
+xiN
 kiz
-kWa
-kWa
+xiN
+xiN
 kiz
-kWa
-vwM
-kWa
-rTC
+xiN
+noy
+xiN
+lhb
 fZJ
 fZJ
 fZJ
@@ -489861,47 +490421,47 @@ euP
 euP
 euP
 xNa
-kWa
+xiN
 hFZ
-hQJ
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-vwM
-lKA
-obT
+iRv
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+noy
+gQH
+enB
 fZJ
 fZJ
 fZJ
@@ -490292,48 +490852,48 @@ euP
 euP
 euP
 euP
-rTC
+lhb
 xNa
-rTC
+lhb
 mlj
-kWa
-kWa
-obT
-rTC
+xiN
+xiN
+enB
+lhb
 xNa
-rTC
-obT
-lKA
-kWa
-kWa
-rTC
-rTC
+lhb
+enB
+gQH
+xiN
+xiN
+lhb
+lhb
 xNa
-obT
-obT
-lKA
-lKA
-lKA
-obT
-rTC
+enB
+enB
+gQH
+gQH
+gQH
+enB
+lhb
 xNa
-rTC
-rTC
-kWa
-kWa
-kWa
-rTC
-obT
+lhb
+lhb
+xiN
+xiN
+xiN
+lhb
+enB
 xNa
-obT
-obT
-kWa
-kWa
-kWa
-obT
-obT
-obT
-obT
+enB
+enB
+xiN
+xiN
+xiN
+enB
+enB
+enB
+enB
 fZJ
 fZJ
 fZJ
@@ -490726,43 +491286,43 @@ euP
 euP
 euP
 euP
-rTC
-rTC
-kWa
-rTC
-rTC
+lhb
+lhb
+xiN
+lhb
+lhb
 euP
 euP
 euP
-obT
-obT
+enB
+enB
 xNa
-rTC
-rTC
+lhb
+lhb
 euP
 euP
 euP
-rTC
-rTC
+lhb
+lhb
 xNa
-rTC
-rTC
+lhb
+lhb
 euP
 euP
 euP
-rTC
-rTC
+lhb
+lhb
 xNa
-rTC
-rTC
+lhb
+lhb
 euP
 euP
 euP
-rTC
-rTC
+lhb
+lhb
 xNa
-rTC
-rTC
+lhb
+lhb
 euP
 euP
 fZJ
@@ -491159,9 +491719,9 @@ euP
 euP
 euP
 euP
-rTC
+lhb
 rIF
-rTC
+lhb
 euP
 euP
 euP
@@ -491591,9 +492151,9 @@ euP
 euP
 euP
 euP
-rTC
-vwM
-rTC
+lhb
+noy
+lhb
 euP
 euP
 euP
@@ -492024,7 +492584,7 @@ euP
 euP
 euP
 xNa
-vwM
+noy
 xNa
 euP
 euP
@@ -492455,9 +493015,9 @@ euP
 euP
 euP
 euP
-rTC
-vwM
-rTC
+lhb
+noy
+lhb
 euP
 euP
 euP
@@ -492887,9 +493447,9 @@ euP
 euP
 euP
 euP
-rTC
+lhb
 rIF
-rTC
+lhb
 euP
 euP
 euP
@@ -493318,11 +493878,11 @@ euP
 euP
 euP
 euP
-rTC
-rTC
-lKA
-rTC
-rTC
+lhb
+lhb
+gQH
+lhb
+lhb
 euP
 euP
 euP
@@ -493752,8 +494312,8 @@ euP
 euP
 xNa
 nAK
-kWa
-kWa
+xiN
+xiN
 xNa
 euP
 euP
@@ -494184,8 +494744,8 @@ euP
 euP
 xNa
 dRr
-lKA
-kWa
+gQH
+xiN
 xNa
 euP
 euP
@@ -494614,11 +495174,11 @@ euP
 euP
 euP
 euP
-rTC
-rTC
+lhb
+lhb
 tbK
-rTC
-rTC
+lhb
+lhb
 euP
 euP
 euP
@@ -495047,9 +495607,9 @@ euP
 euP
 euP
 euP
-rTC
+lhb
 xNa
-rTC
+lhb
 euP
 euP
 euP
@@ -571530,8 +572090,8 @@ diJ
 aCz
 diJ
 diJ
-xaT
-xaT
+hTI
+hTI
 vIa
 vIa
 vIa
@@ -571539,8 +572099,8 @@ vIa
 vIa
 vIa
 vIa
-xaT
-xaT
+hTI
+hTI
 vIa
 vIa
 vIa
@@ -571949,10 +572509,10 @@ vIa
 vIa
 vIa
 vIa
-abE
-abE
-abE
-abE
+jiy
+jiy
+jiy
+jiy
 qsx
 eRa
 qsx
@@ -572381,8 +572941,8 @@ vIa
 vIa
 vIa
 vIa
-abE
-abE
+jiy
+jiy
 qsx
 qsx
 qsx
@@ -572813,34 +573373,34 @@ vIa
 vIa
 vIa
 vIa
-abE
-gJG
+jiy
+dOA
 qsx
 qsx
-hox
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-lVX
+hHW
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+xIU
 qsx
 qsx
 qsx
@@ -573245,39 +573805,39 @@ vIa
 vIa
 vIa
 vIa
-abE
+jiy
 xED
-hox
-xaT
-dld
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-hKm
-xaT
-lVX
-gJG
-dpC
-gJG
+hHW
+hTI
+geS
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+wte
+hTI
+xIU
+dOA
+dyD
+dOA
 vIa
 vIa
 vIa
@@ -573677,39 +574237,39 @@ vIa
 vIa
 vIa
 vIa
-abE
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
+jiy
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
 vIa
 vIa
 vIa
@@ -574109,22 +574669,22 @@ vIa
 vIa
 vIa
 vIa
-abE
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+jiy
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 fkC
 fkC
 fkC
@@ -574134,15 +574694,15 @@ cip
 cip
 fkC
 fkC
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
-fjX
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
+llU
 vIa
 vIa
 vIa
@@ -574541,21 +575101,21 @@ vIa
 vIa
 vIa
 vIa
-abE
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+jiy
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 fkC
 fkC
 wcq
@@ -574567,14 +575127,14 @@ dpc
 xPL
 fkC
 fkC
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
-fjX
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
+llU
 fZJ
 vIa
 vIa
@@ -574973,21 +575533,21 @@ vIa
 vIa
 vIa
 vIa
-abE
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+jiy
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 fkC
 hOI
 nTQ
@@ -574999,14 +575559,14 @@ uIk
 uIk
 cdJ
 rOb
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
-fjX
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 vIa
@@ -575406,19 +575966,19 @@ vIa
 vIa
 vIa
 diJ
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 fkC
 fkC
 fkC
@@ -575431,14 +575991,14 @@ uSE
 uIk
 rqh
 fkC
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
-fjX
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -575838,19 +576398,19 @@ vIa
 vIa
 vIa
 diJ
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 fkC
 akP
 wTr
@@ -575864,13 +576424,13 @@ qSu
 fkC
 fkC
 fkC
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
-fjX
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -576270,18 +576830,18 @@ vIa
 vIa
 vIa
 diJ
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 fkC
 fkC
 fKm
@@ -576296,13 +576856,13 @@ uIk
 gLe
 gsJ
 fkC
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
-fjX
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -576703,17 +577263,17 @@ vIa
 vIa
 diJ
 xED
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 fkC
 fiZ
 awR
@@ -576728,13 +577288,13 @@ qJQ
 vqA
 loS
 wow
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
-fjX
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -577134,18 +577694,18 @@ vIa
 vIa
 vIa
 diJ
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 tQT
 itC
 awR
@@ -577160,13 +577720,13 @@ icU
 bSK
 mlr
 rOb
-fZJ
-fZJ
-jqs
-gJG
-gJG
-dpC
-fjX
+mRr
+mRr
+vXU
+dOA
+dOA
+dyD
+llU
 fZJ
 fZJ
 fZJ
@@ -577566,18 +578126,18 @@ vIa
 vIa
 vIa
 diJ
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 cip
 kWc
 awR
@@ -577592,13 +578152,13 @@ inK
 qJQ
 rlM
 fkC
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
-fjX
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -577998,18 +578558,18 @@ vIa
 vIa
 vIa
 diJ
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 fkC
 cip
 qRI
@@ -578024,13 +578584,13 @@ uIk
 gZr
 vVt
 fkC
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
-fjX
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -578430,19 +578990,19 @@ vIa
 vIa
 vIa
 diJ
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 cip
 cip
 kAL
@@ -578456,13 +579016,13 @@ qSu
 onh
 fkC
 fkC
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
-fjX
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -578862,20 +579422,20 @@ vIa
 vIa
 vIa
 diJ
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 vPV
 xyC
 xyC
@@ -578887,14 +579447,14 @@ vHz
 hEX
 fkC
 fkC
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
-fjX
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -579294,20 +579854,20 @@ vIa
 vIa
 vIa
 diJ
-gJG
-ptX
-vdf
-vdf
-feh
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+dOA
+qkt
+uWM
+uWM
+cek
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 fXZ
 xyC
 xyC
@@ -579318,15 +579878,15 @@ wwy
 yjR
 dwe
 fkC
-fZJ
-fZJ
-kNH
-vdf
-rpr
-gJG
-gJG
-gJG
-fjX
+mRr
+mRr
+mRr
+nAO
+aMc
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -579721,26 +580281,26 @@ vIa
 vIa
 vIa
 vIa
-abE
-abE
-abE
-abE
+jiy
+jiy
+jiy
+jiy
 diJ
-gJG
-gJG
-gJG
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+dOA
+dOA
+dOA
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 xsw
 xyC
 xyC
@@ -579750,15 +580310,15 @@ gZr
 gZr
 wmj
 dmS
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
-gJG
-gJG
-fjX
+mRr
+mRr
+nAO
+aMc
+dOA
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -580153,27 +580713,27 @@ vIa
 vIa
 vIa
 vIa
-abE
+jiy
 qsx
 qsx
 qnC
 diJ
-gJG
-gJG
+dOA
+dOA
 qnC
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
 fIW
 aZs
 dmS
@@ -580182,15 +580742,15 @@ fkC
 ihl
 dmS
 cip
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
-gJG
-gJG
-fjX
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -580591,38 +581151,38 @@ diJ
 diJ
 diJ
 xED
-gJG
-gJG
-gJG
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-dpC
-gJG
-gJG
-fjX
+dOA
+dOA
+dOA
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+dyD
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -581017,44 +581577,44 @@ vIa
 vIa
 vIa
 diJ
-gJG
-gJG
-gJG
-gJG
-gJG
-gJG
-gJG
-gJG
-gJG
-ptX
-vdf
-vdf
-vdf
-vdf
-feh
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
 dOA
-gJG
-gJG
-gJG
-gJG
-fjX
+dOA
+dOA
+dOA
+dOA
+dOA
+dOA
+dOA
+dOA
+qkt
+uWM
+uWM
+uWM
+uWM
+cek
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -581463,30 +582023,30 @@ iFz
 yei
 yei
 pIx
-ptX
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-feh
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-hKm
-xaT
-lVX
-gJG
-gJG
-gJG
-fjX
+qkt
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+cek
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+wte
+hTI
+xIU
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -581904,21 +582464,21 @@ yei
 yei
 yei
 pIx
-fjX
-fZJ
-fZJ
-fZJ
+llU
+mRr
+mRr
+mRr
 rVV
 fKO
 jDq
 jDq
 jDq
 cLS
-jqs
-gJG
-gJG
-gJG
-fjX
+vXU
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -582336,21 +582896,21 @@ wtF
 wtF
 wtF
 xMp
-fjX
-fZJ
-fZJ
-hox
+llU
+mRr
+mRr
+hHW
 hRR
 nKx
 uRt
 lIw
 iur
 gPX
-jqs
-gJG
-gJG
-gJG
-fjX
+vXU
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -582768,21 +583328,21 @@ oBH
 ged
 wtF
 xMp
-fjX
-fZJ
-fZJ
-fjX
+llU
+mRr
+mRr
+llU
 hRR
 vzO
 tfW
 saa
 elm
 gPX
-jqs
-gJG
-gJG
-gJG
-fjX
+vXU
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -583200,21 +583760,21 @@ wxB
 ged
 wtF
 xMp
-fjX
-fZJ
-fZJ
-fjX
+llU
+mRr
+mRr
+llU
 hRR
 gtF
 eUJ
 eUJ
 dap
 gPX
-jqs
-gJG
-gJG
-gJG
-fjX
+vXU
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -583632,21 +584192,21 @@ omr
 ged
 wtF
 xMp
-fjX
-fZJ
-fZJ
-fjX
+llU
+mRr
+mRr
+llU
 hRR
 hyk
 xlm
 xlm
 xlm
 rIp
-jqs
-gJG
-gJG
-gJG
-fjX
+vXU
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -584064,22 +584624,22 @@ tpQ
 cGb
 wtF
 xMp
-fjX
-fZJ
-fZJ
-fjX
+llU
+mRr
+mRr
+llU
 fKO
 xlm
 xlm
 xlm
 xlm
 gPX
-jqs
-gJG
-dpC
-gJG
-ptX
-feh
+vXU
+dOA
+dyD
+dOA
+qkt
+cek
 fZJ
 fZJ
 fZJ
@@ -584496,22 +585056,22 @@ lFG
 wtF
 wtF
 xMp
-fjX
-fZJ
-fZJ
-fjX
+llU
+mRr
+mRr
+llU
 fKO
 cfz
 iJu
 mjf
 kJJ
 gPX
-jqs
-gJG
-gJG
-gJG
-gJG
-fjX
+vXU
+dOA
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -584928,22 +585488,22 @@ ged
 wtF
 jZx
 xMp
-fjX
-fZJ
-fZJ
-fjX
+llU
+mRr
+mRr
+llU
 jBo
 xCI
 fKO
 xCI
 xCI
 kBi
-jqs
-gJG
-gJG
-gJG
-gJG
-fjX
+vXU
+dOA
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -585360,22 +585920,22 @@ uKS
 aCU
 aCU
 ide
-fjX
-fZJ
-fZJ
-ptX
-feh
-rZi
-rZi
-rZi
-rZi
-jqs
-jqs
-gJG
-gJG
-gJG
-gJG
-fjX
+llU
+mRr
+mRr
+qkt
+cek
+jAX
+jAX
+jAX
+jAX
+vXU
+vXU
+dOA
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -585789,25 +586349,25 @@ wtF
 wtF
 uKS
 ide
-gJG
+dOA
 utU
 bAY
-fjX
-fZJ
-fZJ
-fZJ
-ptX
-vdf
-vdf
-vdf
-vdf
-rpr
-jqs
-gJG
-gJG
-gJG
-hox
-dld
+llU
+mRr
+mRr
+mRr
+qkt
+uWM
+uWM
+uWM
+uWM
+aMc
+vXU
+kmy
+dOA
+dOA
+hHW
+geS
 fZJ
 fZJ
 fZJ
@@ -586220,25 +586780,25 @@ dxS
 wtF
 hLC
 xMp
-gJG
-gJG
-gJG
+dOA
+dOA
+dOA
 kRZ
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-hKm
-lVX
-gJG
-gJG
-fjX
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+wte
+xIU
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -586652,25 +587212,25 @@ nBW
 gsV
 xdI
 eOj
-gJG
-gJG
 dOA
+dOA
+kmy
 kRZ
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-fjX
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -587085,24 +587645,24 @@ wtF
 rgQ
 kbs
 pIx
-gJG
-gJG
+dOA
+dOA
 kRZ
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-fjX
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -587519,23 +588079,23 @@ naI
 kbs
 yei
 pIx
-hox
-dld
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-ptX
-feh
+hHW
+geS
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+qkt
+cek
 fZJ
 fZJ
 fZJ
@@ -587951,24 +588511,24 @@ wix
 ipq
 igQ
 xMp
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-kNH
-rpr
-gJG
-gJG
-gJG
-ptX
-feh
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+nAO
+aMc
+dOA
+dOA
+dOA
+qkt
+cek
 fZJ
 fZJ
 fZJ
@@ -588383,24 +588943,24 @@ rCn
 rdP
 aUu
 xMp
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-dpC
-gJG
-gJG
-gJG
-gJG
-fjX
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dyD
+dOA
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -588815,24 +589375,24 @@ fkZ
 mFS
 rdP
 pZe
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
-gJG
-gJG
-fjX
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -589247,24 +589807,24 @@ tvS
 iQL
 stM
 xMp
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
-gJG
-gJG
-fjX
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -589679,24 +590239,24 @@ naI
 naI
 naI
 xMp
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
-gJG
-gJG
-fjX
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -590111,24 +590671,24 @@ hUX
 gkB
 xEH
 xMp
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
-gJG
-gJG
-fjX
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -590543,24 +591103,24 @@ rCn
 rdP
 rdP
 pZe
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
-gJG
-gJG
-fjX
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -590975,24 +591535,24 @@ fkZ
 lVJ
 aUu
 xMp
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-dpC
-gJG
-gJG
-gJG
-gJG
-fjX
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dyD
+dOA
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -591407,24 +591967,24 @@ vvm
 iQL
 stM
 xMp
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-hKm
-lVX
-gJG
-gJG
-gJG
-hox
-dld
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+wte
+xIU
+dOA
+dOA
+dOA
+hHW
+geS
 fZJ
 fZJ
 fZJ
@@ -591839,23 +592399,23 @@ naI
 naI
 naI
 xMp
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
-fjX
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -592271,23 +592831,23 @@ bgs
 wbi
 pvG
 pZe
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
-fjX
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -592703,23 +593263,23 @@ fkm
 rCn
 avj
 xMp
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
-fjX
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -593135,23 +593695,23 @@ eVe
 tpQ
 cGF
 xMp
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-gJG
-fjX
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -593567,23 +594127,23 @@ bpH
 njW
 ueo
 xMp
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+kmy
 dOA
-gJG
-gJG
-fjX
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -593999,23 +594559,23 @@ scK
 soz
 scK
 bfS
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-hox
-dld
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+hHW
+geS
 fZJ
 fZJ
 fZJ
@@ -594431,22 +594991,22 @@ wpu
 ilE
 scK
 bfS
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-fjX
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -594863,22 +595423,22 @@ wpu
 wpu
 scK
 bfS
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-dpC
-fjX
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dyD
+llU
 fZJ
 fZJ
 fZJ
@@ -595295,22 +595855,22 @@ wpu
 wpu
 scK
 bfS
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-fjX
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -595727,22 +596287,22 @@ wpu
 wpu
 scK
 bfS
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-fjX
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -596159,22 +596719,22 @@ wpu
 kGz
 scK
 bfS
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-fjX
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -596566,8 +597126,8 @@ vIa
 szJ
 eJr
 szJ
-abE
-abE
+jiy
+jiy
 wtF
 rSI
 srl
@@ -596591,22 +597151,22 @@ scK
 soz
 scK
 bfS
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
-gJG
-gJG
-fjX
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -596998,8 +597558,8 @@ vIa
 szJ
 atu
 szJ
-abE
-abE
+jiy
+jiy
 wtF
 wtF
 uoM
@@ -597023,22 +597583,22 @@ bbA
 bbA
 bbA
 xVY
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-kNH
-vdf
-vdf
-vdf
-rpr
-gJG
-gJG
-fjX
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+nAO
+uWM
+uWM
+uWM
+aMc
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -597427,50 +597987,50 @@ euP
 euP
 euP
 euP
-abE
-vwM
-abE
-abE
+jiy
+noy
+jiy
+jiy
 qsx
-hox
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-xaT
-dld
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-kNH
-rpr
-gJG
-gJG
-gJG
-gJG
-gJG
-gJG
-fjX
+hHW
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+hTI
+geS
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+nAO
+aMc
+dOA
+dOA
+dOA
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -597861,48 +598421,48 @@ euP
 euP
 euP
 wBJ
-abE
-abE
+jiy
+jiy
 qsx
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
 qsx
-gJG
-gJG
-gJG
-gJG
-gJG
-gJG
-fjX
+dOA
+dOA
+dOA
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -598292,49 +598852,49 @@ euP
 euP
 euP
 euP
-jqs
+vXU
 eRa
 qsx
 qsx
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
 qsx
 qsx
-gJG
-gJG
-gJG
-gJG
-gJG
-fjX
+dOA
+dOA
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -598724,49 +599284,49 @@ euP
 euP
 euP
 euP
-jqs
+vXU
 qsx
 qnC
 qsx
-fjX
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-fZJ
-jqs
+llU
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+mRr
+vXU
 qsx
 qsx
 qsx
-dpC
-gJG
-gJG
-gJG
-fjX
+dyD
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -599156,49 +599716,49 @@ euP
 euP
 euP
 euP
-jqs
+vXU
 qsx
 qsx
 qsx
-ptX
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-vdf
-rpr
+qkt
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+uWM
+aMc
 qsx
 qsx
 qsx
 qsx
-gJG
-gJG
-gJG
-fjX
+dOA
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -599588,8 +600148,8 @@ euP
 euP
 euP
 euP
-hKm
-lVX
+wte
+xIU
 qsx
 qsx
 qsx
@@ -599628,9 +600188,9 @@ qsx
 qsx
 qsx
 qsx
-gJG
-gJG
-fjX
+dOA
+dOA
+llU
 fZJ
 fZJ
 fZJ
@@ -600021,7 +600581,7 @@ euP
 euP
 euP
 euP
-jqs
+vXU
 qsx
 qsx
 qsx
@@ -600062,7 +600622,7 @@ qsx
 qsx
 qsx
 paW
-fjX
+llU
 fZJ
 fZJ
 fZJ
@@ -600453,48 +601013,48 @@ euP
 euP
 euP
 euP
-hKm
-xaT
-lVX
+wte
+hTI
+xIU
 qsx
 qsx
 qsx
-hox
-xaT
-xaT
-xaT
-lVX
+hHW
+hTI
+hTI
+hTI
+xIU
 qsx
 qsx
 qsx
-hox
-xaT
-xaT
-xaT
-lVX
+hHW
+hTI
+hTI
+hTI
+xIU
 qsx
 qsx
 qsx
-hox
-xaT
-xaT
-xaT
-lVX
+hHW
+hTI
+hTI
+hTI
+xIU
 qsx
 qsx
 qsx
-hox
-xaT
-xaT
-xaT
-lVX
+hHW
+hTI
+hTI
+hTI
+xIU
 qsx
 qsx
 qsx
-hox
-xaT
-xaT
-dld
+hHW
+hTI
+hTI
+geS
 fZJ
 fZJ
 fZJ
@@ -600887,43 +601447,43 @@ euP
 euP
 euP
 euP
-hKm
-xaT
-xaT
-xaT
-dld
+wte
+hTI
+hTI
+hTI
+geS
 euP
 euP
 euP
-hKm
-xaT
-xaT
-xaT
-dld
+wte
+hTI
+hTI
+hTI
+geS
 euP
 euP
 euP
-hKm
-xaT
-xaT
-xaT
-dld
+wte
+hTI
+hTI
+hTI
+geS
 euP
 euP
 euP
-hKm
-xaT
-xaT
-xaT
-dld
+wte
+hTI
+hTI
+hTI
+geS
 euP
 euP
 euP
-hKm
-xaT
-xaT
-xaT
-dld
+wte
+hTI
+hTI
+hTI
+geS
 euP
 euP
 fZJ
@@ -601320,9 +601880,9 @@ euP
 euP
 euP
 euP
-jqs
+vXU
 qsx
-fjX
+llU
 euP
 euP
 euP
@@ -601752,9 +602312,9 @@ euP
 euP
 euP
 euP
-jqs
+vXU
 qsx
-fjX
+llU
 euP
 euP
 euP
@@ -602184,9 +602744,9 @@ euP
 euP
 euP
 euP
-jqs
+vXU
 qsx
-fjX
+llU
 euP
 euP
 euP
@@ -602616,9 +603176,9 @@ euP
 euP
 euP
 euP
-jqs
+vXU
 qsx
-fjX
+llU
 euP
 euP
 euP
@@ -603047,11 +603607,11 @@ euP
 euP
 euP
 euP
-kNH
-vdf
-vdf
-vdf
-feh
+nAO
+uWM
+uWM
+uWM
+cek
 euP
 euP
 euP
@@ -603479,11 +604039,11 @@ euP
 euP
 euP
 euP
-jqs
+vXU
 qsx
 qsx
 qsx
-fjX
+llU
 euP
 euP
 euP
@@ -603911,11 +604471,11 @@ euP
 euP
 euP
 euP
-jqs
+vXU
 qsx
 qsx
 qsx
-fjX
+llU
 euP
 euP
 euP
@@ -604343,11 +604903,11 @@ euP
 euP
 euP
 euP
-jqs
+vXU
 qsx
 eRa
 qsx
-fjX
+llU
 euP
 euP
 euP
@@ -604775,11 +605335,11 @@ euP
 euP
 euP
 euP
-jqs
+vXU
 qsx
 qsx
 qsx
-fjX
+llU
 euP
 euP
 euP
@@ -605207,11 +605767,11 @@ euP
 euP
 euP
 euP
-hKm
-xaT
-xaT
-xaT
-dld
+wte
+hTI
+hTI
+hTI
+geS
 euP
 euP
 euP
