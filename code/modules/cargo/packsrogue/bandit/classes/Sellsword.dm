@@ -22,10 +22,25 @@
 	cost = 20
 	contains = list(/obj/item/clothing/neck/roguetown/chaincoif)
 
+/datum/supply_pack/rogue/Sellsword/coif/fullsteel
+	name = "Full Steel Coif"
+	cost = 35
+	contains = list(/obj/item/clothing/neck/roguetown/chaincoif/full)
+
+/datum/supply_pack/rogue/Sellsword/coif/hpcoif
+	name = "Heavy Padded Coif"
+	cost = 30
+	contains = list(/obj/item/clothing/neck/roguetown/coif/heavypadding)
+
 /datum/supply_pack/rogue/Sellsword/Bevor
 	name = "Bevor"
 	cost = 20
 	contains = list(/obj/item/clothing/neck/roguetown/bevor)
+
+/datum/supply_pack/rogue/Sellsword/gorget
+	name = "Gorget"
+	cost = 20
+	contains = list(/obj/item/clothing/neck/roguetown/gorget)
 
 /datum/supply_pack/rogue/Sellsword/sgorget
 	name = "Steel Gorget"

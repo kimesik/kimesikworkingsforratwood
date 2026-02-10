@@ -77,6 +77,11 @@
 	cost = 20
 	contains = list(/obj/item/clothing/neck/roguetown/chaincoif)
 
+/datum/supply_pack/rogue/Knight/coif/fullsteel
+	name = "Full Steel Coif"
+	cost = 20
+	contains = list(/obj/item/clothing/neck/roguetown/chaincoif/full)
+
 /datum/supply_pack/rogue/Knight/coif/hpcoif
 	name = "Heavy Padded Coif"
 	cost = 20
