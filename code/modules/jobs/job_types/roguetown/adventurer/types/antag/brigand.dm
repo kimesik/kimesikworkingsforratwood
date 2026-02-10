@@ -35,6 +35,7 @@
 		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/shields = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/tracking = SKILL_LEVEL_APPRENTICE,
 	)
 
 /datum/outfit/job/roguetown/bandit/brigand/pre_equip(mob/living/carbon/human/H)
