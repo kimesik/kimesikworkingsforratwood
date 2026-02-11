@@ -92,7 +92,7 @@
 	name = "Czwarteki Hussar"
 	greet_text = "You are a Hussar of Czwarteki, under the oath of your lord. You have raised your Journeyman to come with you to cross the lands. "
 	outfit = /datum/outfit/job/roguetown/czwarteki/hussar
-	allowed_races = (/datum/species/human/northern,/datum/species/lupian,/datum/species/demihuman,/datum/species/tieberian, /datum/species/lizardfolk,/datum/species/anthromorph,/datum/species/dracon, /datum/species/tabaxi)
+	allowed_races = list(/datum/species/human/northern,/datum/species/lupian,/datum/species/demihuman,/datum/species/tieberian, /datum/species/lizardfolk,/datum/species/anthromorph,/datum/species/dracon, /datum/species/tabaxi)
 	grant_lit_torch = TRUE
 	show_wanderer_examine = FALSE
 	horse = /mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck/tame/saddled
