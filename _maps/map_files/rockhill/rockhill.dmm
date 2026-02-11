@@ -46835,10 +46835,6 @@
 	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/manor/rockhill)
-"oeZ" = (
-/obj/machinery/light/rogue/wallfire/candle/blue/l,
-/turf/open/floor/rogue/tile,
-/area/rogue/indoors/inq/basement)
 "ofb" = (
 /obj/structure/far_travel,
 /turf/open/floor/rogue/cobble/mossy,
@@ -351533,10 +351529,10 @@ kVj
 qht
 wEb
 fwx
-qht
-oeZ
-jEF
 gTV
+urg
+jEF
+qht
 urg
 urg
 maf
