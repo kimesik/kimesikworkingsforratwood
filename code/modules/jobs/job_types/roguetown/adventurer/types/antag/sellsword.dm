@@ -56,12 +56,12 @@
 	neck = /obj/item/clothing/neck/roguetown/chaincoif
 	id = /obj/item/mattcoin
 	H.adjust_blindness(-3)
-	var/weapons = list("The Disgraced Watchman (Maces, Shields & Crossbows)","The Mercenary (Swords, Shields & Polearms)", "The Wayward Warden (Axes, Archery, Sneaking, Climbing & Athletics)")
+	var/weapons = list("The Deserter (Maces, Shields & Crossbows)","The Mercenary (Swords, Shields & Polearms)", "The Hunter (Axes, Archery, Sneaking, Climbing & Athletics)")
 	if(H.mind)
 		var/weapon_choice = input(H, "Choose your expert-level proficiencies.", "HOW DOTH THOU WALK THROUGH LYFE, SELLSWORD?") as anything in weapons
 		H.set_blindness(0)
 		switch(weapon_choice)
-			if("The Disgraced Watchman (Maces, Shields & Crossbows)") 
+			if("The Deserter (Maces, Shields & Crossbows)") 
 				backl = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 				beltl = /obj/item/rogueweapon/mace/steel
 				beltr = /obj/item/quiver/bolts
@@ -80,17 +80,16 @@
 				H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_EXPERT, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/combat/shields, SKILL_LEVEL_EXPERT, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, SKILL_LEVEL_EXPERT, TRUE)
-			if("The Wayward Warden (Axes, Archery, Sneaking, Climbing & Athletics)")
+			if("The Hunter (Axes, Archery, Sneaking, Climbing & Athletics)")
 				backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 				beltl = /obj/item/quiver/arrows
 				beltr = /obj/item/rogueweapon/stoneaxe/battle
 				armor = /obj/item/clothing/suit/roguetown/armor/leather/hide
-				head = /obj/item/clothing/head/roguetown/roguehood/warden
-				cloak = /obj/item/clothing/cloak/wardencloak
+				head = /obj/item/clothing/head/roguetown/helmet/leather/volfhelm
+				cloak = /obj/item/clothing/cloak/raincloak/furcloak/black
 				H.adjust_skillrank_up_to(/datum/skill/combat/axes, SKILL_LEVEL_EXPERT, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/combat/crossbows, SKILL_LEVEL_EXPERT, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/combat/bows, SKILL_LEVEL_MASTER, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/combat/slings, SKILL_LEVEL_JOURNEYMAN, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/misc/climbing, SKILL_LEVEL_EXPERT, TRUE)
-				H.adjust_skillrank_up_to(/datum/skill/misc/athletics, SKILL_LEVEL_EXPERT, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/misc/sneaking, SKILL_LEVEL_JOURNEYMAN, TRUE)
