@@ -1,5 +1,5 @@
 /*
-Firstly, the
+Firstly, the coordinates device. Eventually, I'll add free aim. But for now...
 */
 /obj/item/rogueweapon/palantir
 	name = "Palantir"
@@ -94,7 +94,7 @@ Take a guess, yeah?
 /obj/item/cannonball/canister/detonate(turf/T)
 	..()
 	canister_detonate()
-	spawn(2 SECONDS)//It detonates ABOVE, or something. I 'unno.
+	spawn(2 SECONDS)//It detonates ABOVE, or something. I 'unno. It's COOL.
 	explosion(T, 0, 0, 1, 4)
 
 /*
