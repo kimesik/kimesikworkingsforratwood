@@ -1306,7 +1306,7 @@
 							// Assign surname to groom
 							var/list/groom_name_parts = splittext(thegroom.real_name, " ")
 							for(T in title)
-								if(T == copytext(groom_name_parts[1]))
+								if(T == copytext(groom_name_parts[1], 1, 0))
 									thegroom.real_name = "[groom_name_parts[1]] [groom_name_parts[2]] [surname]"
 									title_found = TRUE
 									break
@@ -1316,7 +1316,7 @@
 							title_found = FALSE
 							var/list/bride_name_parts = splittext(thebride.real_name, " ")
 							for(T in title)
-								if(T == copytext(bride_name_parts[1]))
+								if(T == copytext(bride_name_parts[1], 1, 0))
 									thebride.real_name = "[bride_name_parts[1]] [bride_name_parts[2]] [surname]"
 									title_found = TRUE
 									break
