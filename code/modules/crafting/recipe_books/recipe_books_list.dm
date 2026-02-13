@@ -167,6 +167,7 @@
 		/datum/book_entry/additus,
 		/datum/book_entry/subtractus,
 		/datum/book_entry/effingo,
+		/datum/book_entry/ruptis,
 		/datum/book_entry/si,
 		/datum/book_entry/alioquin,
 		/datum/book_entry/iteratio,

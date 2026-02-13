@@ -153,7 +153,7 @@
 	return {"
 	<div>
 	<h2>Signum</h2>
-	This command receives a coordinate list iota and provides a coordinate list of the difference between it and the location which the spell was cast toward.
+	This command receives a coordinate iota and provides a coordinate of the difference between it and the location which the spell was cast toward.
 	(The tile clicked upon when casting the spell.)
 	</div>
 	"}
@@ -299,6 +299,18 @@
 	<div>
 	<h2>Effingo</h2>
 	This command provides a duplicate iota of the currently selected iota.
+	</div>
+	"}
+
+/datum/book_entry/ruptis
+	name = "Ruptis"
+	category = "Circuitus"
+
+/datum/book_entry/ruptis/inner_book_html(mob/user)
+	return {"
+	<div>
+	<h2>Ruptis</h2>
+	This command provides a duplicate iota of the previous iota.
 	</div>
 	"}
 
@@ -504,7 +516,7 @@
 	<div>
 	<h2>Regio</h2>
 	This command receives a number and coordinate. The number must precede the coordinate. It provides a list of coordinates in an area around the
-	coordinate, in a radius equal to the number iota used. (A bit finnicky and difficult to use with iteratio.)
+	coordinate, in a radius equal to the number iota used.
 	</div>
 	"}
 

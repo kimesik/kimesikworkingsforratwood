@@ -297,20 +297,30 @@
 	if(!data.target_location)
 		return FALSE
 
-	if(!data.current_iota || data.current_iota.what_am_i != "coordlist")
+	if(!data.current_iota)
 		return FALSE
 
-	var/datum/spell_value/coord_list/clist = data.current_iota
-	var/datum/spell_value/coord_list/result = new()
-
-	for(var/datum/spell_value/position/pos in clist.coord_list)
+	if(data.current_iota.what_am_i == "coords")
+		var/datum/spell_value/position/pos = data.current_iota
 		var/new_x = data.target_location.x - pos.x_pos
 		var/new_y = data.target_location.y - pos.y_pos
 		var/new_z = data.target_location.z - pos.z_pos
-		result.add(new /datum/spell_value/position(new_x, new_y, new_z))
+		data.current_iota = new /datum/spell_value/position(new_x, new_y, new_z)
+		return TRUE
+	else if(data.current_iota.what_am_i == "coordlist")
+		var/datum/spell_value/coord_list/clist = data.current_iota
+		var/datum/spell_value/coord_list/result = new()
 
-	data.current_iota = result
-	return TRUE
+		for(var/datum/spell_value/position/pos in clist.coord_list)
+			var/new_x = data.target_location.x - pos.x_pos
+			var/new_y = data.target_location.y - pos.y_pos
+			var/new_z = data.target_location.z - pos.z_pos
+			result.add(new /datum/spell_value/position(new_x, new_y, new_z))
+
+		data.current_iota = result
+		return TRUE
+	else
+		return FALSE
 
 /datum/spell_operation/to_coords
 	word = "coordinatus"
@@ -643,11 +653,25 @@
 		to_chat(data.caster, span_warning("Cannot loop within a loop!"))
 		return FALSE
 
-	if(!data.current_iota || data.current_iota.what_am_i != "moblist")
+	if(!data.current_iota)
 		return FALSE
 
-	var/datum/spell_value/people/victims = data.current_iota
-	if(!length(victims.mob_list))
+	var/list/items_to_iterate = list()
+
+	if(data.current_iota.what_am_i == "moblist")
+		var/datum/spell_value/people/victims = data.current_iota
+		for(var/mob/M in victims.mob_list)
+			var/datum/spell_value/people/single = new()
+			single.add(M)
+			items_to_iterate += single
+	else if(data.current_iota.what_am_i == "coordlist")
+		var/datum/spell_value/coord_list/coords = data.current_iota
+		for(var/datum/spell_value/position/pos in coords.coord_list)
+			items_to_iterate += pos
+	else
+		return FALSE
+
+	if(!length(items_to_iterate))
 		return TRUE
 
 	data.in_loop = TRUE
@@ -663,10 +687,8 @@
 
 	var/datum/spell_value/backup_iota = data.current_iota
 
-	for(var/mob/M in victims.mob_list)
-		var/turf/T = get_turf(M)
-		if(T)
-			data.current_iota = new /datum/spell_value/position(T.x, T.y, T.z)
+	for(var/datum/spell_value/item in items_to_iterate)
+		data.current_iota = item
 
 		for(var/word_idx = loop_start, word_idx <= length(data.words), word_idx++)
 			var/word = data.words[word_idx]
@@ -754,6 +776,14 @@
 
 /datum/spell_operation/copy/activate(datum/incantation_data/data)
 	data.push_iota(data.current_iota)
+	return TRUE
+
+/datum/spell_operation/copy_last
+	word = "ruptis"
+
+/datum/spell_operation/copy_last/activate(datum/incantation_data/data)
+	var/datum/spell_value/number/new_iota = data.peek_stack(0)
+	data.push_iota(new_iota)
 	return TRUE
 
 /datum/spell_operation/flip_sign
@@ -867,11 +897,11 @@
 		how_far = range_iota.num
 		data.pop_iota()
 
-	var/datum/spell_value/tile_group/area = new()
+	var/datum/spell_value/coord_list/coords = new()
 	for(var/turf/T in range(how_far, center_spot))
-		area.add(T)
+		coords.add(new /datum/spell_value/position(T.x, T.y, T.z))
 
-	data.current_iota = area
+	data.current_iota = coords
 	return TRUE
 
 /datum/spell_operation/find_people
@@ -1500,6 +1530,7 @@ GLOBAL_LIST_INIT(spell_word_list, list(
 	"additus" = new /datum/spell_operation/coord_add(),
 	"subtractus" = new /datum/spell_operation/coord_sub(),
 	"effingo" = new /datum/spell_operation/copy,
+	"ruptis" = new /datum/spell_operation/copy_last(),
 	"si" = new /datum/spell_operation/check_if(),
 	"alioquin" = new /datum/spell_operation/or_else(),
 	"iteratio" = new /datum/spell_operation/for_each(),
