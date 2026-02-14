@@ -253,7 +253,6 @@
 		/datum/sprite_accessory/hair/head/gloomy_long,
 		/datum/sprite_accessory/hair/head/gloomy_medium,
 		/datum/sprite_accessory/hair/head/gloomy_short,
-		/datum/sprite_accessory/hair/head/gloomylong,
 		/datum/sprite_accessory/hair/head/gnomish_f,
 		/datum/sprite_accessory/hair/head/graceful,
 		/datum/sprite_accessory/hair/head/grenzelcut,
