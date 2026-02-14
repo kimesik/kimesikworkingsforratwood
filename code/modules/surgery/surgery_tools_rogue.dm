@@ -232,6 +232,7 @@
 		to_chat(target, span_userdanger("[user] is trying to brand me with \the [src]!"))
 	else
 		user.visible_message(span_warning("[user] slowly wields \the [src] onto themselves."))
+
 	log_combat(user, target, "Branding attempt: \"[setbranding]\"")
 	if(!do_after(user, 5 SECONDS, target = A))
 		log_combat(user, target, "Branding aborted: \"[setbranding]\"")
@@ -245,42 +246,9 @@
 	if(!branding_part) //missing limb
 		to_chat(user, span_warning("Unfortunately, there's nothing there."))
 		return TRUE
-	if(user.zone_selected == BODY_ZONE_PRECISE_GROIN) // if targeting the groin, handle marking genitals and buttocks instead of a single chest zone
-		var/obj/item/organ/penis/penis = target.getorganslot(ORGAN_SLOT_PENIS)
-		var/obj/item/organ/vagina/vagina = target.getorganslot(ORGAN_SLOT_VAGINA)
-		var/obj/item/organ/testicles/testes = target.getorganslot(ORGAN_SLOT_TESTICLES)
-		if((penis && penis.visible_organ || vagina && vagina.visible_organ || testes && testes.visible_organ) && (alert("Brand their genitals?",, "Yes", "No") == "Yes"))
-			var/which_genitals = ""
-			if(penis && penis.visible_organ && alert("Brand their penis?",,"Yes", "No") == "Yes")
-				if(QDELETED(penis) || !user.Adjacent(target))
-					return TRUE
-				if(length(penis.branded_writing))
-					to_chat(user, span_warning("I reburn over the existing marking."))
-				penis.branded_writing = setbranding
-				which_genitals = "cock"
-			else if(vagina && vagina.visible_organ && alert("Brand their pussy?",,"Yes", "No") == "Yes")
-				if(QDELETED(vagina) || !user.Adjacent(target))
-					return TRUE
-				if(length(vagina.branded_writing))
-					to_chat(user, span_warning("I reburn over the existing marking."))
-				vagina.branded_writing = setbranding
-				which_genitals = "pussy"
-			else if(testes && testes.visible_organ && alert("Brand their balls?",,"Yes", "No") == "Yes")
-				if(QDELETED(testes) || !user.Adjacent(target))
-					return TRUE
-				if(length(testes.branded_writing))
-					to_chat(user, span_warning("I reburn over the existing marking."))
-				testes.branded_writing = setbranding
-				which_genitals = "balls"
-			else
-				to_chat(user, span_warning("I pull the iron away."))
-				return TRUE
-			user.visible_message(span_info("[target] writhes as \the [src] sears onto their [which_genitals]! The fresh brand reads \"[setbranding]\"."))
-			target.Knockdown(10)
-		else // fallback to burning their buttocks instead
-			if(alert("Brand their buttocks?",,"Yes", "No") != "Yes")
-				to_chat(user, span_warning("I pull the iron away."))
-				return TRUE
+
+	if(user.zone_selected == BODY_ZONE_PRECISE_GROIN) // if targeting the groin, handle marking buttocks and genitals instead of a single chest zone
+		if(alert("Brand their buttocks?",,"Yes", "No") == "Yes")
 			var/obj/item/bodypart/chest/buttocks = branding_part
 			if(QDELETED(buttocks) || !user.Adjacent(target) || !istype(buttocks)) // something went very wrong, abort
 				return TRUE
@@ -288,7 +256,41 @@
 				to_chat(user, span_warning("I reburn over the existing marking."))
 			user.visible_message(span_info("[target] writhes as \the [src] sears onto their hindquarters! The fresh brand reads \"[setbranding]\"."))
 			buttocks.branded_writing_on_buttocks = setbranding
-			target.Knockdown(10)
+		else // ask if they want to brand genitals
+			var/obj/item/organ/penis/penis = target.getorganslot(ORGAN_SLOT_PENIS)
+			var/obj/item/organ/vagina/vagina = target.getorganslot(ORGAN_SLOT_VAGINA)
+			var/obj/item/organ/testicles/testes = target.getorganslot(ORGAN_SLOT_TESTICLES)
+			if((penis && penis.visible_organ || vagina && vagina.visible_organ || testes && testes.visible_organ) && (alert("Brand their genitals?",, "Yes", "No") == "Yes"))
+				var/which_genitals = ""
+				if(penis && penis.visible_organ && alert("Brand their penis?",,"Yes", "No") == "Yes")
+					if(QDELETED(penis) || !user.Adjacent(target))
+						return TRUE
+					if(length(penis.branded_writing))
+						to_chat(user, span_warning("I reburn over the existing marking."))
+					penis.branded_writing = setbranding
+					which_genitals = "cock"
+				else if(vagina && vagina.visible_organ && alert("Brand their pussy?",,"Yes", "No") == "Yes")
+					if(QDELETED(vagina) || !user.Adjacent(target))
+						return TRUE
+					if(length(vagina.branded_writing))
+						to_chat(user, span_warning("I reburn over the existing marking."))
+					vagina.branded_writing = setbranding
+					which_genitals = "pussy"
+				else if(testes && testes.visible_organ && alert("Brand their balls?",,"Yes", "No") == "Yes")
+					if(QDELETED(testes) || !user.Adjacent(target))
+						return TRUE
+					if(length(testes.branded_writing))
+						to_chat(user, span_warning("I reburn over the existing marking."))
+					testes.branded_writing = setbranding
+					which_genitals = "balls"
+				else
+					to_chat(user, span_warning("I pull the iron away."))
+					return TRUE
+				user.visible_message(span_info("[target] writhes as \the [src] sears onto their [which_genitals]! The fresh brand reads \"[setbranding]\"."))
+			else
+				to_chat(user, span_warning("I pull the iron away."))
+				return TRUE
+		target.Knockdown(10)
 	else if(user.zone_selected == BODY_ZONE_PRECISE_NECK) // if targeting the neck, handle marking instead of generic head zone
 		var/obj/item/bodypart/head/neck = branding_part
 		if(QDELETED(neck) || !istype(neck)) // something went very wrong, abort
@@ -303,6 +305,7 @@
 			to_chat(user, span_warning("I reburn over the existing marking."))
 		user.visible_message(span_info("[target] writhes as \the [src] sears onto their [branding_part.name]! The fresh brand reads \"[setbranding]\"."))
 		branding_part.branded_writing = setbranding
+
 	to_chat(target, span_userdanger("You have been branded!"))
 	target.emote(prob(50) ? "painscream" : "scream", forced = TRUE)
 	target.Stun(40)
