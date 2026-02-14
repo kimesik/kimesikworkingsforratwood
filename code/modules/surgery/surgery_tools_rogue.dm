@@ -182,7 +182,7 @@
 /obj/item/rogueweapon/surgery/cautery/branding
 	name = "branding iron"
 	desc = "A symbol is well-writ on flesh. Heat it up before use."
-	icon_state = "cauteryiron"
+	icon_state = "brandingiron"
 	possible_item_intents = list(/datum/intent/use)
 	var/setbranding = null
 
