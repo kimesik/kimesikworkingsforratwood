@@ -156,7 +156,6 @@
 	accessory_type = /datum/sprite_accessory/testicles/pair
 	var/ball_size = DEFAULT_TESTICLES_SIZE
 	var/virility = TRUE
-	var/branded_writing = ""
 
 /obj/item/organ/testicles/internal
 	name = "internal testicles"
