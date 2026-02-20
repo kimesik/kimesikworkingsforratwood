@@ -1016,7 +1016,7 @@
 			var/obj/item/bodypart/chest/buttocks = branded_bodypart
 			if(length(buttocks.branded_writing_on_buttocks) && get_location_accessible(src, BODY_ZONE_PRECISE_GROIN))
 				. += span_info("[capitalize(m2)] hindquarters has been branded with ") + "[span_boldwarning(buttocks.branded_writing_on_buttocks)]."
-		if(istype(branded_bodypart, /obj/item/bodypart/head))
+		else if(istype(branded_bodypart, /obj/item/bodypart/head))
 			var/obj/item/bodypart/head/neck = branded_bodypart
 			if(length(neck.branded_writing_on_neck) && get_location_accessible(src, BODY_ZONE_PRECISE_NECK))
 				. += span_info("[capitalize(m2)] neck has been branded with ") + "[span_boldwarning(neck.branded_writing_on_neck)]."
