@@ -199,7 +199,9 @@
 /proc/add_cum_floor(turfu, do_big_puddle = FALSE)
 	if(!turfu || !isturf(turfu))
 		return
+	var/obj/effect/decal/cleanable/coom/puddle = new /obj/effect/decal/cleanable/coom(turfu)
 	if(do_big_puddle)
-		new /obj/effect/decal/cleanable/coom/big(turfu)
-	else
-		new /obj/effect/decal/cleanable/coom(turfu)
+		var/obj/effect/decal/cleanable/coom/puddle_big = new /obj/effect/decal/cleanable/coom(turfu)
+		if(puddle_big && puddle) // inherit pixel offset from first puddle
+			puddle_big.pixel_x = puddle.pixel_x
+			puddle_big.pixel_y = puddle.pixel_y
