@@ -1618,12 +1618,12 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	triumph_cost = 3
 
 /datum/loadout_item/tri_raneshen_coat
-	name = "Raneshen Coat"
+	name = "Zybantine Coat"
 	path = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat/raneshen
 	triumph_cost = 3
 
 /datum/loadout_item/tri_raneshen_gambeson
-	name = "Raneshen Gambeson"
+	name = "Zybantine Gambeson"
 	path = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/raneshen
 	triumph_cost = 3
 
@@ -1659,7 +1659,7 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	triumph_cost = 2
 
 /datum/loadout_item/tri_raneshen_hijab
-	name = "Raneshen Hijab"
+	name = "Zybantine Hijab"
 	path = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/raneshen
 	triumph_cost = 2
 
@@ -1768,7 +1768,7 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	triumph_cost = 2
 
 /datum/loadout_item/tri_raneshen_pants
-	name = "Raneshen Pants"
+	name = "Zybantine Pants"
 	path = /obj/item/clothing/under/roguetown/trou/leather/pontifex/raneshen
 	triumph_cost = 2
 
