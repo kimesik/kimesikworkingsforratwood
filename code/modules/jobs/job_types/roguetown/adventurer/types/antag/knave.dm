@@ -75,7 +75,7 @@
 			if("Bow & Sword") //Poacher
 				backl= /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 				l_hand = /obj/item/rogueweapon/sword/short
-				r_hand = /obj/item/restraints/legcuffs/beartrap = 1
+				r_hand = /obj/item/restraints/legcuffs/beartrap
 				beltl = /obj/item/rogueweapon/scabbard/sword
 				beltr = /obj/item/quiver/arrows
 				head = /obj/item/clothing/head/roguetown/helmet/leather/volfhelm //cool hat
