@@ -265,7 +265,7 @@
 	if(!bodypart)
 		return FALSE
 
-	if(!(sigbitflags & SKIP_ADJACENCY_CHECK) && !user.Adjacent(target))
+	if(!(sigbitflags & SKIP_ADJACENCY_CHECK) && !user.sexcon.Adjacent_Or_Closet(target))
 		return FALSE
 
 	if(src.check_same_tile && (user != target || self_target) && !(sigbitflags & SKIP_TILE_CHECK))
@@ -1005,6 +1005,9 @@
 
 /datum/sex_controller/proc/find_occupying_furniture()
 	if(bed || table_or_pillory)
+		return
+	if(istype(user.loc, /obj/structure/closet) || istype(user.loc, /obj/structure/handcart)) // tom cruise, come out of the closet
+		table_or_pillory = user.loc
 		return
 	if(target && isturf(target.loc)) // find target's bed/table
 		if(!(target.mobility_flags & MOBILITY_STAND)) // if target is lying down
