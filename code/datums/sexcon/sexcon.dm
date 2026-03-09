@@ -223,7 +223,7 @@
 			else if((access_zone_bitfield&SEX_ZONE_CHEST) && !get_location_accessible(user, BODY_ZONE_CHEST, grabs = FALSE, skipundies = TRUE))
 				access_zone_bitfield &= ~SEX_ZONE_CHEST
 		else
-		 	// hey YOU, add the new targeted zone to SEX_ZONE bitfield, and update update_all_accessible_body_zones()/get_accessible_body_zone()
+			// hey YOU, add the new targeted zone to SEX_ZONE bitfield, and update update_all_accessible_body_zones()/get_accessible_body_zone()
 			CRASH("sex_action: attempt to access non-existent bitfield for var body_zone_bitfield [body_zone]")
 
 /datum/sex_controller/proc/get_accessible_body_zone(body_zone_bitfield, body_zone, grabs)
@@ -265,7 +265,7 @@
 	if(!bodypart)
 		return FALSE
 
-	if(!(sigbitflags & SKIP_ADJACENCY_CHECK) && !user.Adjacent(target))
+	if(!(sigbitflags & SKIP_ADJACENCY_CHECK) && !user.sexcon.Adjacent_Or_Closet(target))
 		return FALSE
 
 	if(src.check_same_tile && (user != target || self_target) && !(sigbitflags & SKIP_TILE_CHECK))
@@ -351,6 +351,8 @@
 
 /datum/sex_controller/proc/cum_into(oral = FALSE, mob/living/carbon/human/splashed_user = null)
 	log_combat(user, target, "Came inside the target")
+	werewolf_sex_infect_attempt(user, target)
+	deadite_sex_infect_attempt(user, target)
 	if(oral)
 		playsound(user, pick(list('sound/misc/mat/mouthend (1).ogg','sound/misc/mat/mouthend (2).ogg')), 100, FALSE, ignore_walls = FALSE)
 	else
@@ -1004,6 +1006,9 @@
 /datum/sex_controller/proc/find_occupying_furniture()
 	if(bed || table_or_pillory)
 		return
+	if(istype(user.loc, /obj/structure/closet) || istype(user.loc, /obj/structure/handcart)) // tom cruise, come out of the closet
+		table_or_pillory = user.loc
+		return
 	if(target && isturf(target.loc)) // find target's bed/table
 		if(!(target.mobility_flags & MOBILITY_STAND)) // if target is lying down
 			bed = locate() in target.loc
@@ -1188,6 +1193,91 @@
 			if(prob(10))
 				var/obj/item/bodypart/groin = target.get_bodypart(check_zone(BODY_ZONE_PRECISE_GROIN))
 				groin.add_wound(/datum/wound/fracture)
+
+/datum/proc/werewolf_sex_infect_attempt(mob/living/carbon/human/top, mob/living/carbon/human/bottom)
+
+	if(!top || !bottom || !top.mind || !bottom.mind)
+		return
+
+	var/datum/antagonist/werewolf/WWtop
+	var/datum/antagonist/werewolf/WWbottom
+	var/infection_probability = 40
+	if(top.mind.has_antag_datum(/datum/antagonist/werewolf))
+		WWtop = top.mind.has_antag_datum(/datum/antagonist/werewolf/)
+	
+	if(bottom.mind.has_antag_datum(/datum/antagonist/werewolf))
+		WWbottom = bottom.mind.has_antag_datum(/datum/antagonist/werewolf/)
+
+	if(WWtop && WWbottom)
+		return
+	
+	if(WWtop && WWtop.transformed && !WWbottom)
+		if(prob(infection_probability))
+			var/answer = tgui_alert(top, "Infect your mate?", "Please answer in [DisplayTimeText(200)]!", list("Yae","Nae"),200)
+			if(!answer || answer == "Nae")
+				return
+			if(answer == "Yae")
+				bottom.werewolf_infect_attempt()
+		return
+
+
+	if(WWbottom && WWbottom.transformed && !WWtop)
+		if(prob(infection_probability))
+			var/answer = tgui_alert(bottom, "Infect your mate?", "Please answer in [DisplayTimeText(200)]!", list("Yae","Nae"),200)
+			if(!answer || answer == "Nae")
+				return
+			if(answer == "Yae")
+				top.werewolf_infect_attempt()
+		return
+
+/datum/proc/deadite_sex_infect_attempt(mob/living/carbon/human/top, mob/living/carbon/human/bottom)
+	
+	if(!top || !bottom || !top.mind || !bottom.mind)
+		return
+	var/datum/antagonist/zombie/ZMtop
+	var/datum/antagonist/zombie/ZMbottom
+	var/infection_probability = 40
+	if(top.mind.has_antag_datum(/datum/antagonist/zombie))
+		ZMtop = top.mind.has_antag_datum(/datum/antagonist/zombie/)
+	
+	if(bottom.mind.has_antag_datum(/datum/antagonist/zombie))
+		ZMbottom = bottom.mind.has_antag_datum(/datum/antagonist/zombie/)
+	
+	if(ZMtop && ZMbottom)
+		return
+	
+	if(ZMtop && ZMtop.has_turned && !ZMbottom)
+		if(prob(infection_probability))
+			var/answer = tgui_alert(top, "Spread HER gift?", "Please answer in [DisplayTimeText(200)]!", list("Yae","Nae"),200)
+			if(!answer || answer == "Nae")
+				return
+			if(answer == "Yae")
+				bottom.zaids_check()
+		return
+
+	if(ZMbottom && ZMbottom.has_turned && !ZMtop)
+		if(prob(infection_probability))
+			var/answer = tgui_alert(bottom, "Spread HER gift?", "Please answer in [DisplayTimeText(200)]!", list("Yae","Nae"),200)
+			if(!answer || answer == "Nae")
+				return
+			if(answer == "Yae")
+				top.zaids_check()
+		return
+///Making sure there're not any other antag or immune, then applies zombie infection
+/mob/living/carbon/human/proc/zaids_check() 
+	if(!mind)
+		return
+	if(mind.has_antag_datum(/datum/antagonist/vampire))
+		return
+	if(mind.has_antag_datum(/datum/antagonist/werewolf))
+		return
+	if(mind.has_antag_datum(/datum/antagonist/zombie))
+		return
+	if(mind.has_antag_datum(/datum/antagonist/skeleton))
+		return
+	if(HAS_TRAIT(src, TRAIT_ZOMBIE_IMMUNE))
+		return
+	return apply_status_effect(/datum/status_effect/zombie_infection)
 
 #undef SEX_ZONE_NULL
 #undef SEX_ZONE_GROIN
