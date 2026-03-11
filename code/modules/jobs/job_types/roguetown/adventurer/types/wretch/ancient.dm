@@ -1,0 +1,102 @@
+/datum/advclass/wretch/ancientchampion
+	name = "Ancient Champion"
+	tutorial = "In life, you were a mortal warrior shedding blood for Her Majesty, a veteran of countless battles and razings. In death, you have been rewarded with a privilege to serve Her forever more. You awaken once again, wielding blade and arcyne, to complete Her Grandest Work."
+	allowed_sexes = list(MALE, FEMALE)
+	allowed_races = RACES_ALL_KINDS //You get force-set to Skeleton Human anyway.
+	outfit = /datum/outfit/job/roguetown/wretch/ancientchampion
+	cmode_music = 'sound/music/combat_ancient.ogg'
+	category_tags = list(CTAG_WRETCH)
+	maximum_possible_slots = 1 //Spellcaster in Luxarmour and Master in weapons. Zizo's top skeleton.
+	applies_post_equipment = TRUE
+	traits_applied = list(TRAIT_HEAVYARMOR, TRAIT_OVERTHERETIC, TRAIT_ARCYNE_T2)
+	subclass_stats = list(
+		STATKEY_STR = 2,
+		STATKEY_INT = 2,
+		STATKEY_PER = 2,
+		STATKEY_CON = 2,
+		STATKEY_WIL = 2,
+		STATKEY_SPD = -3, //Slow as molasses. Weighted stat total of +6.
+	)
+	subclass_skills = list(
+		/datum/skill/combat/swords = SKILL_LEVEL_MASTER, //Master of Avantyne Longsword
+		/datum/skill/magic/arcane = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/knives = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/polearms = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/maces = SKILL_LEVEL_EXPERT, //Can side-spec into maces, but not desirable.
+		/datum/skill/combat/wrestling = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/riding = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/athletics = SKILL_LEVEL_MASTER,
+		/datum/skill/misc/climbing = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/shields = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
+	) //No Swimming because skeletons in water is bad.
+/datum/outfit/job/roguetown/wretch/ancientchampion/pre_equip(mob/living/carbon/human/H)
+	..()
+	H.become_skeleton()
+	H.set_patron(/datum/patron/inhumen/zizo) //Your entire purpose.
+	H.adjust_blindness(-3)
+	if(H.mind)
+		H.mind.add_antag_datum(new /datum/antagonist/skeleton())
+	head = /obj/item/clothing/head/roguetown/helmet/heavy/zizo
+	neck = /obj/item/clothing/neck/roguetown/bevor
+	mask = /obj/item/flowercrown/rosa //Worn by Her champions. Bring death to bring forth new life.
+	cloak = /obj/item/clothing/cloak/half
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/full/zizo
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy //We don't want to get bodyshot to death by archers
+	pants = /obj/item/clothing/under/roguetown/platelegs/zizo
+	gloves = /obj/item/clothing/gloves/roguetown/plate/zizo
+	wrists = /obj/item/clothing/wrists/roguetown/bracers
+	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/zizo
+	belt = /obj/item/storage/belt/rogue/leather/black
+	id = /obj/item/clothing/neck/roguetown/psicross/inhumen/aalloy
+	backr = /obj/item/rogueweapon/shield/tower/metal
+	backl = /obj/item/storage/backpack/rogue/satchel
+	r_hand = /obj/item/rogueweapon/sword/long/zizo
+	beltl = /obj/item/rogueweapon/scabbard/sword
+	if(H.mind)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/zizo_snuff/champion) //Champion-variant of Snuff Lights. Non-miracle, static range of 7, but much longer CD.
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/mending) //You can't take off your armour or do rites, so that's your only way of repairing your armour.
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/deathgrasp) //GET OVER HERE. Fetch that also applies -4 Speed, but with a longer CD.
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/profane) //Non-miracle version, your only way of dealing ranged damage.
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/bonemend) //Awkward-to-use self-heal.
+		H.dna.species.soundpack_m = new /datum/voicepack/male/evil() //Normal Skeleton voice is funny rather than menacing.
+		H.dna.species.soundpack_f = new /datum/voicepack/female/haughty()
+	H.set_blindness(0)
+	H.energy = H.max_energy //Just in case.
+	to_chat(H, span_danger("You are an ancient warrior risen from death, not a comedic skeleton. Be menacing and play with gravitas rather than humour."))
+
+/obj/effect/proc_holder/spell/invoked/bonemend
+	name = "Bone Mend"
+	desc = "Mend the chosen target's bones with a burst of necrotic magick. Requires standing still for a few seconds"
+	cost = 3
+	overlay_state = "rituos"
+	releasedrain = 50
+	chargetime = 5 SECONDS // Make in combat usage harder
+	range = 2
+	warnie = "sydwarning"
+	movement_interrupt = FALSE
+	chargedloop = null
+	sound = 'sound/magic/woundheal_crunch.ogg'
+	spell_tier = 2
+	chargedloop = /datum/looping_sound/invokeascendant
+	associated_skill = /datum/skill/magic/arcane
+	gesture_required = TRUE
+	antimagic_allowed = TRUE
+	recharge_time = 30 SECONDS
+	miracle = FALSE
+	zizo_spell = TRUE
+
+/obj/effect/proc_holder/spell/invoked/bonemend/cast(list/targets, mob/living/user)
+	..()
+	if(!isliving(targets[1]))
+		return FALSE
+
+	var/mob/living/target = targets[1]
+	if(target.mob_biotypes & MOB_UNDEAD) //positive energy harms the undead
+		var/obj/item/bodypart/affecting = target.get_bodypart(check_zone(user.zone_selected))
+		if(affecting && (affecting.heal_damage(50, 50) || affecting.heal_wounds(50)))
+			target.update_damage_overlays()
+		target.visible_message(span_danger("[target] reforms under the vile energy!"), span_notice("I'm remade by dark magic!"))
+		return TRUE
+	return TRUE
