@@ -5,17 +5,18 @@
 	allowed_races = RACES_ALL_KINDS //You get force-set to Skeleton Human anyway.
 	outfit = /datum/outfit/job/roguetown/wretch/ancientchampion
 	cmode_music = 'sound/music/combat_ancient.ogg'
+	class_select_category = CLASS_CAT_ACCURSED
 	category_tags = list(CTAG_WRETCH)
 	maximum_possible_slots = 1 //Spellcaster in Luxarmour and Master in weapons. Zizo's top skeleton.
 	applies_post_equipment = TRUE
 	traits_applied = list(TRAIT_HEAVYARMOR, TRAIT_OVERTHERETIC, TRAIT_ARCYNE_T2)
 	subclass_stats = list(
-		STATKEY_STR = 2,
+		STATKEY_STR = 3,
 		STATKEY_INT = 2,
 		STATKEY_PER = 2,
 		STATKEY_CON = 2,
 		STATKEY_WIL = 2,
-		STATKEY_SPD = -3, //Slow as molasses. Weighted stat total of +6.
+		STATKEY_SPD = -3, //Slow as molasses. Weighted stat total of +8.
 	)
 	subclass_skills = list(
 		/datum/skill/combat/swords = SKILL_LEVEL_MASTER, //Master of Avantyne Longsword
@@ -54,6 +55,12 @@
 	backl = /obj/item/storage/backpack/rogue/satchel
 	r_hand = /obj/item/rogueweapon/sword/long/zizo
 	beltl = /obj/item/rogueweapon/scabbard/sword
+	backpack_contents = list(
+		/obj/item/flashlight/flare/torch/lantern/prelit = 1,
+		/obj/item/rope/chain = 1,
+		/obj/item/rogueweapon/huntingknife = 1,
+		/obj/item/rogueweapon/scabbard/sheath = 1,
+		)
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/zizo_snuff/champion) //Champion-variant of Snuff Lights. Non-miracle, static range of 7, but much longer CD.
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/mending) //You can't take off your armour or do rites, so that's your only way of repairing your armour.
