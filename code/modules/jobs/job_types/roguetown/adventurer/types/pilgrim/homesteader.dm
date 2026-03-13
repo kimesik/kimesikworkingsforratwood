@@ -5,7 +5,7 @@
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/homesteader
 	maximum_possible_slots = 10 // Should never fill, for the purpose of players to know what types towners are in round at the menu
-	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER)
+	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER, CTAG_CAMPFOLLOWER)
 	traits_applied = list(TRAIT_HOMESTEAD_EXPERT)
 	subclass_stats = list(
 		STATKEY_SPD = -1,
@@ -369,13 +369,13 @@
 		"Modest Scholar - Spectacles, tunic, chaperon",
 		"Countryside - Straw hat, chemise, shortboots"
 	)
-	
+
 	var/outfit_choice = input(H, "Choose your outfit style.", "Outfit Selection") as anything in outfit_styles
-	
+
 	// Set base items
 	belt = /obj/item/storage/belt/rogue/leather
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
-	
+
 	switch(outfit_choice)
 		if("Laborer - Worker vest, trou, boots")
 			if(H.pronouns == SHE_HER || H.pronouns == THEY_THEM_F)
@@ -388,7 +388,7 @@
 				shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
 				shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 				head = /obj/item/clothing/head/roguetown/armingcap
-		
+
 		if("Field Hand - Straw hat, shortshirt, trou")
 			if(H.pronouns == SHE_HER || H.pronouns == THEY_THEM_F)
 				armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/random
@@ -398,7 +398,7 @@
 				pants = /obj/item/clothing/under/roguetown/trou
 				shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 			head = /obj/item/clothing/head/roguetown/strawhat
-		
+
 		if("Woodsman - Hood, workervest, bracers")
 			if(H.pronouns == SHE_HER || H.pronouns == THEY_THEM_F)
 				armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/random
@@ -410,7 +410,7 @@
 				shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 			head = /obj/item/clothing/head/roguetown/roguehood
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-		
+
 		if("Fisher - Fisherhat, shortshirt, work vest")
 			if(H.pronouns == SHE_HER || H.pronouns == THEY_THEM_F)
 				armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/random
@@ -420,14 +420,14 @@
 				armor = /obj/item/clothing/suit/roguetown/armor/workervest
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 			head = /obj/item/clothing/head/roguetown/fisherhat
-		
+
 		if("Artisan - Tunic, tights, furcloak")
 			shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/white
 			pants = /obj/item/clothing/under/roguetown/tights/random
 			shoes = /obj/item/clothing/shoes/roguetown/shortboots
 			cloak = /obj/item/clothing/cloak/raincloak/furcloak
 			head = /obj/item/clothing/head/roguetown/hatblu
-		
+
 		if("Seamster - Armordress, white tunic, cloth belt")
 			armor = /obj/item/clothing/suit/roguetown/armor/armordress
 			shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/white
@@ -435,7 +435,7 @@
 			shoes = /obj/item/clothing/shoes/roguetown/shortboots
 			cloak = /obj/item/clothing/cloak/raincloak/furcloak
 			belt = /obj/item/storage/belt/rogue/leather/cloth/lady
-		
+
 		if("Traveler - Half cloak, undershirt, boots")
 			if(H.pronouns == SHE_HER || H.pronouns == THEY_THEM_F)
 				armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/random
@@ -446,7 +446,7 @@
 				shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 			cloak = /obj/item/clothing/cloak/half
 			head = /obj/item/clothing/head/roguetown/roguehood/shalal/heavyhood
-		
+
 		if("Rustic - Fur hat, shortshirt, leather boots")
 			if(H.pronouns == SHE_HER || H.pronouns == THEY_THEM_F)
 				armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/random
@@ -455,7 +455,7 @@
 				pants = /obj/item/clothing/under/roguetown/trou
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 			head = /obj/item/clothing/head/roguetown/hatfur
-		
+
 		if("Miner - Arming cap, trou, work vest")
 			if(H.pronouns == SHE_HER || H.pronouns == THEY_THEM_F)
 				armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/random
@@ -466,7 +466,7 @@
 				shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
 			head = /obj/item/clothing/head/roguetown/armingcap
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
-		
+
 		if("Entertainer - Fancy hat, tunic, half cloak")
 			shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/white
 			pants = /obj/item/clothing/under/roguetown/tights/random
@@ -474,14 +474,14 @@
 			cloak = /obj/item/clothing/cloak/half
 			head = /obj/item/clothing/head/roguetown/fancyhat
 			belt = /obj/item/storage/belt/rogue/leather/cloth
-		
+
 		if("Modest Scholar - Spectacles, tunic, chaperon")
 			shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/white
 			pants = /obj/item/clothing/under/roguetown/tights/random
 			shoes = /obj/item/clothing/shoes/roguetown/shortboots
 			head = /obj/item/clothing/head/roguetown/chaperon
 			mask = /obj/item/clothing/mask/rogue/spectacles
-		
+
 		if("Countryside - Straw hat, chemise, shortboots")
 			if(H.pronouns == SHE_HER || H.pronouns == THEY_THEM_F)
 				armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/random

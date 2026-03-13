@@ -506,6 +506,28 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	delete_after_roundstart = FALSE
 	jobspawn_override = list("Wretch")
 
+/obj/effect/landmark/start/campfollower
+	name = "campfollower"
+	icon_state = "arrow"
+	jobspawn_override = list("Camp Follower")
+
+/obj/effect/landmark/start/campfollowerlate
+	name = "campfollower"
+	icon_state = "arrow"
+	delete_after_roundstart = FALSE
+	jobspawn_override = list("Camp Follower")
+
+/obj/effect/landmark/start/concierge
+	name = "concierge"
+	icon_state = "arrow"
+	jobspawn_override = list("Concierge")
+
+/obj/effect/landmark/start/conciergelate
+	name = "concierge"
+	icon_state = "arrow"
+	delete_after_roundstart = FALSE
+	jobspawn_override = list("Concierge")
+
 /obj/effect/landmark/start/nukeop_leader
 	name = "nukeop leader"
 	icon = 'icons/effects/landmarks_static.dmi'

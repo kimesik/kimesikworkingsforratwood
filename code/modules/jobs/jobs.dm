@@ -158,6 +158,8 @@ GLOBAL_LIST_INIT(wanderer_positions, list(
 	"Court Agent",
 	"Bandit",
 	"Wretch",
+	"Camp Follower",
+	"Concierge",
 ))
 
 GLOBAL_LIST_INIT(roguewar_positions, list(
@@ -185,6 +187,8 @@ GLOBAL_LIST_INIT(foreign_positions, list(
 	"Suitor",
 	"Orthodoxist",
 	"Migrant",
+	"Camp Follower",
+	"Concierge",
 ))
 
 GLOBAL_LIST_INIT(test_positions, list(

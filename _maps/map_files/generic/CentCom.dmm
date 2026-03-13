@@ -406,6 +406,9 @@
 /obj/structure/chair/wood/rogue{
 	dir = 1
 	},
+/obj/effect/landmark/start/conciergelate{
+	dir = 1
+	},
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/cave/inhumen/wretch/camp)
 "aQ" = (
@@ -1962,6 +1965,9 @@
 /obj/structure/chair/wood/rogue{
 	dir = 8
 	},
+/obj/effect/landmark/start/campfollowerlate{
+	dir = 8
+	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/banditcamp)
 "iL" = (
@@ -2558,6 +2564,9 @@
 "lT" = (
 /obj/machinery/light/rogue/wallfire/candle/r,
 /obj/structure/chair/wood/rogue{
+	dir = 8
+	},
+/obj/effect/landmark/start/campfollowerlate{
 	dir = 8
 	},
 /turf/open/floor/rogue/tile,
@@ -4245,6 +4254,7 @@
 /area/rogue/under/cave/inhumen/wretch/camp)
 "vD" = (
 /obj/structure/chair/stool/rogue,
+/obj/effect/landmark/start/concierge,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/cave/inhumen/wretch/camp)
 "vE" = (
@@ -8539,6 +8549,10 @@
 /obj/effect/landmark/deaths_door/entry/tl,
 /turf/open/floor/rogue/underworld/road,
 /area/rogue/indoors/deathsedge)
+"RE" = (
+/obj/effect/landmark/start/campfollower,
+/turf/open/floor/rogue/herringbone,
+/area/rogue/indoors/banditcamp)
 "RF" = (
 /obj/structure/fluff/walldeco/bath/wallrope{
 	pixel_x = 32
@@ -10970,7 +10984,7 @@ vp
 Ex
 Ol
 Hi
-Hi
+RE
 mR
 eO
 Uc
@@ -11100,7 +11114,7 @@ vp
 SU
 At
 aH
-Hi
+RE
 vF
 Ie
 Ie
@@ -11230,7 +11244,7 @@ vp
 wH
 At
 Hi
-Hi
+RE
 nR
 xP
 TK
