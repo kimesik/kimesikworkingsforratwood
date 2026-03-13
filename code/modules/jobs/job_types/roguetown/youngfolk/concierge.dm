@@ -10,6 +10,7 @@
 	tutorial = "Assigned by The Powers That Be to cater to this world's particularly wicked individuals of interest, you have been granted an almost perfect disguise, but you are authorised to use only a fraction of your former power, and you may not harm inhabitants of this plane of existence. Directly."
 	cmode_music = 'sound/music/combat_maniac2.ogg'
 
+	spells = list(/obj/effect/proc_holder/spell/invoked/diagnose/secular, /obj/effect/proc_holder/spell/targeted/touch/prestidigitation, /obj/effect/proc_holder/spell/invoked/mending, /obj/effect/proc_holder/spell/self/recall, /obj/effect/proc_holder/spell/invoked/mirror_transform, /obj/effect/proc_holder/spell/invoked/create_campfire)
 	outfit = /datum/outfit/job/roguetown/concierge
 	display_order = JDO_CONCIERGE
 	show_in_credits = FALSE
@@ -118,4 +119,5 @@
 		/obj/item/rogueweapon/huntingknife = 1,
 		/obj/item/flint = 1,
 		/obj/item/rope/chain = 1,
+		/obj/item/soap = 1,
 		)
