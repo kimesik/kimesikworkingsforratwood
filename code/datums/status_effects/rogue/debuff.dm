@@ -649,36 +649,6 @@
 /atom/movable/screen/alert/status_effect/debuff/knockout
 	name = "Drowsy"
 
-//Heretics in rite armour / with rite buffs being punished, for lingering on hallowed ground.
-//If they're captured, it's a moot point.
-/atom/movable/screen/alert/status_effect/overt_punishment
-	name = "Hallowed Ground"
-	desc = "The Ten have taken notice. I should not linger here!"
-	icon_state = "muscles"
-
-/datum/status_effect/debuff/overt_punishment
-	id = "overtpunish"
-	alert_type = /atom/movable/screen/alert/status_effect/overt_punishment
-//Extreme since it's just the cathedral. If you're seeing this frequently, you may be the issue.
-	effectedstats = list(STATKEY_STR = -6, STATKEY_PER = -4, STATKEY_INT = -4, STATKEY_WIL = -4, STATKEY_CON = -4, STATKEY_SPD = -4, STATKEY_LCK = -8)
-
-/datum/status_effect/debuff/overt_punishment/process()
-	.=..()
-	var/area/rogue/our_area = get_area(owner)
-	if(!(our_area.holy_area))
-		owner.remove_status_effect(/datum/status_effect/debuff/overt_punishment)
-
-/datum/status_effect/debuff/overt_punishment/on_apply()
-		. = ..()
-		var/mob/living/carbon/C = owner
-		C.add_movespeed_modifier(MOVESPEED_ID_DAMAGE_SLOWDOWN, multiplicative_slowdown = 1.5)
-
-/datum/status_effect/debuff/overt_punishment/on_remove()
-	. = ..()
-	if(iscarbon(owner))
-		var/mob/living/carbon/C = owner
-		C.remove_movespeed_modifier(MOVESPEED_ID_DAMAGE_SLOWDOWN)
-
 /datum/status_effect/debuff/lost_naledi_mask
 	id = "naledimask"
 	alert_type = /atom/movable/screen/alert/status_effect/debuff/naledimask
@@ -782,7 +752,7 @@
 
 /atom/movable/screen/alert/status_effect/debuff/mesmerised
 	name = "Mesmerised"
-	desc = span_warning("Their beauty is otherwordly..")
+	desc = span_warning("Their beauty is otherworldly..")
 	icon_state = "acid"
 
 /////////////////////////
@@ -798,6 +768,8 @@
 	var/mob/living/carbon/human/passenger
 	var/stamcost = 9
 	var/obj/item/organ/wings/harpy/harpy_wings
+	/// Buckled mob if someone decides to mount the flying harpy
+	var/datum/weakref/buckled_mob
 
 /datum/status_effect/debuff/harpy_flight/on_creation(mob/living/new_owner, new_stamcost)
 	stamcost = new_stamcost
@@ -816,11 +788,16 @@
 		break
 	harpy.movement_type |= FLYING
 	harpy.dna.species.speedmod += 0.3
+	harpy.remove_movespeed_modifier(MOVESPEED_ID_LIVING_TURF_SPEEDMOD) // If they are slowed down (like being in water) remove it
 	harpy.add_movespeed_modifier(MOVESPEED_ID_SPECIES, TRUE, 100, override=TRUE, multiplicative_slowdown = harpy.dna.species.speedmod)
 	harpy.apply_status_effect(/datum/status_effect/debuff/flight_sound_loop)
 	ADD_TRAIT(harpy, TRAIT_SPELLCOCKBLOCK, ORGAN_TRAIT)
 	harpy.flying = TRUE
 	init_signals()
+	var/mob/buckled_rider = harpy.buckled_mobs[1]
+	if(!isnull(buckled_rider))
+		buckled_mob = WEAKREF(buckled_rider)
+		buckled_rider.movement_type |= FLYING
 
 /datum/status_effect/debuff/harpy_flight/tick()
 	. = ..()
@@ -866,6 +843,10 @@
 		for(var/obj/item/rogueweapon/huntingknife/idagger/harpy_talons/talons in harpy.held_items)
 			harpy.dropItemToGround(talons, TRUE)
 			return
+	var/mob/buckled_rider = buckled_mob.resolve()
+	if(!isnull(buckled_rider))
+		buckled_rider.movement_type &= ~FLYING
+	buckled_mob = null
 
 /atom/movable/screen/alert/status_effect/debuff/harpy_flight
 	name = "Flying..."
@@ -895,6 +876,9 @@
 
 /datum/status_effect/debuff/harpy_flight/proc/init_signals()
 	RegisterSignal(owner, COMSIG_MOVABLE_MOVED, PROC_REF(check_movement))
+	RegisterSignal(owner, COMSIG_LIVING_UPDATE_TURF_MOVESPEED, PROC_REF(on_turf_movespeed_update))
+	RegisterSignal(owner, COMSIG_MOVABLE_BUCKLE, PROC_REF(harpy_mob_buckled))
+	RegisterSignal(owner, COMSIG_MOVABLE_UNBUCKLE, PROC_REF(harpy_mob_unbuckle))
 
 /datum/status_effect/debuff/harpy_flight/proc/check_movement(datum/source) // rewritten by @tmyqlfpir
 	SIGNAL_HANDLER
@@ -911,12 +895,38 @@
 		cur_turf = temp_turf
 	shadow.forceMove(cur_turf)
 
+/datum/status_effect/debuff/harpy_flight/proc/on_turf_movespeed_update()
+	SIGNAL_HANDLER
+	return TURF_MOVESPEED_BLOCKED // Flying harpies do not get slowed down from turfs
+
+/// Updates flight when a mob is buckled as a harpy is already in flight
+/datum/status_effect/debuff/harpy_flight/proc/harpy_mob_buckled(datum/source, mob/living/M, force = FALSE)
+	SIGNAL_HANDLER
+	if(isnull(M))
+		return
+	buckled_mob = WEAKREF(M)
+	M.movement_type |= FLYING
+
+/// Updates flight when a mob is unbuckled as a harpy is already in flight
+/datum/status_effect/debuff/harpy_flight/proc/harpy_mob_unbuckle(datum/source, mob/living/M, force = FALSE)
+	SIGNAL_HANDLER
+	var/mob/living/unbuckling_mob = buckled_mob.resolve()
+	if(!unbuckling_mob && isnull(M))
+		buckled_mob = null
+		return
+	unbuckling_mob.movement_type &= ~FLYING
+	var/turf/tile_under_rider = get_turf(unbuckling_mob)
+	tile_under_rider.zFall(unbuckling_mob)
+	buckled_mob = null
+
 /datum/status_effect/debuff/harpy_flight/proc/remove_signals()
 	UnregisterSignal(owner, list(
 		COMSIG_MOVABLE_MOVED,
+		COMSIG_LIVING_UPDATE_TURF_MOVESPEED,
+		COMSIG_MOVABLE_BUCKLE,
+		COMSIG_MOVABLE_UNBUCKLE,
 	))
-	if(shadow)
-		QDEL_NULL(shadow)
+	QDEL_NULL(shadow)
 
 /datum/status_effect/debuff/harpy_passenger
 	id = "harpy_passenger"
@@ -986,6 +996,22 @@
 /////////////////////////////
 ///HARPY FLIGHT STUFF END///
 ///////////////////////////
+
+/datum/status_effect/debuff/specialcd
+	id = "specialcd"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/specialcd
+	duration = 30 SECONDS
+	status_type = STATUS_EFFECT_UNIQUE
+
+/datum/status_effect/debuff/specialcd/on_creation(mob/living/new_owner, new_dur)
+	if(new_dur)
+		duration = new_dur
+	return ..()
+
+/atom/movable/screen/alert/status_effect/debuff/specialcd
+	name = "Special Manouevre Cooldown"
+	desc = "I used it. I must wait."
+	icon_state = "debuff"
 
 /datum/status_effect/debuff/liver_failure
 	id = "liver_failure"
@@ -1070,3 +1096,68 @@
 	if(iscarbon(owner))
 		var/mob/living/carbon/C = owner
 		C.remove_movespeed_modifier(MOVESPEED_ID_DAMAGE_SLOWDOWN)
+
+/datum/status_effect/debuff/freezing
+	id = "freezing"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/freezing
+	effectedstats = list(STATKEY_CON = -1)
+	duration = 100
+
+/atom/movable/screen/alert/status_effect/debuff/freezing
+	name = "Freezing"
+	desc = "It's so cold!"
+	icon_state = "chilled"
+
+/datum/status_effect/debuff/brittle
+	id = "brittle cold"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/brittle
+	duration = 10 SECONDS
+
+/datum/status_effect/debuff/brittle/on_apply()
+	. = ..()
+	var/mob/living/carbon/C = owner
+	to_chat(C, span_warning("My joints stiffen as the cold hardens my frame."))
+	ADD_TRAIT(C, TRAIT_CRITICAL_WEAKNESS, STATUS_EFFECT_TRAIT)
+
+/datum/status_effect/debuff/brittle/on_remove()
+	. = ..()
+	var/mob/living/carbon/C = owner
+	to_chat(C, span_notice("My frame loosens as warmth returns."))
+	REMOVE_TRAIT(C, TRAIT_CRITICAL_WEAKNESS, STATUS_EFFECT_TRAIT)
+
+/atom/movable/screen/alert/status_effect/debuff/brittle
+	name = "brittle cold"
+	desc = "My frame is so cold it's brittle!"
+	icon_state = "chilled"
+
+/datum/status_effect/debuff/overheat
+	id = "overheating"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/overheat
+	duration = 10 SECONDS
+	effectedstats = list(STATKEY_SPD = 2, STATKEY_WIL = -4)
+
+/datum/status_effect/debuff/overheat/on_apply()
+	. = ..()
+	var/mob/living/carbon/C = owner
+	to_chat(C, span_userdanger("My core temperature rises, overheating my frame."))
+	message_admins("debuff applied")
+/datum/status_effect/debuff/overheat/on_remove()
+	. = ..()
+	var/mob/living/carbon/C = owner
+	to_chat(C, span_userdanger("My core temperature returns to normal."))
+
+/atom/movable/screen/alert/status_effect/debuff/overheat
+	name = "overheating"
+	desc = "My frame is overheating!"
+	icon_state = "fire"
+
+/datum/status_effect/debuff/kiss_ecstasy
+	id = "kiss_ecstasy"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/kiss_ecstasy
+	effectedstats = list(STATKEY_CON = -2, STATKEY_WIL = -2)
+	duration = 30 SECONDS
+
+/atom/movable/screen/alert/status_effect/debuff/kiss_ecstasy
+	name = "The Kiss"
+	desc = "A terrible sweetness floods my senses."
+	icon_state = "vampirebite"

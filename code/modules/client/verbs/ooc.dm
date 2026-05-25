@@ -107,7 +107,7 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 			msg_to_send = "<span style='font-size:70%'>[base_msg]</span>"
 		else
 			msg_to_send = base_msg
-		to_chat(C, msg_to_send)
+		to_chat(C, type = MESSAGE_TYPE_OOC, html = msg_to_send)
 
 //				if(!holder.fakekey || C.holder)
 //					if(check_rights_for(src, R_ADMIN))
@@ -224,7 +224,7 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 			msg_to_send = "<span style='font-size:70%'>[base_msg]</span>"
 		else
 			msg_to_send = base_msg
-		to_chat(C, msg_to_send)
+		to_chat(C, type = MESSAGE_TYPE_OOC, html = msg_to_send)
 
 
 /proc/toggle_ooc(toggle = null)
@@ -614,3 +614,18 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 		policytext += "No related rules found."
 
 	usr << browse(policytext.Join(""),"window=policy")
+
+/client/verb/toggle_ghost_protection()
+	set name = "Toggle Ghost Protection"
+	set category = "OOC"
+	set desc = "Permit or forbid ghosts from orbiting or seeing you."
+	if(!mob)
+		return
+	// Flip preference
+	prefs.ghost_protection = !prefs.ghost_protection
+	prefs.save_preferences()
+	to_chat(src, span_notice("Ghost protection is now [prefs.ghost_protection ? "ENABLED (Ghosts can no longer see or orbit you)" : "DISABLED (Ghosts can now see and orbit you)"]."))
+
+// Currently ghost sprite not displaying
+// Can't return to afterlife or use for teleporting 
+// Need to add hide emotes, etc

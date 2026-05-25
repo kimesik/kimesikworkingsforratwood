@@ -76,6 +76,8 @@
 	dropshrink = 0.5
 	var/textper = 100
 	var/maxlen = 2000
+	///CSS applied to <body> when reading — used by fax letters to show a rim on the window border.
+	var/window_rim_style
 
 	var/cached_mailer
 	var/cached_mailedto
@@ -152,23 +154,32 @@
 		if(info)
 			. += "<a href='?src=[REF(src)];read=1'>Read</a>"
 	else
-		. += "It's from [mailer], addressed to [mailedto].</a>"
+		. += "It's from [mailer], addressed to [mailedto]."
+		if(isobserver(user) && IsAdminGhost(user))
+			. += "<a href='?src=[REF(src)];read=1'>Read (Admin)</a>"
 
 /obj/item/paper/proc/read(mob/user)
-	if(!user.client || !user.hud_used)
+	if(!user.client)
 		return
-	if(!user.hud_used.reads)
+	var/admin_observer = isobserver(user) && IsAdminGhost(user)
+	if(!user.hud_used)
+		if(!admin_observer)
+			return
+	else if(!admin_observer && !user.hud_used.reads)
 		return
-	if(!user.can_read(src))
+	if(!admin_observer && !user.can_read(src))
 		if(info)
 			user.adjust_experience(/datum/skill/misc/reading, 2, FALSE)
 		return
-	if(mailer)
+	if(!admin_observer && mailer)
 		return
 	if(in_range(user, src) || isobserver(user))
+		user << browse_rsc('html/book.png')
+		var/body_border_css = window_rim_style ? "box-sizing:border-box;[window_rim_style]" : ""
 		var/dat = {"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">
 			<html><head><style type=\"text/css\">
-			body { background-image:url('book.png');background-repeat: repeat; }</style></head><body scroll=yes>"}
+			html, body { height:100%; margin:0; padding:0; }
+			body { background-image:url('book.png');background-repeat: repeat;[body_border_css] }</style></head><body scroll=yes>"}
 		dat += info
 		dat += "<br>"
 		dat += "</body></html>"
@@ -352,7 +363,8 @@
 			user << browse(null, "window=reading")
 
 	var/literate = usr.is_literate()
-	if(!usr.canUseTopic(src, BE_CLOSE, literate))
+	var/admin_observer = isobserver(usr) && IsAdminGhost(usr)
+	if(!admin_observer && !usr.canUseTopic(src, BE_CLOSE, literate))
 		return
 
 	if(href_list["read"])

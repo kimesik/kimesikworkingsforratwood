@@ -1,7 +1,7 @@
 #define GARRISON_CROWN_COLOR "#C2A245"
 
 /obj/item/clothing/head/roguetown/crown/serpcrown
-	name = "Crown of Rotwood Vale"
+	name = "Crown of the Realm"
 	article = "the"
 	desc = "Heavy is the head that wears this."
 	icon_state = "serpcrown"
@@ -18,6 +18,7 @@
 	var/messagereceivedsound = 'sound/misc/scom.ogg'
 	var/hearrange = 0 // Only hearable by wearer
 	is_important = TRUE
+	slot_flags = ITEM_SLOT_HEAD|ITEM_SLOT_HIP|ITEM_SLOT_MASK
 
 /obj/item/clothing/head/roguetown/crown/serpcrown/Initialize(mapload)
 	. = ..()
@@ -35,6 +36,9 @@
 	qdel(src) //Anti-stall
 
 /obj/item/clothing/head/roguetown/crown/serpcrown/attack_right(mob/living/carbon/human/user)
+	if(user.restrained() || user.incapacitated())
+		to_chat(user, span_warning("I cannot use this while restrained or incapacitated!"))
+		return
 	user.changeNext_move(CLICK_CD_MELEE)
 	visible_message(span_notice ("[user] presses their hands against their crown."))
 	var/input_text = input(user, "Enter your ducal message:", "Crown SCOM")
@@ -70,6 +74,9 @@
 					S.repeat_message(input_text, src, usedcolor)
 
 /obj/item/clothing/head/roguetown/crown/serpcrown/attack_self(mob/living/user)
+	if(user.restrained() || user.incapacitated())
+		to_chat(user, span_warning("I cannot use this while restrained or incapacitated!"))
+		return
 	if(.)
 		return
 	user.changeNext_move(CLICK_CD_MELEE)
@@ -78,6 +85,9 @@
 	to_chat(user, span_info("I [garrisonline ? "connect the crown to the garrison SCOMline" : "connect the crown to the general SCOMline"]"))
 
 /obj/item/clothing/head/roguetown/crown/serpcrown/MiddleClick(mob/user)
+	if(user.restrained() || user.incapacitated())
+		to_chat(user, span_warning("I cannot use this while restrained or incapacitated!"))
+		return
 	if(.)
 		return
 	user.changeNext_move(CLICK_CD_MELEE)
