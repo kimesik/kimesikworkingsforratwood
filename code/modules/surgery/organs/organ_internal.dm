@@ -161,8 +161,13 @@
 	foodtype = RAW | MEAT | GROSS
 	eat_effect = /datum/status_effect/debuff/uncookedfood
 	var/obj/item/organ/organ_inside
+	var/list/bitten_names = list()
 
 /obj/item/reagent_containers/food/snacks/organ/On_Consume(mob/living/eater)		//Graggarites looove eating organs, they loooove eating organs!
+	if(ishuman(eater))
+		var/mob/living/carbon/human/H = eater
+		if(!(H.real_name in bitten_names))
+			bitten_names += H.real_name
 	if(HAS_TRAIT(eater, TRAIT_ORGAN_EATER))
 		eat_effect = /datum/status_effect/buff/snackbuff
 		check_culling(eater)

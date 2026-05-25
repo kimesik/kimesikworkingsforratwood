@@ -1011,6 +1011,75 @@
 	pixel_x = -32
 	pixel_y = -16
 
+/obj/structure/fluff/statue/femalestatue/zizo/attackby(obj/item/W, mob/living/carbon/human/user, params) //Zizoist Weddings. Zizoists conduct them. Can be done anywhere.
+	if(user.mind)
+		if(user.patron?.type == /datum/patron/inhumen/zizo)
+			if(istype(W, /obj/item/reagent_containers/food/snacks/organ))
+				var/marriage = FALSE
+				var/obj/item/reagent_containers/food/snacks/organ/A = W
+				if(A.bitten_names.len == 2)
+					var/mob/living/carbon/human/thegroom
+					var/mob/living/carbon/human/thebride
+					// Find people by bite order, not random viewer order
+					for(var/bite_name in A.bitten_names)
+						var/found = FALSE
+						for(var/mob/M in viewers(src, 7))
+							if(!ishuman(M)) continue //Must be "human"
+							var/mob/living/carbon/human/C = M
+							if(C.stat == DEAD) continue //Must be alive
+							if(!C.client) continue //Must be client
+							if(C.marriedto) continue //Can't be already married
+							if(C.real_name == bite_name) //"Real name" must match the name stored in the bitten organ
+								if(!thegroom)
+									thegroom = C  // First bite = groom
+								else if(!thebride)
+									thebride = C  // Second bite = bride
+								found = TRUE
+								break
+						if(found && thegroom && thebride)
+							break
+					if(thegroom && thebride)
+						// Prompt priest for surname
+						var/surname = input(user, "Enter a surname for the couple:", "Marriage Ceremony") as text|null
+						if(!surname || !length(trim(surname)))
+							surname = thegroom.dna.species.random_surname()
+						priority_announce("[thegroom.real_name] and [thebride.real_name] have bound their souls together! The Dark Lady smiles upon them!", title = "Unholy Matrimony!", sound = 'sound/misc/evilevent.ogg')
+						var/list/titles = list("Sir", "Ser", "Dame", "Lord", "Lady", "Knight-Captain", "Duke", "Duchess", "Father", "Mother", "Brother", "Sister", "Prelate", "Devotee", "Votary")
+						// Assign surname to groom
+						var/list/groom_name_parts = splittext(thegroom.real_name, " ")
+						var/title_found = (titles.Find(groom_name_parts[1]) != 0)
+						if(title_found)
+							thegroom.real_name = "[groom_name_parts[1]] [groom_name_parts[2]] [surname]"
+						else
+							thegroom.real_name = "[groom_name_parts[1]] [surname]"
+						// Assign surname to bride
+						var/list/bride_name_parts = splittext(thebride.real_name, " ")
+						title_found = (titles.Find(bride_name_parts[1]) != 0)
+						if(title_found)
+							thebride.real_name = "[bride_name_parts[1]] [bride_name_parts[2]] [surname]"
+						else
+							thebride.real_name = "[bride_name_parts[1]] [surname]"
+						// Private notification to both
+						if(thegroom) 
+							to_chat(thegroom, span_notice("Your new shared surname is [surname]."))
+						if(thebride) 
+							to_chat(thebride, span_notice("Your new shared surname is [surname]."))
+						// Set marriedto fields
+						thegroom.marriedto = thebride.real_name
+						thebride.marriedto = thegroom.real_name
+						thegroom.adjust_triumphs(1)
+						thebride.adjust_triumphs(1)
+						// After surname is set, have the priest say the wedding line
+						if(user && surname)
+							user.say("I hereby wed you as [surname]s.")
+						qdel(A)
+						marriage = TRUE
+					if(!marriage)
+						if(istype(W, /obj/item/reagent_containers/food/snacks/organ))
+							W.burn()
+						return
+				return
+
 /obj/structure/fluff/statue/scare
 	name = "scarecrow"
 	icon_state = "td"
@@ -1330,7 +1399,7 @@
 	divine = FALSE
 	max_integrity = 350
 
-/obj/structure/fluff/psycross/attackby(obj/item/W, mob/living/carbon/human/user, params)
+/obj/structure/fluff/psycross/attackby(obj/item/W, mob/living/carbon/human/user, params) //Tennite Weddings. Acolytes and Bishop conduct them. Can be done only in the chapel.
 	if(user.mind)
 		if((user.mind.assigned_role == "Bishop") || (user.mind.assigned_role == "Acolyte"))
 			if(istype(W, /obj/item/reagent_containers/food/snacks/grown/apple))
@@ -1407,22 +1476,12 @@
 								user.say("I hereby wed you as [surname]s.")
 							qdel(A)
 							marriage = TRUE
-						else
-							A.become_rotten()
-							to_chat(user, span_danger("Eora recoils from this union! The apple rots in your hands. The excommunicated cannot be wed by the church."))
-							if(thegroom)
-								to_chat(thegroom, span_danger("Eora recoils from this union! You are excommunicated and cannot be wed by the church."))
-							if(thebride)
-								to_chat(thebride, span_danger("Eora recoils from this union! You are excommunicated and cannot be wed by the church."))
-							// Do not qdel(A) here so the rotten apple remains
-							return
 					if(!marriage)
 						if(istype(W, /obj/item/reagent_containers/food/snacks/grown/apple))
 							W.burn()
 						return
 				return
 	..()
-
 
 /obj/structure/fluff/psycross/copper/Destroy()
 	addomen("psycross")
